@@ -117,14 +117,20 @@
 
 				scene = new THREE.Scene();
 
+				var categoryTotals = {};
 
 				// process memories data
 
 				for ( var i = 0; i < memories.length; i++ ) {
+					var mem = memories[i];
 
 					// check for missing first/last names
-					if (!memories[i].hasOwnProperty('firstName')) memories[i].firstName = '';
-					if (!memories[i].hasOwnProperty('lastName')) memories[i].lastName = '';
+					if (!mem.hasOwnProperty('firstName')) mem.firstName = '';
+					if (!mem.hasOwnProperty('lastName')) mem.lastName = '';
+
+					// increase category count for building grid layout
+					if (!categoryTotals.hasOwnProperty(mem.category)) categoryTotals[mem.category] = 0;
+					categoryTotals[mem.category] += 1;
 
 					// color map for categories
 					var colorMap = {
@@ -137,16 +143,16 @@
 
 					var card = document.createElement( 'div' );
 					card.className = 'card';
-					card.style.backgroundColor = 'rgba(' + colorMap[memories[i].category].join(',') + ',0.75)';
+					card.style.backgroundColor = 'rgba(' + colorMap[mem.category].join(',') + ',0.75)';
 
 					var initials = document.createElement( 'div' );
 					initials.className = 'initials';
-					initials.textContent = memories[i]['firstName'].substring(0, 1) + memories[i].lastName.substring(0, 1);
+					initials.textContent = mem['firstName'].substring(0, 1) + mem.lastName.substring(0, 1);
 					card.appendChild( initials );
 
 					var details = document.createElement( 'div' );
 					details.className = 'details';
-					details.innerHTML = memories[i]['firstName'] + '<br>' + memories[i]['lastName']
+					details.innerHTML = mem['firstName'] + '<br>' + mem['lastName']
 					card.appendChild( details );
 
 					var object = new THREE.CSS3DObject( card );
@@ -182,18 +188,32 @@
 				// grid
 
 				cameraPresets.grid = { x: -2000, y: -10, z: 4500 };
+				var categoryIndex = {};
+				var categoryCount = -1;
 
 				for ( var i = 0; i < objects.length; i ++ ) {
+					var mem = memories[i];
 
 					var object = new THREE.Object3D();
 
-					object.position.x = ( ( i % 5 ) * 200 ) - 400;
-					object.position.y = ( - ( Math.floor( i / 5 ) % 5 ) * 200 ) + 400;
-					object.position.z = ( Math.floor( i / 25 ) ) * 700 - 1400;
+					if (!categoryIndex.hasOwnProperty(mem.category)) {
+						var data = {
+							count: -1,
+							index: ++categoryCount
+						}
+						categoryIndex[mem.category] = data;
+					}
+					categoryIndex[mem.category].count += 1;
+
+					object.position.x = ( ( categoryIndex[mem.category].count % 5 ) * 200 ) - 400;
+					object.position.y = ( - ( Math.floor( categoryIndex[mem.category].count / 5 ) ) * 200 ) + 800;
+					object.position.z = ( Math.floor( categoryIndex[mem.category].index ) ) * 900 - 1500;
 
 					targets.grid.push( object );
 
 				}
+
+				console.log(categoryIndex)
 
 				//
 
@@ -206,8 +226,9 @@
 
 				controls = new THREE.TrackballControls( camera, renderer.domElement );
 				controls.rotateSpeed = 0.5;
-				controls.minDistance = 500;
-				controls.maxDistance = 6000;
+				controls.minDistance = 000;
+				controls.maxDistance = 10000;
+				controls.noRotate = true;
 				controls.addEventListener( 'change', render );
 
 				var button = document.getElementById( 'table' );
@@ -226,7 +247,9 @@
 
 				}, false );
 
-				transform( targets.table, 1000 );
+				// transform( targets.table, 1000 );
+				transform( targets.grid, 1000 );
+				animateCamera( cameraPresets.grid, 2000 );
 
 				//
 
