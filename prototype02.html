@@ -46,7 +46,6 @@
 					font-size: 60px;
 					font-weight: bold;
 					color: rgba(255,255,255,0.75);
-					text-shadow: 0 0 10px rgba(255,255,255,0.95);
 				}
 
 				.card .details {
@@ -166,6 +165,28 @@
 					object.position.z = Math.random() * 4000 - 2000;
 					scene.add( object );
 
+					card.addEventListener( 'click', function ( event ) {
+
+						var index = parseInt(Math.random() * objects.length);
+						var target = objects[index];
+
+						new TWEEN.Tween( target.position )
+						.to( { x: camera.position.x, y: camera.position.y, z: camera.position.z - 300 }, 1000 )
+						.easing( TWEEN.Easing.Exponential.InOut )
+						.start();
+
+						new TWEEN.Tween( target.rotation )
+						.to( { y: -3.14 }, 1500 )
+						.easing( TWEEN.Easing.Exponential.InOut )
+						.start();
+
+						new TWEEN.Tween( this )
+						.to( {}, 1000 * 2 )
+						.onUpdate( render )
+						.start();
+
+					}, false );
+
 					objects.push( object );
 
 				}
@@ -215,8 +236,6 @@
 					targets.grid.push( object );
 
 				}
-
-				console.log(categoryIndex)
 
 				//
 
