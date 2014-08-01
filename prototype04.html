@@ -107,6 +107,8 @@
 			var cameraPresets = {};
 			var sceneWidth = 900;
 
+			var activeCard = false;
+
 			// load memories data
 			var memories = [];
 			$.get('/js/memories.json', function(data) {
@@ -148,6 +150,7 @@
 
 					var card = document.createElement( 'div' );
 					card.className = 'card';
+					card.setAttribute('data-id', i);
 					card.style.backgroundColor = 'rgba(' + colorMap[mem.category].join(',') + ',0.85)';
 
 					var initials = document.createElement( 'div' );
@@ -168,8 +171,16 @@
 
 					card.addEventListener( 'click', function ( event ) {
 
-						var index = parseInt(Math.random() * objects.length);
-						var target = objects[index];
+						if (activeCard) {
+						}
+
+						var id = $(this).attr('data-id');
+						for (var i = 0; i < objects.length; i++) {
+							if (objects[i].id == id) {
+								var target = objects[i].object;
+								activeCard = id;
+							}
+						}
 
 						new TWEEN.Tween( target.position )
 						.to( { x: camera.position.x, y: camera.position.y, z: camera.position.z - 300 }, 1000 )
@@ -188,7 +199,7 @@
 
 					}, false );
 
-					objects.push( object );
+					objects.push( { id: i, object: object });
 
 				}
 
@@ -322,7 +333,7 @@
 
 				for ( var i = 0; i < objects.length; i ++ ) {
 
-					var object = objects[ i ];
+					var object = objects[ i ].object;
 					var target = targets[ i ];
 
 					new TWEEN.Tween( object.position )
