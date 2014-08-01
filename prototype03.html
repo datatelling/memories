@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<title>memories</title>
+		<style>
+			html, body {
+				height: 100%;
+			}
+
+			body {
+				background-color: white;
+				margin: 0;
+				font-family: Helvetica, sans-serif; 
+				overflow: hidden;
+			}
+
+			#container > div {
+				border-right: 1px solid gray;
+			}
+
+			a {
+				color: #ffffff;
+			}
+
+			.card {
+				width: 120px;
+				height: 160px;
+				box-shadow: 0px 0px 12px rgba(255,255,255,0.5);
+				border: 1px solid rgba(127,255,255,0.25);
+				text-align: center;
+				cursor: default;
+			}
+
+			.card:hover {
+				box-shadow: 0px 0px 12px rgba(255,255,255,0.75);
+				border: 1px solid rgba(255,255,255,0.75);
+			}
+
+				.card .initials {
+					position: absolute;
+					top: 15px;
+					left: 0px;
+					right: 0px;
+					font-size: 60px;
+					font-weight: bold;
+					color: rgba(255,255,255,0.75);
+				}
+
+				.card .details {
+					position: absolute;
+					top: 85px;
+					left: 0px;
+					right: 0px;
+					font-size: 14px;
+					color: rgba(255,255,255,0.75);
+				}
+
+			#menu {
+				position: absolute;
+				bottom: 20px;
+				left: 350px;
+				text-align: center;
+			}
+
+			button {
+				color: rgba(127, 127, 127, 0.75);
+				background: transparent;
+				outline: 1px solid rgba(127, 127, 127, 0.75);
+				border: 0px;
+				padding: 5px 10px;
+				cursor: pointer;
+			}
+			button:hover {
+				background-color: rgba(0,255,255,0.5);
+			}
+			button:active {
+				color: #000000;
+				background-color: rgba(0,255,255,0.75);
+			}
+		</style>
+	</head>
+	<body>
+		<script src="js/three.min.js"></script>
+		<script src="js/tween.min.js"></script>
+		<script src="js/OrbitControls.js"></script>
+		<script src="js/CSS3DRenderer.js"></script>
+		<script src="js/jquery-2.1.1.min.js"></script>
+
+		<div id="container"></div>
+
+		<div id="menu">
+			<button id="table">TABLE</button>
+			<button id="category">CATEGORY</button>
+			<button id="age">AGE</button>
+		</div>
+
+		<script>
+
+			var camera, scene, renderer;
+			var controls;
+
+			var objects = [];
+			var targets = { table: [], category: [], age: [] };
+
+			var cameraPresets = {};
+			var sceneWidth = 900;
+
+			// load memories data
+			var memories = [];
+			$.get('/js/memories.json', function(data) {
+				memories = data.memories;
+				init();
+				animate();
+			})
+
+			function init() {
+
+				camera = new THREE.PerspectiveCamera( 40, sceneWidth / window.innerHeight, 1, 10000 );
+				camera.position.z = 3000;
+
+				scene = new THREE.Scene();
+
+				var categoryTotals = {};
+
+				// process memories data
+
+				for ( var i = 0; i < memories.length; i++ ) {
+					var mem = memories[i];
+
+					// check for missing first/last names
+					if (!mem.hasOwnProperty('firstName')) mem.firstName = '';
+					if (!mem.hasOwnProperty('lastName')) mem.lastName = '';
+
+					// increase category count for building category layout
+					if (!categoryTotals.hasOwnProperty(mem.category)) categoryTotals[mem.category] = 0;
+					categoryTotals[mem.category] += 1;
+
+					// color map for categories
+					var colorMap = {
+						vse: [127, 169, 178],
+						trouble: [255, 12, 107],
+						antics: [21, 213, 255],
+						family: [204, 195, 101],
+						hist: [250, 163, 6],
+					}
+
+					var card = document.createElement( 'div' );
+					card.className = 'card';
+					card.style.backgroundColor = 'rgba(' + colorMap[mem.category].join(',') + ',0.85)';
+
+					var initials = document.createElement( 'div' );
+					initials.className = 'initials';
+					initials.textContent = mem['firstName'].substring(0, 1) + mem.lastName.substring(0, 1);
+					card.appendChild( initials );
+
+					var details = document.createElement( 'div' );
+					details.className = 'details';
+					details.innerHTML = mem['firstName'] + '<br>' + mem['lastName']
+					card.appendChild( details );
+
+					var object = new THREE.CSS3DObject( card );
+					object.position.x = Math.random() * 4000 - 2000;
+					object.position.y = Math.random() * 4000 - 2000;
+					object.position.z = Math.random() * 4000 - 2000;
+					scene.add( object );
+
+					card.addEventListener( 'click', function ( event ) {
+
+						var index = parseInt(Math.random() * objects.length);
+						var target = objects[index];
+
+						new TWEEN.Tween( target.position )
+						.to( { x: camera.position.x, y: camera.position.y, z: camera.position.z - 300 }, 1000 )
+						.easing( TWEEN.Easing.Exponential.InOut )
+						.start();
+
+						new TWEEN.Tween( target.rotation )
+						.to( { y: -3.14 }, 1500 )
+						.easing( TWEEN.Easing.Exponential.InOut )
+						.start();
+
+						new TWEEN.Tween( this )
+						.to( {}, 1000 * 2 )
+						.onUpdate( render )
+						.start();
+
+					}, false );
+
+					objects.push( object );
+
+				}
+
+				// table layout
+
+				var yPos = 0;
+				cameraPresets.table = { x: 0, y: 0, z: 3000}
+
+				for ( var i = 0; i < objects.length; i++ ) {
+
+					var object = new THREE.Object3D();
+					var xPos = i % 15;
+					if (xPos == 0) yPos++;
+
+					object.position.x = (xPos * 140) - 993;
+					object.position.y = - ( yPos * 180 ) + 990;
+
+					targets.table.push( object );
+
+				}
+
+				// category layout
+
+				cameraPresets.category = { x: -1830, y: 480, z: 4500 };
+				var categoryIndex = {};
+				var categoryCount = -1;
+
+				for ( var i = 0; i < objects.length; i ++ ) {
+					var mem = memories[i];
+
+					var object = new THREE.Object3D();
+
+					if (!categoryIndex.hasOwnProperty(mem.category)) {
+						var data = {
+							count: -1,
+							index: ++categoryCount
+						}
+						categoryIndex[mem.category] = data;
+					}
+					categoryIndex[mem.category].count += 1;
+
+					object.position.x = ( ( categoryIndex[mem.category].count % 10 ) * 200 ) - 800;
+					object.position.y = ( ( Math.floor( categoryIndex[mem.category].count / 10 ) ) * 200 ) + 000;
+					object.position.z = ( Math.floor( categoryIndex[mem.category].index ) ) * 900 - 1500;
+
+					targets.category.push( object );
+
+				}
+
+				// age layout
+
+				cameraPresets.age = { x: -4189, y: 1810, z: 5600 };
+				var ageIndex = [];
+				var ageCount = -1;
+
+				for ( var i = 0; i < objects.length; i ++ ) {
+					var mem = memories[i];
+					if (!mem.hasOwnProperty('age') || mem.age.length > 1) mem.age = '0';
+
+					// super hacky way of getting rid of the layout gap between years 4 & 6!
+					// redo this a better way!
+					if (mem.age == '6') mem.age = '5';
+
+					var object = new THREE.Object3D();
+
+					if (!ageIndex.hasOwnProperty(mem.age)) ageIndex[mem.age] = -1;
+					ageIndex[mem.age] += 1;
+
+					object.position.x = ( ( ageIndex[mem.age] % 10 ) * 200 ) - 800;
+					object.position.y = ( ( Math.floor( ageIndex[mem.age] / 10 ) ) * 200 ) + 000;
+					object.position.z = mem.age * 900 - 1500;
+
+					targets.age.push( object );
+
+				}
+
+				//
+
+				renderer = new THREE.CSS3DRenderer();
+				renderer.setSize( sceneWidth, window.innerHeight );
+				renderer.domElement.style.position = 'absolute';
+				renderer.domElement.style.backgroundColor = 'white';
+				document.getElementById( 'container' ).appendChild( renderer.domElement );
+
+				//
+
+				controls = new THREE.OrbitControls( camera, renderer.domElement );
+				controls.rotateSpeed = 0.5;
+				controls.minDistance = 000;
+				controls.maxDistance = 10000;
+				controls.noRotate = false;
+				controls.addEventListener( 'change', render );
+
+				var button = document.getElementById( 'table' );
+				button.addEventListener( 'click', function ( event ) {
+
+					transform( targets.table, 1000 );
+					animateCamera( cameraPresets.table, 2000 );
+
+				}, false );
+
+				var button = document.getElementById( 'category' );
+				button.addEventListener( 'click', function ( event ) {
+
+					transform( targets.category, 1000 );
+					animateCamera( cameraPresets.category, 2000 );
+
+				}, false );
+
+				var button = document.getElementById( 'age' );
+				button.addEventListener( 'click', function ( event ) {
+
+					transform( targets.age, 1000 );
+					animateCamera( cameraPresets.age, 2000 );
+
+				}, false );
+
+				transform( targets.table, 1000 );
+				// transform( targets.category, 1000 );
+				// animateCamera( cameraPresets.category, 2000 );
+
+				//
+
+				window.addEventListener( 'resize', onWindowResize, false );
+
+			}
+
+			function transform( targets, duration ) {
+
+				TWEEN.removeAll();
+
+				for ( var i = 0; i < objects.length; i ++ ) {
+
+					var object = objects[ i ];
+					var target = targets[ i ];
+
+					new TWEEN.Tween( object.position )
+						.to( { x: target.position.x, y: target.position.y, z: target.position.z }, Math.random() * duration + duration )
+						.easing( TWEEN.Easing.Exponential.InOut )
+						.start();
+
+					new TWEEN.Tween( object.rotation )
+						.to( { x: target.rotation.x, y: target.rotation.y, z: target.rotation.z }, Math.random() * duration + duration )
+						.easing( TWEEN.Easing.Exponential.InOut )
+						.start();
+
+				}
+
+				new TWEEN.Tween( this )
+					.to( {}, duration * 2 )
+					.onUpdate( render )
+					.start();
+
+			}
+
+			function animateCamera( position, duration ) {
+
+				new TWEEN.Tween( camera.position )
+						.to( position, duration )
+						.easing( TWEEN.Easing.Exponential.Out )
+						.start();
+
+			}
+
+			function onWindowResize() {
+
+				camera.aspect = sceneWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( sceneWidth, window.innerHeight );
+
+				render();
+
+			}
+
+			function animate() {
+
+				requestAnimationFrame( animate );
+
+				TWEEN.update();
+
+				controls.update();
+
+			}
+
+			function render() {
+
+				renderer.render( scene, camera );
+
+			}
+
+		</script>
+	</body>
+</html>
