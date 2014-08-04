@@ -29,7 +29,7 @@
 				height: 240px;
 				box-shadow: 0px 0px 12px rgba(255,255,255,0.5);
 				border: 1px solid rgba(127,255,255,0.25);
-				text-align: center;
+				/*text-align: center;*/
 				cursor: default;
 			}
 
@@ -38,7 +38,7 @@
 				border: 1px solid rgba(255,255,255,0.75);
 			}
 
-				.card .initials, #activeCard .initials {
+				.card .callout {
 					position: absolute;
 					top: 15px;
 					left: 0px;
@@ -46,25 +46,51 @@
 					font-size: 60px;
 					font-weight: bold;
 					color: rgba(255,255,255,0.75);
+					padding-left: 10px;
 				}
 
-				.card .details, #activeCard .details {
+				.card .name {
 					position: absolute;
 					bottom: 20px;
 					left: 0px;
 					right: 0px;
 					font-size: 36px;
 					color: rgba(255,255,255,0.75);
+					padding-left: 10px;
 				}
 
 			#activeCard {
 				width: 800px;
 				height: 530px;
+				overflow-y: scroll;
 				top: 800px;
 				position: absolute;
 				left: 50px;
+				color: white;
 				background-color: rgba(0, 127, 127, 0.9);
 			}
+				#activeCard .callout {
+					font-size: 60px;
+					padding: 25px;
+				}
+
+				#activeCard .name {
+					position: relative;
+					float: left;
+					display: inline;
+					width: 280px;
+					font-size: 30px;
+					padding: 10px;
+				}
+
+				#activeCard .text {
+					position: relative;
+					float: right;
+					display: inline;
+					width: 450px;
+					font-size: 24px;
+					padding: 10px;
+				}
 
 			#menu {
 				position: absolute;
@@ -108,8 +134,9 @@
 		</div>
 
 		<div id="activeCard">
-			<div class="initials">"quote"</div>
-			<div class="details">Matt Felsen</div>
+			<div class="callout"></div>
+			<div class="name"></div>
+			<div class="text"></div>
 		</div>
 
 		<script>
@@ -176,16 +203,15 @@
 					card.setAttribute('data-id', i);
 					card.style.backgroundColor = 'rgba(' + colorMap[mem.category].join(',') + ',0.85)';
 
-					var initials = document.createElement( 'div' );
-					initials.className = 'initials';
-					// initials.textContent = mem['firstName'].substring(0, 1) + mem.lastName.substring(0, 1);
-					initials.textContent = mem.callout;
-					card.appendChild( initials );
+					var callout = document.createElement( 'div' );
+					callout.className = 'callout';
+					callout.textContent = mem.callout;
+					card.appendChild( callout );
 
-					var details = document.createElement( 'div' );
-					details.className = 'details';
-					details.innerHTML = mem['firstName'] + ' ' + mem['lastName']
-					card.appendChild( details );
+					var name = document.createElement( 'div' );
+					name.className = 'name';
+					name.innerHTML = mem['firstName'] + ' ' + mem['lastName']
+					card.appendChild( name );
 
 					var object = new THREE.CSS3DObject( card );
 					object.position.x = Math.random() * 4000 - 2000;
@@ -194,7 +220,6 @@
 
 					object.rotation.x = Math.random() * 2 * 3.14;
 					object.rotation.y = Math.random() * 2 * 3.14;
-					// object.rotation.z = Math.random() * 1 * 3.14;
 
 					scene.add( object );
 
@@ -206,31 +231,20 @@
 						var id = $(this).attr('data-id');
 						for (var i = 0; i < objects.length; i++) {
 							if (objects[i].id == id) {
-								var target = objects[i].object;
 								activeCard = id;
+								break;
 							}
 						}
 
-						new TWEEN.Tween( target.position )
-						.to( { x: camera.position.x, y: camera.position.y - 300, z: camera.position.z - 300 }, 1000 )
-						.easing( TWEEN.Easing.Cubic.InOut )
-						.start();
+						transformActiveCard( );
 
-						new TWEEN.Tween( target.rotation )
-						.to( { y: -3.14 }, 1000 )
-						.easing( TWEEN.Easing.Cubic.InOut )
-						.start();
-
-						new TWEEN.Tween( this )
-						.to( {}, 1000 * 2 )
-						.onUpdate( render )
-						.start();
+						$('#activeCard .callout').text(memories[i].callout);
+						$('#activeCard .name').text(memories[i].firstName + ' ' + memories[i].lastName);
+						$('#activeCard .text').text(memories[i].text);
 
 						$('#activeCard').css('background-color', $(this).css('background-color'));
 						$('#activeCard').css('top', window.innerHeight);
-						$('#activeCard .initials').text($(this).children('.initials').text());
-						$('#activeCard .details').text($(this).children('.details').text());
-						$('#activeCard').delay(800).animate({ top:'100px' });
+						$('#activeCard').delay(900).animate({ top:'100px' });
 
 					}, false );
 
@@ -356,10 +370,12 @@
 
 				var card = document.getElementById( 'activeCard' );
 				card.addEventListener( 'click', function ( event ) {
-					$(card).fadeOut('fast', function() {
-						$(card).css('top', window.innerHeight);
+
+					$(card).animate({ top: window.innerHeight }, 200, function() {
 						$(card).css('display', 'block');
+						transform( targets.table, 1000 );
 					});
+
 				}, false );
 
 
@@ -378,7 +394,7 @@
 
 				TWEEN.removeAll();
 
-				for ( var i = 0; i < objects.length; i ++ ) {
+				for ( var i = 0; i < targets.length; i ++ ) {
 
 					var object = objects[ i ].object;
 					var target = targets[ i ];
@@ -399,6 +415,30 @@
 					.to( {}, duration * 2 )
 					.onUpdate( render )
 					.start();
+
+			}
+
+			function transformActiveCard( ) {
+
+				TWEEN.removeAll();
+				var duration = 1000;
+				var object = objects[ activeCard ].object;
+
+				new TWEEN.Tween( object.position )
+				.to( { x: camera.position.x, y: camera.position.y - 300, z: camera.position.z - 300 }, 1000 )
+				.easing( TWEEN.Easing.Cubic.InOut )
+				.start();
+
+				new TWEEN.Tween( object.rotation )
+				// .to( { y: -3.14 }, 1000 )
+				.to( { x: 3.14 / 1.5 }, 1000 )
+				.easing( TWEEN.Easing.Cubic.InOut )
+				.start();
+
+				new TWEEN.Tween( this )
+				.to( {}, 1000 * 2 )
+				.onUpdate( render )
+				.start();
 
 			}
 
