@@ -272,9 +272,17 @@
 
 				// category layout
 
-				cameraPresets.category = { x: -1830, y: 480, z: 4500 };
+				cameraPresets.category = { x: -4142, y: 1074, z: 5941 };
 				var categoryIndex = {};
 				var categoryCount = -1;
+
+				var zMap = {
+					'0': -3800,
+					'1': -1500,
+					'2': 400,
+					'3': 1800,
+					'4': 2800
+				}
 
 				for ( var i = 0; i < objects.length; i ++ ) {
 					var mem = memories[i];
@@ -290,9 +298,9 @@
 					}
 					categoryIndex[mem.category].count += 1;
 
-					object.position.x = ( ( categoryIndex[mem.category].count % 10 ) * 400 ) - 800;
-					object.position.y = ( ( Math.floor( categoryIndex[mem.category].count / 10 ) ) * 260 ) + 000;
-					object.position.z = ( Math.floor( categoryIndex[mem.category].index ) ) * 900 - 1500;
+					object.position.x = categoryIndex[mem.category].count % 9  * 400  - 1600;
+					object.position.y = Math.floor( categoryIndex[mem.category].count / 9 ) * 260;
+					object.position.z = zMap[ categoryIndex[mem.category].index ];
 
 					targets.category.push( object );
 
@@ -392,7 +400,7 @@
 
 			function transform( targets, duration ) {
 
-				TWEEN.removeAll();
+				// TWEEN.removeAll();
 
 				for ( var i = 0; i < targets.length; i ++ ) {
 
@@ -420,7 +428,7 @@
 
 			function transformActiveCard( ) {
 
-				TWEEN.removeAll();
+				// TWEEN.removeAll();
 				var duration = 1000;
 				var object = objects[ activeCard ].object;
 
