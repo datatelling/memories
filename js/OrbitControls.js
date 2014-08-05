@@ -70,6 +70,9 @@ THREE.OrbitControls = function ( object, domElement ) {
 	// The four arrow keys
 	this.keys = { LEFT: 37, UP: 38, RIGHT: 39, BOTTOM: 40 };
 
+	// Some custom stuff
+	this.altControls = false;
+
 	////////////
 	// internals
 
@@ -450,11 +453,17 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 		if ( delta > 0 ) {
 
-			scope.dollyOut();
+			if (scope.altControls)
+				scope.pan(0, scope.keyPanSpeed )
+			else
+				scope.dollyOut();
 
 		} else {
 
-			scope.dollyIn();
+			if (scope.altControls)
+				scope.pan(0, - scope.keyPanSpeed )
+			else
+				scope.dollyIn();
 
 		}
 

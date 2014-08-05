@@ -309,9 +309,20 @@
 				// age layout
 
 				// cameraPresets.age = { x: -4189, y: 1810, z: 5600 };
-				cameraPresets.age = { x: 0, y: 0, z: 10000}
+				// cameraPresets.age = { x: 0, y: 0, z: 10000}
+				// cameraPresets.age = { x: 0, y: 1768, z: 7134 }
+				cameraPresets.age = { x: -220, y: 2187, z: 6155 }
 				var ageIndex = [];
 				var ageCount = -1;
+
+				var zMap = {
+					'0': -4000,
+					'1': -2700,
+					'2': -700,
+					'3': 1300,
+					'4': 2300,
+					'5': 3000
+				}
 
 				for ( var i = 0; i < objects.length; i ++ ) {
 					var mem = memories[i];
@@ -326,13 +337,15 @@
 					if (!ageIndex.hasOwnProperty(mem.age)) ageIndex[mem.age] = -1;
 					ageIndex[mem.age] += 1;
 
-					object.position.x = ( ( ageIndex[mem.age] % 6 ) * 400 ) - 500;
-					object.position.y = ( ( Math.floor( ageIndex[mem.age] / 6 ) ) * 260 ) - 500;
-					object.position.z = mem.age * 1750 - 500; // - 1500;
+					object.position.x = ( ( ageIndex[mem.age] % 9 ) * 400 ) - 1600;
+					object.position.y = ( ( Math.floor( ageIndex[mem.age] / 9 ) ) * 260 ) - 500;
+					object.position.z = zMap[ mem.age ];
 
 					targets.age.push( object );
 
 				}
+
+				// console.log(ageIndex)
 
 				//
 
@@ -348,8 +361,8 @@
 				controls.rotateSpeed = 0.5;
 				controls.minDistance = -10000;
 				controls.maxDistance = 10000;
-				// controls.noRotate = true;
-				// controls.noZoom = true;
+				controls.noRotate = true;
+				controls.altControls = true;
 				controls.addEventListener( 'change', render );
 
 				var button = document.getElementById( 'table' );
@@ -357,6 +370,9 @@
 
 					transform( targets.table, 1000 );
 					animateCamera( cameraPresets.table, 2000 );
+
+					controls.altControls = true;
+					controls.noRotate = true;
 
 				}, false );
 
@@ -366,6 +382,9 @@
 					transform( targets.category, 1000 );
 					animateCamera( cameraPresets.category, 2000 );
 
+					controls.altControls = false;
+					controls.noRotate = false;
+
 				}, false );
 
 				var button = document.getElementById( 'age' );
@@ -373,6 +392,9 @@
 
 					transform( targets.age, 1000 );
 					animateCamera( cameraPresets.age, 2000 );
+
+					controls.altControls = false;
+					controls.noRotate = false;
 
 				}, false );
 
@@ -389,8 +411,6 @@
 
 				transform( targets.table, 1000 );
 				animateCamera( cameraPresets.table, 2000 );
-				// transform( targets.category, 1000 );
-				// animateCamera( cameraPresets.category, 2000 );
 
 				//
 
