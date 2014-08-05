@@ -6,14 +6,16 @@
       "lastName": "Dickison",
       "category": "vse",
       "subcategory": "dream",
-      "age": "3-4"
+      "age": "3-4",
+      "callout": "chased... by a dragon"
     },
     {
       "text": "I had a very early memory come back to me when I was in my thirties and it hit me like a freight train. I was sitting in my pram looking at my hands and started to focus on the scene unfolding in the background. I could see my nappies drying over the fire and then a plug socket with wires coming out of it. I started to reach for it when I heard my mother raise her voice and say ''Nooo.'' I became afraid and she calmed me down by giving me a snow dome with a small effigy of the Virgin Mary inside. I was fascinated by the snow falling gently on this little world. When this little scenario came back to me I was in a room with some friends and when I tried to explain to them that I had just remembered deep into my past they showed little or no interest and I can't say I blame them.",
       "firstName": "Peter",
       "lastName": "Dunne",
       "category": "vse",
-      "subcategory": "roomfurn"
+      "subcategory": "roomfurn",
+      "callout": "plug socket"
     },
     {
       "text": "We lived on a farm in what was Rhodesia until I was a week before my 3rd birthday, when we moved to the city, forevermore. I clearly remember the long straight dirt road leading to the house, and thinking that the other way might lead to heaven, or somewhere wonderful. I remember the morning milking of the cows, the smells, and the sound of the chatter, and I remember the cooked maize meal with chunks of beef and gravy, and its taste. These are all things I have never experienced since, so these memories must have been when I was still two, at the latest. But wonderful memories they are.",
@@ -21,7 +23,8 @@
       "lastName": "Alon",
       "category": "vse",
       "subcategory": "roomfurn",
-      "age": "2"
+      "age": "2",
+      "callout": "milking of the cows"
     },
     {
       "text": "Just after I turned 3, I remember walking through our new house, which was still being built - only finishing touches left. I have a very distinct memory of a man on a ladder out on the back porch painting the ceiling. I remember having to look past one of my parents to see him, but as my attention was outside, I don't know which one it was.",
@@ -29,7 +32,8 @@
       "lastName": "Armbruster",
       "category": "vse",
       "subcategory": "roomfurn",
-      "age": "3"
+      "age": "3",
+      "callout": "man on a ladder"
     },
     {
       "text": "I was about 4. For some reason my bed was next to a floor-to-ceiling mirror (I believe it might have been a closet door, \"classed up\" with a smoky-mirror effect). So I would wake up and the first thing I would see was -- me, staring back at me, through the rather cloudy mirror I was facing. And that is the earliest memory I have.",
@@ -37,14 +41,16 @@
       "lastName": "Berreby",
       "category": "vse",
       "subcategory": "roomfurn",
-      "age": "4"
+      "age": "4",
+      "callout": "me, staring back at me"
     },
     {
       "text": "I remember being transfixed by the beauty of the clarity and light reflections on a long thread of a some pellucid material. My mother was a hazy presence in the room, off to my left, but not at my side. I was looking down at this amazing phenomenon. When it dawned on me that the lovely thread of light was my own drool, I had a nonverbal reaction that was, roughly, \"Eeeeeew! I HATE when I do that!\" I also remember a wriggling sensation.",
       "firstName": "Carla",
       "lastName": "Bolte",
       "category": "vse",
-      "subcategory": "roomfurn"
+      "subcategory": "roomfurn",
+      "callout": "my own drool"
     },
     {
       "text": "At age of three my parents brought us to our new home in Encinitas, CA to live in our home, now a heritage home shaped like a boat on shore, [...] The S.S. Moonlight. I recall walking down the center wooden hallway and noticing the filtered sunlight coming in from the porthole windows. http://encinitashistoricalsociety.org/The_Boathouses.html",
@@ -521,7 +527,8 @@
       "lastName": "Dahl",
       "category": "antics",
       "subcategory": "getintrouble",
-      "age": "2"
+      "age": "2",
+      "callout": "peppermint bonbons"
     },
     {
       "text": "My sister was not yet born so I must have been around two. We were on vacation on a mountainous area and we went for a walk. I was walking in front of my parents and then I started running towards the edge of a steep cliff. My father ran and caught me just before I fell down. After this incident I always looked upon my father as my personal hero and saviour.",
