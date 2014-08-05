@@ -1,11 +1,760 @@
 {
   "memories": [
-  {
+    {
+      "text": "Age 21 months. Pearl Harbor. Sitting in my stroller looking up. Everyone seemed worried.",
+      "firstName": "Jessea",
+      "lastName": "Ahway",
+      "category": "hist",
+      "subcategory": "war",
+      "age": "1",
+      "callout": "Pearl Harbor"
+    },
+    {
+      "text": "The earliest memory that I can definitively date is Dec 7, 1941, which puts me at just six years old. My brother and I were playing with blocks on the living room floor while my parents were becoming upset listening to the radio. They were listening to the war news on station WOR, which confused me mightily as I was just learning the alphabet.",
+      "firstName": "Charles",
+      "lastName": "Cairns",
+      "category": "hist",
+      "subcategory": "war",
+      "age": "6",
+      "callout": "war news"
+    },
+    {
+      "text": "My earliest significant memory, other than a few moments from my third birthday party, and some before that, was of the 1946 Memorial Day parade in New York City. It was the one immediately following our victory in World War II, so it was probably one of the most spectacular parades in the city's history. It turned the corner at 95th street and Riverside Drive, next to the apartment building where I lived. I remember standing under the barricade at the side of the street, where I had an unobstructed view of, and heard the powerful sound of the endless procession of excellent marching bands. There was never another parade like it.",
+      "firstName": "Nick",
+      "lastName": "Cohen",
+      "category": "hist",
+      "callout": "Memorial Day parade"
+    },
+    {
+      "text": "I was two. And this I know because History recorded the memory. I was sitting in-front of the black and white TV on the floor watching the parade in Texas. It was the shooting of JFK. I first recalled it when during the 80's the conspiracy theory came out on TV and was saying footage not seen since the day of the shooting. I told co-workers what would take place in the car as he got shot and they said I couldn't remember that far back. I told them to watch. They did and I was vindicated.",
+      "firstName": "James T.",
+      "lastName": "Hinman",
+      "category": "hist",
+      "age": "2",
+      "callout": "shooting of JFK"
+    },
+    {
+      "text": "This was my father's earliest memory. which he wrote about in an email when he was in his late 80s. Ben Lawler was born in January 1915 and was living in Green Bay, Wisconsin: \"Memory of WWI dates back to l9l8 when I was 3--t’was in the spring of the year. Mayme and I were in our back yard as a street car with a band playing in it loud and clear, church bells were ringing and factory whistles were blowing. My question to Mayme was: What's all the noise for, mother? She said: \\“The war's over.\\” My question to her was: \\“What's a war mama?\\” She tried to explain it to me. Recall briefly, that she indicated that men killed their enemies. My question: \\“what's an enemy, mother\\” -- The band played on, the factory whistles blew, the street car went on its way. People on the street car were singing who weren't playing an instrument. Mother went back into the house to prepare dinner; I followed her. Memory fails what went on further. I was unable to absorb those facts until a few years later when attending school. -- My first recollection of Veteran's Day. -- The foregoing is my personal experience from WWI.\"",
+      "firstName": "Mary Ann",
+      "lastName": "Lawler",
+      "category": "hist",
+      "subcategory": "war",
+      "age": "3",
+      "callout": "\"the war's over\""
+    },
+    {
+      "text": "I will be 68 years old on June 23. My earliest memory is of a hurricane that hit southeast Florida during the season of 1948. I remember that my brother who was 17 months younger, was an infant in a crib. The rain water had come into the room and was on the crib legs. I was under three years of age and was very scared. My grandfather held me up to see the debris blowing around.",
+      "firstName": "Cheryl",
+      "lastName": "Lutzinger",
+      "category": "hist",
+      "age": "0-3",
+      "callout": "debris blowing"
+    },
+    {
+      "text": "I remember my brother-in-law coming home from WW11. I do not remember anything but him being in uniform. I was born in June, 1942 ;so, I must have been 31/2 or 4. To this day I remember vividly him walking in wearing the uniform.",
+      "firstName": "Bonita",
+      "lastName": "Wright",
+      "category": "hist",
+      "subcategory": "war",
+      "age": "3",
+      "callout": "being in uniform"
+    },
+    {
+      "text": "I remember, in a very physical sort of way, getting my head stuck between the skinny metal banisters of the spiral staircase in my house when I was three or four. I recall the sense of panic that washed over me when I realized dislodging my head wasn't as effortless as the initial \"lodging.\" After a minute of struggle and repeated knocking of my jaw and ears on metal, I removed my head easily enough before a parent was any the wiser.",
+      "firstName": "Scarlett",
+      "lastName": "Chepke",
+      "category": "antics",
+      "age": "3-4",
+      "callout": "sense of panic"
+    },
+    {
+      "text": "Personally, my memory is not the best. I am always misplacing my belongings, forgetting appointments, and many other clumsy tasks my disorganized mind makes. Although I may have an overall horrible memory, I remember this one particular moment. My older brother and I would get our picture taken with Santa Claus at the mall every year. My mother would dress us up in these ridiculous outfits and we would go to the movie theater and watch one after. My mother was famous for bringing our own snacks in her purse instead of spending a fortune at the snack bar. This one particular day, I was bugging my mother for a fruit roll-up. It's a sugary snack that is apparently very easy to choke on. My mother finally gave in to my whining to calm me down before my picture being taken with Santa. We were next in line and I got nervous I wasn't going to finish my treat. So, I shoved the entire three foot fruit roll-up in my mouth. In the picture, you can clearly see I'm trying my best to hold back something or keep a secret. The only thing I was holding back was my vomit that ended up mostly on Santa Claus. Needless to say, the other kids in line weren't too happy; but Santa surprisingly kept his act together and was extremely forgiving. That is my earliest memory as a child.",
+      "firstName": "Danielle",
+      "lastName": "Clay",
+      "category": "antics",
+      "callout": "three foot fruit roll-up"
+    },
+    {
+      "text": "One time I awoke in daylight and needed to go to the bathroom badly. I probably was near 2. No one else was in the room. It took me a long time climb over the side of the crib and step down to the floor. During that time, I pooped. I was very embarrassed, because \"big boys\" are supposed to get someone to help them do it in the toilet. (There was also a commode in the bedroom for emergencies, but I was still too young to use it without help.)",
+      "firstName": "John",
+      "lastName": "Dickey",
+      "category": "antics",
+      "age": "2",
+      "callout": "I pooped"
+    },
+    {
+      "text": "I remember going to Kindergarten when it was only half day at the age of 4 (I was a young one because I had a November birthday). All of my older sisters went from 9-3pm, but since I was in Kindergarten, I had to go from 12-3 so I could walk home with my sisters. I was the youngest of 5 girls (there are only 6 years between us all), and my parents both worked so I was instructed to wait for a phone call to let me know when to go to school. I was so sad to see my sisters go to school without me, being the youngest, I felt I was missing out on something. I diligently sat by the phone and waited for my dad to call me from work to tell me it was time to go to school. I would say, “OK!”, hang up the phone, and run out the front door to walk the 2 blocks to school. Years later, our neighbor across the street told me that every day she would have to walk across the street and shut the front door for me. I guess I was so excited that I would just run off and leave the door open.",
+      "firstName": "Sharon",
+      "lastName": "Lim",
+      "category": "antics",
+      "age": "4",
+      "callout": "shut the front door"
+    },
+    {
+      "text": "I remember something from my first day of kindergarten. The teacher was calling roll. She said, \"Michelle.\" I had never heard the name before and though it was pretty, so I repeated it. The petite girl next to me said menacingly, \"Yeah, that's my name. What do you want to do about it?\"",
+      "firstName": "Catherine",
+      "lastName": "Martell",
+      "category": "antics",
+      "callout": "menacingly"
+    },
+    {
+      "text": "I was a few weeks short of my third birthday. I remember I didn't want to take my usual afternoon nap. My mother had already exhausted almost all of her tricks that normally would switch me into the cooperative mode. Therefore as a last resort she offered one of the hard candies I loved. Laying on my bed I started dissolving it in my mouth but after a moment I became a little bit groggy. I remember vividly my mother telling me that I should not fell asleep until the candy was gone entirely, but I said to myself: \"I will place it under my tongue and perhaps the candy will still be in my mouth when I wake up,\" and I fell asleep. An hour or so later I woke up and instantly checked for the candy - it was in my mouth. I remember a feeling of triumph and pride as if some scientific hypothesis had been proven experimentally, and I resolved to never to tell that to my mother. Well, I did, some forty years later, but she could not recall the situation. Another memory of my early childhood is tied to the same surroundings, this is to the place we lived in until I was four and a half years old and never went back there in my life. I have a very clear memory of the floor plan of the apartment including a layout of the furniture in all rooms.",
+      "firstName": "Christopher",
+      "lastName": "Onzol",
+      "category": "antics",
+      "age": "2",
+      "callout": "hard candies"
+    },
+    {
+      "text": "I have a couple of memories of being in my crib which was located in a corner of the living room due to my older brothers and sisters occupying the bedrooms. I would guess this was around one to three years of age. I recall having worked one of the wooden bars out of its socket allowing enough space to get out through the bars of my crib. The only problem being the loose bar was on the wall side of the crib. I would remove the bar, grab the bars on either side of the egress and push the crib away from the wall. Having gained my freedom, I promptly raided the bowl of peppermint bonbons my mother loved and feasted on the sweet delicacies. I remember waking up back in my crib with soggy sticky half melted peppermint bonbons stuck all over my blankets.",
+      "firstName": "Dan",
+      "lastName": "Dahl",
+      "category": "antics",
+      "subcategory": "getintrouble",
+      "age": "2",
+      "callout": "peppermint bonbons"
+    },
+    {
+      "text": "My sister was not yet born so I must have been around two. We were on vacation on a mountainous area and we went for a walk. I was walking in front of my parents and then I started running towards the edge of a steep cliff. My father ran and caught me just before I fell down. After this incident I always looked upon my father as my personal hero and saviour.",
+      "firstName": "Amalia",
+      "lastName": "Liontaki",
+      "category": "antics",
+      "subcategory": "getintrouble",
+      "age": "2",
+      "callout": "edge of a steep cliff"
+    },
+    {
+      "text": "My mother had stepped outside and there was a warm lemon meringue pie cooling on the kitchen counter. I took the whole pie and went upstairs to my younger sister's crib. I dropped the pie into the crib and crawled over the edge into the crib with her and the pie. We made a mess. My mother told me that when she came back into the house and discovered the infraction, she laughed hysterically. I remember the warmth of the pie.",
+      "firstName": "Don",
+      "lastName": "Smith",
+      "category": "antics",
+      "subcategory": "getintrouble",
+      "callout": "lemon meringue"
+    },
+    {
+      "text": "2 years old. I remember visiting the neighbours by sneaking through a gap in the fence. They took my inside and I was playing behind their sofa. I looked everywhere for a potty and the closest thing to a potty was neighbour Jimmy's slipper. I knew it was not a potty but thought maybe it was a very small potty. I recall his suprise when he put on a very wet slipper!",
+      "firstName": "Nikki",
+      "lastName": "Stevenson",
+      "category": "antics",
+      "subcategory": "getintrouble",
+      "age": "2",
+      "callout": "very wet slipper"
+    },
+    {
+      "text": "The year was 1957. I was on the USS Ainsworth with my mother, older sister and younger brother heading to Guam. I was three years old. A naval officer dressed in white entered our room and was speaking with my mother. I became bored and climbed on a plank that was sticking halfway out of a porthole. It is still very vivid in my memory to this day. I crawled out a ways on the plank and looked down, viewing the lower deck. Civilians and navy crew were walking around on a wooden deck. I remember ladies dressed in suits and high heels with hats and I even remember their hairdos. I was feeling pretty smug knowing they couldn't see me but I could see them. Then all of a sudden my mother let out a scream and called my name and I crawled backwards back inside very comfortably and the officer lifted me off the plank and also I am sure he took care of that plank. My mother about passed out and I remember having had no fear of the situation.",
+      "firstName": "Marilyn",
+      "lastName": "Camargo",
+      "category": "antics",
+      "subcategory": "getintrouble",
+      "age": "3",
+      "callout": "climbed on a plank"
+    },
+    {
+      "text": "I was around 9 months old. We were living in a rental house and two large dogs lived in the yard next door. I remember my older brother (2 years older) being afraid of these dogs and therefore feeling fear myself. I can remember they were on the east side of our back yard and there was a chain link fence which kept them out physically but not visually. This was verified by my mother a few years before she died (at 93).",
+      "firstName": "Anne",
+      "lastName": "Cooper",
+      "category": "antics",
+      "subcategory": "play",
+      "age": "0-1",
+      "callout": "two large dogs"
+    },
+    {
+      "text": "I'm riding in a little yellow and red plastic car at a playgroup, a friend is coming towards me on another ride-on toy. We smile at each other. I think I must have been between 3-3.5.",
+      "firstName": "Helen",
+      "lastName": "Taylor",
+      "category": "antics",
+      "subcategory": "play",
+      "age": "3",
+      "callout": "red plastic car"
+    },
+    {
+      "text": "My earliest memory was from when I was two years old (plus/minus two months), living in Winnipeg, Manitoba. I can recall running around a neighbour's yard on a summer day chasing older kids that were playing 'guns'. I was holding my arm up and my index finger pointed out as a makeshift toy gun. I can remember where the neighbour's house was relative to mine as well as the 'shape' of the neighbourhood even though I only lived there for nine months. Although I was certainly being ignored by the older children, I also recall feeling joyous and exhilarated in those few moments back in 1971.",
+      "firstName": "Rob",
+      "lastName": "Tyrrell",
+      "category": "antics",
+      "subcategory": "play",
+      "age": "2",
+      "callout": "makeshift toy gun"
+    },
+    {
+      "text": "I was 4, I see myself running by a small wall with many plants surrounding it, I was very happy. At the other side of the wall there was a countryside and it seemed to me like an unreacheable paradise. I didn't want to jump the wall, just to feel it inside my mind, my breathing was very accelerated. There was a friend of mine with me, but the secret was just mine. The sun crossed through the plants and the mystery was the biggest in the world.... Very, very special memory.",
+      "firstName": "Jesús",
+      "lastName": "Saez",
+      "category": "antics",
+      "subcategory": "play",
+      "age": "4",
+      "callout": "countryside"
+    },
+    {
+      "text": "The earliest memory I have is of my brother and 2 of our friends removing a rock from a stone wall so we could climb up and see over it. After I grew up I saw the wall was only about knee-high.",
+      "firstName": "Marilyn",
+      "lastName": "Wolf",
+      "category": "antics",
+      "subcategory": "play",
+      "callout": "climb up and see"
+    },
+    {
+      "text": "An early memory of linguistic acquisition: I was sitting on the rug while my mother was chatting with a friend in animated conversation. She expressed herself using the third conditional (eg. \"If I had known you were going to bring your car I would have gone with you.\") This was when I understood the use of this kind of construction. Some wheels just started turning in my head and EUREKA!",
+      "firstName": "Richard A.",
+      "lastName": "Schultz",
+      "category": "antics",
+      "subcategory": "learnlanguage",
+      "callout": "linguistic acquisition"
+    },
+    {
+      "text": "Well, the story or event I distinctly remember from my early childhood is about my mom beating me for my committing a serious act that affected the drinking water supply of say at least fifty people maybe. I was under five, hadn't started going to school. But summertime is the time when kids rebel. I was part of a bunch of three and on a sunny forenoon we vanished together from the homestead and reached the nearly dry pond to the west of the homestead. On the east side of the embankment of the pond there was a well maintained public well perhaps the drinking water source for say ten or fifteen families. In summer season people who come for fetching water using a pulley rope and bucket may have to wait for several minutes for water to seep in. The troop of three kids, I am one, initially started to lean over the protective wll to have a peek at the floor of the well. Then one of us dropped a piece stone into the well. Then there was a competition to throw stuff in. It was a rage for us for some time. Then we frolicked our way back home. But in an hour or so the word about spoiling the well reached my home. On questioning by mom I told the truth and there started say like ten minutes of spanking with a broom stick, but below my knees. After all a mom beating her kid. It was a punishment that I never forget in my life.",
+      "firstName": "Dr. Thrivikramji",
+      "lastName": "Kythavilakom",
+      "category": "antics",
+      "subcategory": "getintrouble",
+      "callout": "kids rebel"
+    },
+    {
+      "text": "My earliest childhood memory was in the home I grew up in, I was standing holding on to my crib crying for my mother. I could see the back of her head, and she was ignoring me. I remember being very angry and screaming. I remember I did not know how to form words, so I screamed. When she would not turn or come to me, I decided to climb out of my crib. As soon as I breached the top rail, I slipped over and fell to the floor. Of course baby's heads are the heaviest part of their bodies, so that is where I landed. The next thing I knew, my mother was running to me and grabbing me up from the floor. I remember as she rocked me against her shoulder she was crying. My oldest brother came behind her to look at me. I remember the shock in his eyes when he saw me. He told me when I was 10 years older, that he saw an egg size lump swelling from my forehead. I also remember, being in the car and reaching towards the window and crying… My mind does not link these two situations together, but was told on the way to the hospital after the fall in the panic my hand was closed in the car door. I suppose I remember because for a baby it must have been quite traumatic!",
+      "firstName": "D.",
+      "lastName": "Ebi",
+      "category": "trouble",
+      "subcategory": "fear",
+      "callout": "fell to the floor"
+    },
+    {
+      "text": "Age, according to Wolfram Alpha, I was 2 years 3 months 15 days. I fell head first into what I thought of as a river. Mom says it was a stream. I remember seeing the silt in the water in layers. My uncle pulled me out as his legs were longer and faster. I don't remember that. It is my understanding that if one experiences some sort of trauma in early childhood, one will remember that. That must be the case here because even today, I have minor issues putting my head underwater.",
+      "firstName": "David",
+      "lastName": "Eckard",
+      "category": "trouble",
+      "age": "2",
+      "callout": "fell head first"
+    },
+    {
+      "text": "I was 6 years old and this little boy in my \"Kindergarten\" group (I grew up in Germany) kept telling me that I was 5 years old. I told him that I was 6 years old and explained that I must be 6 because I could already tie my shoes. The boy was frequently mean to me and I often wished him to be gone. When he drowned, I felt mortified that I was responsible, since I had wished him to disappear.",
+      "firstName": "Claudia",
+      "lastName": "Lieberwirth",
+      "category": "trouble",
+      "age": "6",
+      "callout": "I often wished"
+    },
+    {
+      "text": "I have a lot of memories but I wouldn't know which one is the earliest. I'll tell you about one that must be one of the oldest because it was on the day of my second birthday and also is very singular because it involves the \"critical thinking\" that I had by that time. It wasn't a party but a family reunion in my grandarents' house, I was playing \"carritos\" or something in front of the stairways at the entrance of the house that lead to the street when, I don't know how, I fell through them. I must have hit hard because I was crying. And crying a lot. So hard that I stopped breathing like when the air is suddenly taken away by a punch in the stomach. Well, I happened to gain everyone's attention, and surely don't remember much of their arguments but I do remember how they (the adults, can't say who exactly) brought me inside the house and put me on top of the dining table (good at the height to serve them as a piñata) and I start receiving some slaps in my butt; and I remember seeing through my watering eyes all the people around me and thinking \"What is wrong with these people? I fell off, hit myself, I'm crying, and ALSO they slap me? Shame!!\" (I guess at that point I was turning blue!!!)",
+      "firstName": "Humberto",
+      "lastName": "Molero Eljuri",
+      "category": "trouble",
+      "subcategory": "pain",
+      "age": "2",
+      "callout": "I stopped breathing"
+    },
+    {
+      "text": "I remember from a very early age that all I wanted was my family to love me ....My memories started when I was three, I can remember all the physical abuse and what I now know as emotional abuse like it was yesterday. I remember telling my aunt and being told it was my fault, I remember her smell, her dress, and mostly the look she had on her face ..... It scared me. She told me it happened because I was a bad person.....She said if I told anyone - worse things would happen. My family was middle class. I remember a lot of the comments said to degrade and belittle, the abuse, the lies and being treated as less than human. I was locked in my room or slept with the dogs. I remember doing it gladly, I liked the dogs and if I did what they told me- my family might love me. Our stories are different, we are not. Not all memories are happy.",
+      "firstName": "Anonymous",
+      "category": "trouble",
+      "subcategory": "abuse",
+      "age": "3",
+      "callout": "physical abuse"
+    },
+    {
+      "text": "At age 2 1/2 I fell down a staircase at a playmates house and broke my right leg. I can remember entering the house, and instead of going up 3-4 steps into the kitchen, I tumbled down the staircase into the basement. The basement was dark. The next thing I remember is my parents carrying me up a long set of stairs into the hospital. Those memories are still very clear at my present age of 78. I can vaguely remember riding a tricycle while having a cast on my leg.",
+      "firstName": "Fran",
+      "lastName": "Murphy",
+      "category": "trouble",
+      "subcategory": "brokenbone",
+      "age": "2",
+      "callout": "broke my right leg"
+    },
+    {
+      "text": "I remember breaking my thumb at 2.5 years old. I recall going to the hospital and having an enourmous bandage on it. The doctor must have been a Sikh because he had a turban on his head-I thought it was a bandage. For many years afterwards whenever I saw a Sikh, I would shout \"Look! There is a doctor!\" It felt so logical at the time!",
+      "firstName": "Nikki",
+      "lastName": "Stevenson",
+      "category": "trouble",
+      "subcategory": "brokenbone",
+      "age": "2",
+      "callout": "enormous bandage"
+    },
+    {
+      "text": "My earliest memory dates back to probably 1939-40, when I must have been about a year old at the most. I remember distinctly that I am sitting cross-legged on the floor of a doctor’s clinic in Delhi, looking at the gleaming surgical instruments through the glass of the lowest shelf in a cupboard. The scene was confirmed by my parents who had taken me to a very well known Doctor’s clinic for some consultation about me, and I had been allowed to look at the instruments to keep me from howling while my parents consulted with the doctor. This is a rather inconsequential memory per se, but one which is very clear and apparently refuses to go away even after 7 decades!",
+      "firstName": "Ravindra",
+      "lastName": "Sharma",
+      "category": "trouble",
+      "subcategory": "docvisit",
+      "age": "1",
+      "callout": "surgical instruments"
+    },
+    {
+      "text": "I remember my crib. I remember being in the crib and yelling to be let out. I think I was in my crib longer than many children simply because I was the youngest of four and it was just more economical and efficient. Therefore I could have been as old as three or four before I had my own bed. I don’t know for sure. But I remember standing up in my crib and trying to get the attention of someone to get me out.",
+      "firstName": "Aimee",
+      "lastName": "Eisiminger",
+      "category": "trouble",
+      "subcategory": "fear",
+      "callout": "yelling to be let out"
+    },
+    {
+      "text": "Rural Puerto Rico, late 1935-early 1936. I was three or four years old. I am sure of that because when I was four and a half my family moved to town, away from the little house in the country where this happened. It was probably a Sunday. I had followed, unbeknownst to them, my mother and a group of aunts and uncles out into the balcony. They were standing there, as was the after-dinner custom, enjoying the breeze and greeting passersby, usually a parade on foot or horseback, rarely a car. The balustrade was made of parallel wooden slats painted white that allowed my knee through. The road was thirty feet away the most (that detail was learned driving by many years later, on the way to San Juan). Suddenly a very dark tall man wearing all black and a black cape, with a goosestep gait appeared on a small hill to our left on the road, shouting something about needing to be very careful so as not to step on his dead mother's bones. The women screamed and ran back into the house. The men also ran in, but I don't hear their screams in my memory. Then they closed the door behind them! I was trying to run too, but I was stuck to the slats. The harder I yanked, the tighter I stuck. Then one of the uncles came out and unstuck my leg simply by unfolding it. I felt no relief. I felt betrayed and abandoned by my mother--the others didn't matter. I was scared to death of Frankenstein into my late teens and had scary dreams with that theme, namely the gait, perhaps reinforced by the WWll movies.",
+      "firstName": "Silvia",
+      "lastName": "Herrera",
+      "category": "trouble",
+      "subcategory": "fear",
+      "age": "3-4",
+      "callout": "stuck to the slats"
+    },
+    {
+      "text": "We lived in a 3-flat bldg on the 3700 block of McLean in Chicago. Going up the back stairs, wearing my pink moire dress, I saw this gray fuzzy stuff in a corner and put my hand in it. It felt AWFUL! I was terrorized, because if I moved my hand even a teeny bit, it felt worse. I was so scared! I screamed, and our next door neighbor came running with a pillow. She had pansies in her garden that I thought looked like monkey faces. Years later, Mom said I was just 18 months old when this happened. (I'm 80 now and it's as vivid as if it were happening now).",
+      "firstName": "Marilynn",
+      "lastName": "Miller",
+      "category": "trouble",
+      "subcategory": "fear",
+      "age": "1",
+      "callout": "pink moire dress"
+    },
+    {
+      "text": "My earliest childhood memory was during the 1st year of my school, I was 2.5 to 3 years old around that time. My father came to drop me to school that day and I don't know why, but I didn't want him to leave me and go. And so I started crying, cried out loud and kept crying the whole day till he came back to pick me up. A point to note here is that I usually loved going school, never cried for that.",
+      "firstName": "Grishma",
+      "lastName": "Patel",
+      "category": "trouble",
+      "subcategory": "fear",
+      "age": "2",
+      "callout": "crying the whole day"
+    },
+    {
+      "text": "The adults in my family used to tease that the cops were going to take me away when I was about two. I can recall only one specific memory regarding this. I saw a man's silhouette through the translucent window of our apartment door as he banged loudly and demanded the door to be opened. I was terrified that the man was there to take me away, but it was just my uncle being impatient at the door. I also recall begging my mom not to open the door and my uncle trying to comfort me once he was in the house.",
+      "firstName": "C.",
+      "lastName": "Welsh",
+      "category": "trouble",
+      "subcategory": "fear",
+      "age": "2",
+      "callout": "take me away"
+    },
+    {
+      "text": "My earliest memories are from preschool. I was probably about 4 years old. One memory is being completely terrified that my mother, having just dropped me off, was going to leave and never come back. What if I got hurt? What if the other kids were mean to me? The distress of my mother leaving for those 2-3 hours were horrible enough for me--I can't imagine what it felt like for her.",
+      "firstName": "JoAnna",
+      "lastName": "Wendel",
+      "category": "trouble",
+      "subcategory": "fear",
+      "age": "4",
+      "callout": "completely terrified"
+    },
+    {
+      "text": "I was badly scalded with very hot water when less than two years old. Although I don't remember the actual incident, I do remember being in a cot in hospital and standing and shaking the cot and shouting for the nurse. This is one of my most powerful memories, and I think of it often. I am now 65 years old.",
+      "firstName": "Ian",
+      "lastName": "Boddy",
+      "category": "trouble",
+      "subcategory": "hospital",
+      "age": "0-2",
+      "callout": "badly scalded"
+    },
+    {
+      "text": "About age 2 or 3, I distinctly remember people in white clothing picking me up, placing me on a hard surface, forcing me to look into very bright lights over my head. I see someone leaning over me, placing what seemed like a cupped screen with cotton in it over my mouth and nose, and then (as I learned later) dropping ether onto the cotton until I lost consciousness. This was all due to the repair of a cleft lip/palate, and was among the early portions of what turned out to be 14 surgeries.",
+      "firstName": "Mancos",
+      "lastName": "Grant",
+      "category": "trouble",
+      "subcategory": "hospital",
+      "age": "2-3",
+      "callout": "ether onto the cotton"
+    },
+    {
+      "text": "I was 19 months old. I'm 49 now. I remember a hospital room. It was yellow. I was in a crib by the door. There were about 4 other cribs. There was a short table in the middle of the room with child's chairs. There were high windows on the opposite wall. I described this scene to my mom as an adult and confirmed the details. I was in hospital for three days with pneumonia. It took two nurses to hold me down to administer medicine.",
+      "firstName": "Bob",
+      "lastName": "Hawaii",
+      "category": "trouble",
+      "subcategory": "hospital",
+      "age": "1",
+      "callout": "a hospital room"
+    },
+    {
+      "text": "I remember being in the hospital. I recall having an IV in my leg, and my mother was begging me to eat some chicken. It turns out I had pneumonia and was about 2 years old at the time. I remember feeling very tired and wanting to go home.",
+      "firstName": "Pam",
+      "lastName": "Marshall",
+      "category": "trouble",
+      "subcategory": "hospital",
+      "age": "2",
+      "callout": "an IV in my leg"
+    },
+    {
+      "text": "My earliest childhood memory was when I was about 18 months. I had acute bronchitis/pneumonia and was in the hospital. I specifically remember because I was in a miniature oxygen tent. Across from me a little girl was also in for the very same reason. I remember her hair being long black and her nightgown being a baby blue. I remember thinking that this was fun and that I was tired of being in the tent but also very sleepy or lethargic. Then the doctor came in and was smiling, I smiled too until he grabbed my leg through the tent holes and with the other hand he started to give me a shot. I was so angry, and when I turned to look at my dad (with tears blurring my vision) he was holding up my Raggedy Anne coloring book and had colored a page in trying to make me smile. I wasn't happy about that either.",
+      "firstName": "Suzanne",
+      "lastName": "Powell",
+      "category": "trouble",
+      "subcategory": "hospital",
+      "age": "1",
+      "callout": "miniature oxygen tent"
+    },
+    {
+      "text": "I was 3 years. I remember going to the hospital and the room where I was in a crib with another child. I remember going into the operating room and especially the lights. I remember coming home from the hospital and being carried up the stairs to my parents apartment. I remember being given a bottle and while I lay on the couch in the living room.",
+      "firstName": "Francis",
+      "lastName": "Salzano",
+      "category": "trouble",
+      "subcategory": "hospital",
+      "age": "3",
+      "callout": "operating room"
+    },
+    {
+      "text": "I recall that at about age three years, my brother and I lived with my mother and grandmother in a small town in Central Georgia (USA). Our father was in the Pacific during WWII. I slept on a screen porch the second room away from my mother, who slept in a room on the other side of my grandmother’s room. I had a nightmare that involved a red cat. I recall it being some sort of cat that was dangerous like a panther or Bob cat. It was very small, and was bouncing around my room jumping here and there. I was very scared because it seemed real. I recall navigating territory out of my room, across grandmother’s bed in the room next to mine, then to my mother’s room. She calmed me down and I went back to sleep.",
+      "firstName": "Phil",
+      "lastName": "Brown",
+      "category": "trouble",
+      "subcategory": "nightmare",
+      "age": "3",
+      "callout": "a nightmare"
+    },
+    {
+      "text": "I believe I was about 2 years old. The story of the \"Big Bad Wolf\" had been read to me and later that night I had a nightmare that the wolf was outside our house. I climbed out of the crib and went out the front door and started walking up the road outside our house. I was imagining that the wolf was following me in the woods and I was terrified. A policeman saw me and pick me up and gave me a ride back to our house. My parents were awoken and were very relieved to see me. My mom soaked my feet in water since they were very cold.",
+      "firstName": "Peter",
+      "lastName": "Ronman",
+      "category": "trouble",
+      "subcategory": "nightmare",
+      "age": "2",
+      "callout": "Big Bad Wolf"
+    },
+    {
+      "text": "Superman's Girl Friend Lois Lane #66 They Call Me the Cat / Lois Lane, Witch-Doctor\nDC Comics\nJul 1966\nSilver Age / USA / English\nComic / $0.12\nI was born in Jan. of '62, barely 4 years old and I remember reading this comic in my bedroom. I had a whole library of books by then. (I had an alphabet book in my cradle I cut my teeth on.) This comic gave me a nightmare and I still remember it. I didn't know it then but I was coming down with the measles and after I started to break out my mother called her friend and brought her kids for a sleep over.",
+      "firstName": "Shara",
+      "lastName": "Bingham Mills",
+      "category": "trouble",
+      "subcategory": "sick",
+      "age": "4",
+      "callout": "measles"
+    },
+    {
+      "text": "I remember darkness and the feeling of bliss and comfort, then light and real discomfort. Much later I learned that the memories were of an occasion I became gravely ill when I was 8 months old and was treated with penicillin injections every three hours day and night. Every time I was injected the lights were turned on and then when the lights were dimmed and the fever subsided I felt better.",
+      "firstName": "Roberto",
+      "lastName": "Blum",
+      "category": "trouble",
+      "subcategory": "sick",
+      "age": "0-1",
+      "callout": "I remember darkness"
+    },
+    {
+      "text": "I was about three years old and I was chasing a girl named Judy Christmas outside our house in Whittier, CA. I got too close and her heel caught my right eyebrow. I bled a lot but I was not taken to the doctor, merely mopped up and sent back out to play. I still bear a scar from that incident and I'm now 67.",
+      "firstName": "Jeffrey",
+      "lastName": "Jones",
+      "category": "trouble",
+      "subcategory": "sick",
+      "age": "3",
+      "callout": "I bled a lot"
+    },
+    {
+      "text": "I remember (or at least remember remembering) getting the chicken pox. I was 3 years old, and my preschool teacher took me in the hall and told me I had to go home because I had the chicken pox. I vehemently insisted that I didn't (my best friend at the time had just had them, so I knew what they looked like and was unable to believe that I could have gotten spots without knowing it), but she was insistent, and I had to go home. The memory is very hazy-I can't even remember whether my mom or dad came to pick me up. I remember two other snapshots of chicken pox: lying in bed and wanting to get up but not being able to because of the chicken pox on my feet, and getting cereal for a meal for myself when I was feeling a little better because I infected my mom, and she got a much worse case than I did. (I also infected my few-month-old brother, and he has some scars from his case. I'm glad there's a vaccine now!)",
+      "firstName": "Evelyn",
+      "lastName": "Lamb",
+      "category": "trouble",
+      "subcategory": "sick",
+      "age": "3",
+      "callout": "chicken pox"
+    },
+    {
+      "text": "I was the second to last child in a family of eight children. One winter nobody wanted to hold me on their lap. I had a cough, a deep barking cough with a \"whoop\" at the end. Sometimes I would throw up after a coughing spell. I am in my sixties and I can still recall the sound. My oldest sister says that I couldn't have been more than three years old. There was no vaccine for Pertussis back in the early fifties. Since then I sumbit myself to the torture of a DPT shot every ten years. I get feverish and I carry around a lump in my arm the size of a golf ball but come June 2016, I will be lining up for my shot.",
+      "firstName": "Elizabeth",
+      "lastName": "Slinde",
+      "category": "trouble",
+      "subcategory": "sick",
+      "age": "3",
+      "callout": "barking cough"
+    },
+    {
+      "text": "When I was 3 years old we lived in Merfelden Germany, my dad was in the Air Force. It was around Christmas when I remember my dad taking my pacifier and cutting it up and throwing it in the trash. I cried and cried but he just told me I was a big girl now.",
+      "firstName": "Patricia",
+      "lastName": "Delacruz",
+      "category": "trouble",
+      "age": "3",
+      "callout": "taking my pacifier"
+    },
+    {
+      "text": "I was three years old. My parents were fighting with each other - full on. It became a physical free for all. I remember screaming after them trying to stop them as the chaos and violence went from room to room.",
+      "firstName": "Carolyn",
+      "lastName": "Lawler",
+      "category": "trouble",
+      "age": "3",
+      "callout": "chaos and violence"
+    },
+    {
+      "text": "I was born Dec 13, 1948. My earliest memory was when I was maybe 3-4 years old. It was a time when I slept in a crib. What I remember is a recurring dream that I had for what seemed like months. In the dream, I was in what I now recognize as being an oriental palace-like structure with ornate red and gold columns and a pool. I was being chased around the pool by a \"dragon.\" I didn't see the dragon in the dream, but I \"knew\" that's what was chasing me. This was a time before TV and we had no books or other material in which I could have seen those images, so I was always curious about how I obtained those oriental palace images. It was only later in life that I recognized those images as being oriental. And, as an added curiosity, I have always been attracted to the Orient. I've never had an interest in Europe/Western culture, only the Far East. So is there a connection between that earliest memory and my interests in later life?",
+      "firstName": "Richard",
+      "lastName": "Dickison",
+      "category": "vse",
+      "subcategory": "dream",
+      "age": "3-4",
+      "callout": "chased... by a dragon"
+    },
+    {
+      "text": "I had a very early memory come back to me when I was in my thirties and it hit me like a freight train. I was sitting in my pram looking at my hands and started to focus on the scene unfolding in the background. I could see my nappies drying over the fire and then a plug socket with wires coming out of it. I started to reach for it when I heard my mother raise her voice and say ''Nooo.'' I became afraid and she calmed me down by giving me a snow dome with a small effigy of the Virgin Mary inside. I was fascinated by the snow falling gently on this little world. When this little scenario came back to me I was in a room with some friends and when I tried to explain to them that I had just remembered deep into my past they showed little or no interest and I can't say I blame them.",
+      "firstName": "Peter",
+      "lastName": "Dunne",
+      "category": "vse",
+      "subcategory": "roomfurn",
+      "callout": "plug socket"
+    },
+    {
+      "text": "We lived on a farm in what was Rhodesia until I was a week before my 3rd birthday, when we moved to the city, forevermore. I clearly remember the long straight dirt road leading to the house, and thinking that the other way might lead to heaven, or somewhere wonderful. I remember the morning milking of the cows, the smells, and the sound of the chatter, and I remember the cooked maize meal with chunks of beef and gravy, and its taste. These are all things I have never experienced since, so these memories must have been when I was still two, at the latest. But wonderful memories they are.",
+      "firstName": "Ben",
+      "lastName": "Alon",
+      "category": "vse",
+      "subcategory": "roomfurn",
+      "age": "2",
+      "callout": "milking of the cows"
+    },
+    {
+      "text": "Just after I turned 3, I remember walking through our new house, which was still being built - only finishing touches left. I have a very distinct memory of a man on a ladder out on the back porch painting the ceiling. I remember having to look past one of my parents to see him, but as my attention was outside, I don't know which one it was.",
+      "firstName": "Robert",
+      "lastName": "Armbruster",
+      "category": "vse",
+      "subcategory": "roomfurn",
+      "age": "3",
+      "callout": "man on a ladder"
+    },
+    {
+      "text": "I was about 4. For some reason my bed was next to a floor-to-ceiling mirror (I believe it might have been a closet door, \"classed up\" with a smoky-mirror effect). So I would wake up and the first thing I would see was -- me, staring back at me, through the rather cloudy mirror I was facing. And that is the earliest memory I have.",
+      "firstName": "David",
+      "lastName": "Berreby",
+      "category": "vse",
+      "subcategory": "roomfurn",
+      "age": "4",
+      "callout": "me, staring back at me"
+    },
+    {
+      "text": "I remember being transfixed by the beauty of the clarity and light reflections on a long thread of a some pellucid material. My mother was a hazy presence in the room, off to my left, but not at my side. I was looking down at this amazing phenomenon. When it dawned on me that the lovely thread of light was my own drool, I had a nonverbal reaction that was, roughly, \"Eeeeeew! I HATE when I do that!\" I also remember a wriggling sensation.",
+      "firstName": "Carla",
+      "lastName": "Bolte",
+      "category": "vse",
+      "subcategory": "roomfurn",
+      "callout": "my own drool"
+    },
+    {
+      "text": "At age of three my parents brought us to our new home in Encinitas, CA to live in our home, now a heritage home shaped like a boat on shore, [...] The S.S. Moonlight. I recall walking down the center wooden hallway and noticing the filtered sunlight coming in from the porthole windows. http://encinitashistoricalsociety.org/The_Boathouses.html",
+      "firstName": "Petra",
+      "lastName": "Challus",
+      "category": "vse",
+      "subcategory": "roomfurn",
+      "age": "3",
+      "callout": "porthole windows"
+    },
+    {
+      "text": "I was about 3 or 4. I'm almost 58 now. I distinctly remember...\"daddy long-legs\" spiders on a rock wall behind our house.",
+      "firstName": "Mark",
+      "lastName": "Dixon",
+      "category": "vse",
+      "subcategory": "outdoors",
+      "age": "3-4",
+      "callout": "daddy long-legs"
+    },
+    {
+      "text": "I can't pinpoint my exact age, but it could have been about the time of the attached picture. There was a shaded porch at the front of the house, with a narrow sidewalk leading to the back yard.... In fact, the exact sidewalk shown in the picture. It was a hot day, and I was barefoot... and as I stepped off the porch onto the unshaded sidewalk, I distinctly remember feeling a sensation of COLD on the soles of my feet. It must have been the first time I walked barefoot on a hot sidewalk. However, quickly realizing my mistake and recognizing the HOT sensation, I hopped back up on the shady porch.",
+      "firstName": "Carl",
+      "lastName": "Egetter",
+      "category": "vse",
+      "subcategory": "outdoors",
+      "callout": "the HOT sensation"
+    },
+    {
+      "text": "Earliest memory? Vivid experience of viewing the blue sky from my baby buggy while lying down. Memory seems to have me not just seeing the sky but feeling it—being it. Guessing I must have been around a year old or less.",
+      "firstName": "Joan",
+      "lastName": "Greenwald",
+      "category": "vse",
+      "subcategory": "",
+      "age": "1",
+      "callout": "the blue sky"
+    },
+    {
+      "text": "A toddler is grasping a small jam-jar\nContaining a cabbage-white butterfly,\nIn a warm and dusty summertime yard.\nThe fluttering wings puttering softly\nUp against the trap’s glass transparency.\nA man holds the memory like a bright\nSnapshot in his mind’s eye. Apparently\nThe infant is me, captured in sunlight.\nIn a moment the animal flaps free\nInto air. Red blood appears on an arm.\nA horrified woman runs up to see.\nI’m fingering a faint cross on my palm.\n\tA lifetime ago and a lifetime gone,\n\tNo lifetime remaining now but this one.",
+      "firstName": "Ken",
+      "lastName": "Hazelwood",
+      "category": "vse",
+      "callout": "fluttering wings"
+    },
+    {
+      "text": "I think I remember toys above my crib latched onto the side. I know I remember riding the ferry from Newfoundland when I was about 18 months. It was unpleasant. We were on a bench on the deck and the ship's horn was painfully loud.",
+      "firstName": "Russ",
+      "lastName": "Hoffman",
+      "category": "vse",
+      "subcategory": "travel",
+      "age": "1",
+      "callout": "the ship's horn"
+    },
+    {
+      "text": "My first memory, aside from eating cherry Jello, I was possibly four, five months old, lying in my crib. I had never needed a night light as complete darkness has always been necessary for my sleep. I never suffered from monsters under my bed. My closet-- a different story. I learned quite by accident that I was able to entertain myself with the natural phosphenes induced by vigorously rubbing my eyes. Bright orange flashes, intense blues, pinwheels of colored dots, metamorphosing undulating organic apparitions, all beyond rational description (hey, I was only a baby!), each vaporizing with a lick of a sudden faint flame, to be replaced with the even more bizarre. My own self-induced mystical carnival of colors- a delightful natural spectacle, summoned at will for my very young goodnights' delight. * There are no pictures to submit as I was too young at the time to take selfies.",
+      "firstName": "Rick",
+      "lastName": "Lett",
+      "category": "vse",
+      "age": "0-1",
+      "callout": "orange flashes"
+    },
+    {
+      "text": "I can remember squatting in the yard by the coal chute and looking at the Lilies of the Valley, how white they were against the black coal on the ground. The flowers seemed to be knee high, so I was very young. I also remember the tinkling sound I imagined they made. (Several years later I heard an orchestra playing over the loud exhaust of a car with a bad muffler as I road for forty minutes home with my father at night. A second very young memory is of sitting behind a coal/wood stove that was burning. My family was looking for me, but I liked the warm place between the stove and the wall.",
+      "firstName": "Roger A.",
+      "lastName": "Meyer",
+      "category": "vse",
+      "subcategory": "outdoors",
+      "callout": "coal chute"
+    },
+    {
+      "text": "It was 1964, and I was three years old living in Guam. I remember sitting on the white sand beach just at the water's edge, playing with a bucket. The water was very clear, and I could see the sea shells under water. I was wearing a red bathing suit with a little skirt. Afterwards, we went to a concessions stand where I had a chocolate milkshake. It really was paradise.",
+      "firstName": "Marianne",
+      "lastName": "Mortera",
+      "category": "vse",
+      "subcategory": "outdoors",
+      "age": "3",
+      "callout": "chocolate milkshake"
+    },
+    {
+      "text": "Someone was holding me in their arms near the old black cookstove. When another person lifted up one of the round iron covers, I could peer down into the stove and see the fire burning, bright yellow-orange and dramatic through the black hole. Mother said I must have been 1 1/2.",
+      "firstName": "Joan",
+      "lastName": "Pasch",
+      "category": "vse",
+      "subcategory": "roomfurn",
+      "age": "1",
+      "callout": "fire burning"
+    },
+    {
+      "text": "I was born on January 18, 1944 in Bradenton, Florida, a small town on the Gulf of Mexico. When, I was about 2 or 3 years old, I remember lying near a window in the bedroom of our two bedroom house, looking out the window at the oranges on the trees next to the window.",
+      "firstName": "Joseph",
+      "lastName": "Reed",
+      "category": "vse",
+      "subcategory": "roomfurn",
+      "age": "2-3",
+      "callout": "oranges on the trees"
+    },
+    {
+      "text": "Just before my third birthday we flew from Southern California to Kansas City. Up to then I had mostly only seen a brown, dry landscape - this was the late 1940's before irrigated lawns. As the plane was landing I was looking out the window and was amazed by the bright green grass covered all over with yellow flowers (Dandelions).",
+      "firstName": "Lois",
+      "lastName": "Ruble",
+      "category": "vse",
+      "subcategory": "travel",
+      "age": "2",
+      "callout": "bright green grass"
+    },
+    {
+      "text": "I remember being in a crib (I promise) in a darkened room in the afternoon (probably for a nap). I remember a curtained window in the room and a soft plaid blanket mostly white. My mother said that this was in Trenton, N.J. and I was about 18 months of age.",
+      "firstName": "Richard A.",
+      "lastName": "Schultz",
+      "category": "vse",
+      "subcategory": "roomfurn",
+      "age": "1",
+      "callout": "soft plaid blanket"
+    },
+    {
+      "text": "There is a memory of my childhood which occasionally resurfaces from the deepest depths of my mind, which I feel must be from my first year of life--possibly around ten months old. The large front window of our house was divided into upper and lower sections by a wooden beam (or sill), and I was barely tall enough to reach up and hold onto the sill so I could support myself while peering outside, just over the top of the sill, at our front patio, lawn and driveway. I can remember watching the mailman as he crossed the front patio to place the day's mail in the mailbox at our front door. And in my mind's eye, I can also see an old photograph from our family photo album showing me from behind, wearing only a diaper, looking out the front window as I have described. (Though, no such photograph actually exists today, in the album I inherited after my mother's death. So, who knows whether or not I simply imagined seeing such a photo of me as a child?)",
+      "firstName": "Anonymous",
+      "category": "vse",
+      "subcategory": "roomfurn",
+      "age": "0-1",
+      "callout": "watching the mailman"
+    },
+    {
+      "text": "In my earliest memory, I believe I was about 15 months old. It is Christmas time, and I can visualize a Christmas tree beside a bay window; I am sitting and crawling on the floor around the tree, and I am playing with a red plastic toy. My parents told me that I was late in starting to walk – nearly two years old, I think, so by my second birthday I would have been walking. So this must have been the previous Christmas, when I would have been nearly 15 months.",
+      "firstName": "Peter",
+      "lastName": "Ramsden",
+      "category": "vse",
+      "subcategory": "holiday",
+      "age": "1",
+      "callout": "Christmas tree"
+    },
+    {
+      "text": "I recall as a two year old the first basement apartment, one bedroom my parents and I lived in. At Christmas time that year I received a small electric pin ball machine with ball catches that lit up. Two weeks later I turned 3. A year later the family moved to a new house.",
+      "firstName": "F.",
+      "lastName": "Vonsnickle",
+      "category": "vse",
+      "subcategory": "roomfurn",
+      "age": "2",
+      "callout": "pin ball machine"
+    },
+    {
+      "text": "I have several memories from the time I was 18-20 months old. One consisted of hearing a parade go down our street, which we then watched from the porch of our house in Whittier, CA.",
+      "firstName": "Jeffrey",
+      "lastName": "Jones",
+      "category": "vse",
+      "subcategory": "outdoors",
+      "age": "1",
+      "callout": "hearing a parade"
+    },
+    {
+      "text": "I remember being close to three years old. The house next door burned to the ground on Christmas Eve. I remember the sounds of the fire engines, people running everywhere.",
+      "firstName": "Carolyn",
+      "lastName": "Lawler",
+      "category": "vse",
+      "age": "3",
+      "callout": "burned to the ground"
+    },
+    {
+      "text": "I was under a year old but already talking in sentences. I remember being on the porch of our two-story apartment building, in my play pen. People would come by and I remember that I would ask them something my mother always said to visitors, \"Come on in for a cup of coffee!\"",
+      "firstName": "Deborah",
+      "lastName": "Koreneff",
+      "category": "vse",
+      "age": "0-1",
+      "callout": "talking in sentences"
+    },
+    {
+      "text": "I was three and I was watching a yellow bulldozer move earth and said to my friend, \"I want to do that!\" It was at my parents' Glendora House.",
+      "firstName": "Kurt",
+      "lastName": "Cooper",
+      "category": "vse",
+      "subcategory": "outdoors",
+      "age": "3",
+      "callout": "yellow bulldozer"
+    },
+    {
+      "text": "My earliest memory is pretty mundane. In it, I am taking a walk around the block (near my house, I think), and I remember noticing how the beat of my footfalls on the sidewalk made a song. This worries me greatly, because I'm afraid my parents will hear it, and that I'll be embarrassed. Given the location, I must have been 2 or barely 3.",
+      "firstName": "Emily",
+      "lastName": "Stahl",
+      "category": "vse",
+      "subcategory": "outdoors",
+      "age": "2",
+      "callout": "beat of my footfalls"
+    },
+    {
+      "text": "I remember several events and activities very vividly...between age two and three. Playing in the garden in front of my house with my mother and talking about the colors of the flowers. Catching butterflies and setting them free in my room and watching them fly out through the window.",
+      "firstName": "Neelakantan",
+      "lastName": "Sunder",
+      "category": "vse",
+      "subcategory": "outdoors",
+      "age": "2-3",
+      "callout": "catching butterflies"
+    },
+    {
+      "text": "I remember eating ice cubes outside, playing in a hedge, I must have been about 18 months old, I remember dad going to work, [...] I remember the area and various other things around that area and time.",
+      "firstName": "Christopher",
+      "lastName": "Wesselingh",
+      "category": "vse",
+      "subcategory": "outdoors",
+      "age": "1",
+      "callout": "eating ice cubes"
+    },
+    {
+      "text": "I was given a puppy for my 3rd birthday. He was born 8 weeks before my birthday, so this memory must have been near my birthday. I remember the farm house and walking around to the backyard where the mother and puppies were being kept in a pen attached to the house. The house was a pink/coral color. I can see the dogs in the pen and feel the joy of picking my Mittens.",
+      "firstName": "Emily",
+      "lastName": "Andersen",
+      "category": "vse",
+      "subcategory": "outdoors",
+      "age": "3",
+      "callout": "given a puppy"
+    },
+    {
+      "text": "My earliest memory is of being taken up for a joy flight on my father's knee with Sir Alan Cobham's Flying Circus in Northern England. It was April 1930 and I had just turned 3. It was a byplane with two open cockpits. I hope there was a seatbelt, but I don't rememember it. Cobham, a land-speed record holder, was, like many others at the time, trying to popularise flying.",
+      "firstName": "Jeff",
+      "lastName": "Whittle",
+      "category": "vse",
+      "age": "3",
+      "callout": "a joy flight"
+    },
+    {
+      "text": "I was probably between 2-3 years old. My mother was a medical resident in training, rarely home, and I remember a feeling of wanting to be with her. Here is the memory: I walked to the right side of the bed where she lay – I woke her by asking her for juice. She got up and walked with me to the kitchen (left of the bedroom). I never drank the orange juice. It was in a clear glass placed on the wooden dresser to the right of the bed. In the morning, there was a large cockroach – drowned in the juice.",
+      "firstName": "Dena",
+      "lastName": "Dubal",
+      "category": "vse",
+      "age": "2-3",
+      "callout": "a large cockroach"
+    },
+    {
+      "text": "I was in-between fourteen and eighteen months (according to my mother) when I saw the Tomb of the Unknown Soldier. It was a sunny day and I was with my mother and my father. My father was holding me and I remember the vantage point. I was higher up than other things I remember from when I was very young.",
+      "firstName": "Beth",
+      "lastName": "Gibson",
+      "category": "vse",
+      "subcategory": "travel",
+      "age": "1",
+      "callout": "the vantage point"
+    },
+    {
       "text": "The very first thing I remember is getting slapped by a strange man, when I woke up crying in my crib. The strange man was my father, just back from World War II. I was born in August '44, this must have been sometime in '45, so I would have been about a year old.",
       "firstName": "Ropger",
       "lastName": "Deslauriers",
       "category": "family",
-      "age": "1"
+      "age": "1",
+      "callout": "getting slapped"
     },
     {
       "text": "I was about 3 and a half years old and I remember my aunt wrapping me up in a big blanket and picking me up. It was in my old house which I moved out of just before my 4th birthday.",
@@ -13,27 +762,31 @@
       "lastName": "Banco",
       "category": "family",
       "subcategory": "aunt",
-      "age": "3"
+      "age": "3",
+      "callout": "a big blanket"
     },
     {
       "text": "Nov. 2, 1969: It was the day before my second birthday, and me and my newly separated mom, who had moved from Chicago to Detroit with her government job, were moving again. This time we were leaving my Aunt Lucille's house for a new apartment because she, her husband and three children were moving on to Middle Class glory in a new house on the outskirts of the city. I'd had memory flashes before, but this was my first full day of remembrance and I recall it as clearly as last Tuesday. My rhythms were changing, we were catching the city bus to new and strange places like the opening of \"Mary Tyler Moore,\" and best of all, Aunt Lucille promised to host a birthday party for me the next day. As you can see — she did.",
       "firstName": "Deborah",
       "lastName": "Douglas",
       "category": "family",
-      "age": "2"
+      "age": "2",
+      "callout": "strange places"
     },
     {
       "text": "I have a lot of random early childhood memories but no way to tack some of them to my age. There is one clear memory I have though of going to the funeral home when my younger sister died. I was only 2.5 at the time. When I talked to my mother about it when I was in my 20's she said I hadn't even gone to the funeral, which really confused me because the memory was so clear. Then a few years later I told my aunt about it. She said she had taken me to the funeral home the day before the funeral, but Mom didn't know about it.",
       "firstName": "M.L.",
       "lastName": "Lott",
       "category": "family",
-      "age": "2"
+      "age": "2",
+      "callout": "funeral home"
     },
     {
       "text": "I believe that my earliest memory was before I could walk and I am 64 now. I lived on a farm in North Carolina. Daddy was probably on a tractor somewhere farming. My mother worked across the yard in the pre-Civil War house next door as a house keeper. So my great-grandma kept me for a while. The thing I remember is that grandma went out the front door and I remember following her and the door hit my fingers. I started to holler. Ma came out on the second story porch of the house where she was working and I remember her saying, 'What's the matter?' I remember reaching one arm to her and crying/hollering. I also remember the great-grand ma saying, 'You ought not had your hands in the doorway.' No one else was around to hear it. I don't know when but later Ma took me with her to work and the lady she worked for told me about 10 years ago that I was a good baby. All they had to do was give me the Christmas reindeer and I could play for hours. I vaguely remember Daddy playing with me on the floor. I also remember probably as a toddler following Ma in the house as she was showing my cousin my baby clothes. My cousin was just starting her family and Ma gave them to her. I remember passing my crib listening and watching. I did not like the idea Ma was getting rid of MY clothes. The memory of the crib is why I believe it was a toddler because later I got a youth bed. I also remember when my uncle came to our house for dinner in his army uniform and I ran to him and he picked me up. I thought he was tall. Come to think about it many, many decades later I was really young because he was short and not much taller than I am. He fought in Korea around that time. I also remember my great grand ma's brother came to visit us on the farm. I remember standing behind him looking at him looking out over the fields. He appeared tall. He wasn't tall. I was very young, nowhere near school age, because I did not have my puppy or the pet pig Daddy gave me.",
       "firstName": "Connie",
       "lastName": "Richardson",
-      "category": "family"
+      "category": "family",
+      "callout": "the door hit my fingers"
     },
     {
       "text": "33 months. It is a clear and unusually warm February day. It is early afternoon. The sun is high in the sky. The only shadows the seven members of my family are casting are directly beneath our feet. An in-ground pool's just been installed in my family's backyard. It is kidney-shaped, with baby-blue slide and diving board, and glistening chrome handrails at the entry stairs, and two ladders bolted to the pool walls. Somehow, the structure is promising many wonderful and playful times in the years to come. There are feelings of pride from my parents at bringing this promise of joy into the home, of excitement by my 3 tween sisters, who are clearly realizing the potential for future teen pool parties. I don't have a sense of what my 10 year old brother is feeling. I am in awe, I don't yet understand what a swimming pool is but I know the family is eagerly anticipating the pool becoming functional. I do know I will share in the joy they are awaiting in association with this, to me, wondrous, cavernous, yet enigmatic structure! Before the pool's filled my parents and their 5 children descend the gunite steps and walk around admiring, inspecting the empty vessel. Growing up, there were not many moments my parents could afford to dazzle their children with what money could buy. This concrete hole in the ground was providing me with a joyful, magical feeling. It was visceral happiness. A loudness and a silence at the same time. Self-contained enthusiasm and open mirth at once. No spankings being meted out. No discord to be found. Our large nuclear family were all focused on the same bright future. I hope I remember the feel of that walk in an empty pool with my family forever.",
@@ -55,7 +808,7 @@
       "lastName": "Creedon",
       "category": "family",
       "subcategory": "gparents",
-      "age": "0"
+      "age": "0-1"
     },
     {
       "text": "I couldn't have been older than one. I remember sitting in the garden chair on the terrace. The cushions were covered in a striped white & red material, a little rough to the touch. There was some kind of bush behind the chair which reached a little above the back. I hear my grandfather call me with his distinctive call, I can smell him and see the top of his bald head, he was very tall, but hard as I try I cannot climb down from the chair. I call back: \"I come Appa, I come\"... The incredible part is how vivid the memory is. The colors, the sounds, even the time of day, probably around early afternoon. Not too long after that my grandfather died, because I got to mention that scene to my mother and she said her father was very worried I'd never learn to speak properly having been so premature, and she laughed it off because I was only one. She was surprised I remembered so may details. The material with which the cushions was covered was indeed striped canvas, and although we lived in that house until I was twelve, there were many things that changed, beginning with the arrangement and cover of the furniture in the terrace.",
@@ -173,7 +926,7 @@
       "lastName": "Fagereng",
       "category": "family",
       "subcategory": "parents",
-      "age": "0"
+      "age": "0-1"
     },
     {
       "text": "I remember my dad would come home at the same time every day and me running to give him a hug. Don't know how old I was but I remember I was no taller than his knee and I remember looking down at his shoes and me being in a diaper. Funny, I don't remember his face, but I remember his smell. English leather. A smell I love to this day.",
@@ -188,7 +941,7 @@
       "lastName": "Gauvin",
       "category": "family",
       "subcategory": "parents",
-      "age": "0"
+      "age": "0-1"
     },
     {
       "text": "I was born March 1932 and my second sister was born in October 1935, so I was about 3 years and 4 months old when my mother was expecting my sister in the summer of 1935. My mother was having problems with preeclampsia that summer so she was on a restricted diet. Instead of sharing the evening meal with us she read to us. I can even remember the title of the book: \"The Cloister on the Hearth.\"I believe it was a story of a group of itinerant actors travelling through England. I can't remember the author. That kind of information wasn't of interest to a 3 year old :)!",
@@ -228,7 +981,7 @@
       "lastName": "Lipeles",
       "category": "family",
       "subcategory": "parents",
-      "age": "0"
+      "age": "0-1"
     },
     {
       "text": "My earliest memory is having just spit a pill into the bathroom sink. I can see the sink, and the pill slowly melting down into the drain. I know my mother was beside me. This took place in the town where I was born, and since we moved before I turned 3, this memory must be from before that age.",
@@ -368,666 +1121,6 @@
       "lastName": "Suessmilch",
       "category": "family",
       "age": "4"
-    },
-    {
-      "text": "I was born Dec 13, 1948. My earliest memory was when I was maybe 3-4 years old. It was a time when I slept in a crib. What I remember is a recurring dream that I had for what seemed like months. In the dream, I was in what I now recognize as being an oriental palace-like structure with ornate red and gold columns and a pool. I was being chased around the pool by a \"dragon.\" I didn't see the dragon in the dream, but I \"knew\" that's what was chasing me. This was a time before TV and we had no books or other material in which I could have seen those images, so I was always curious about how I obtained those oriental palace images. It was only later in life that I recognized those images as being oriental. And, as an added curiosity, I have always been attracted to the Orient. I've never had an interest in Europe/Western culture, only the Far East. So is there a connection between that earliest memory and my interests in later life?",
-      "firstName": "Richard",
-      "lastName": "Dickison",
-      "category": "vse",
-      "subcategory": "dream",
-      "age": "3-4"
-    },
-    {
-      "text": "I had a very early memory come back to me when I was in my thirties and it hit me like a freight train. I was sitting in my pram looking at my hands and started to focus on the scene unfolding in the background. I could see my nappies drying over the fire and then a plug socket with wires coming out of it. I started to reach for it when I heard my mother raise her voice and say ''Nooo.'' I became afraid and she calmed me down by giving me a snow dome with a small effigy of the Virgin Mary inside. I was fascinated by the snow falling gently on this little world. When this little scenario came back to me I was in a room with some friends and when I tried to explain to them that I had just remembered deep into my past they showed little or no interest and I can't say I blame them.",
-      "firstName": "Peter",
-      "lastName": "Dunne",
-      "category": "vse",
-      "subcategory": "roomfurn"
-    },
-    {
-      "text": "We lived on a farm in what was Rhodesia until I was a week before my 3rd birthday, when we moved to the city, forevermore. I clearly remember the long straight dirt road leading to the house, and thinking that the other way might lead to heaven, or somewhere wonderful. I remember the morning milking of the cows, the smells, and the sound of the chatter, and I remember the cooked maize meal with chunks of beef and gravy, and its taste. These are all things I have never experienced since, so these memories must have been when I was still two, at the latest. But wonderful memories they are.",
-      "firstName": "Ben",
-      "lastName": "Alon",
-      "category": "vse",
-      "subcategory": "roomfurn",
-      "age": "2"
-    },
-    {
-      "text": "Just after I turned 3, I remember walking through our new house, which was still being built - only finishing touches left. I have a very distinct memory of a man on a ladder out on the back porch painting the ceiling. I remember having to look past one of my parents to see him, but as my attention was outside, I don't know which one it was.",
-      "firstName": "Robert",
-      "lastName": "Armbruster",
-      "category": "vse",
-      "subcategory": "roomfurn",
-      "age": "3"
-    },
-    {
-      "text": "I was about 4. For some reason my bed was next to a floor-to-ceiling mirror (I believe it might have been a closet door, \"classed up\" with a smoky-mirror effect). So I would wake up and the first thing I would see was -- me, staring back at me, through the rather cloudy mirror I was facing. And that is the earliest memory I have.",
-      "firstName": "David",
-      "lastName": "Berreby",
-      "category": "vse",
-      "subcategory": "roomfurn",
-      "age": "4"
-    },
-    {
-      "text": "I remember being transfixed by the beauty of the clarity and light reflections on a long thread of a some pellucid material. My mother was a hazy presence in the room, off to my left, but not at my side. I was looking down at this amazing phenomenon. When it dawned on me that the lovely thread of light was my own drool, I had a nonverbal reaction that was, roughly, \"Eeeeeew! I HATE when I do that!\" I also remember a wriggling sensation.",
-      "firstName": "Carla",
-      "lastName": "Bolte",
-      "category": "vse",
-      "subcategory": "roomfurn"
-    },
-    {
-      "text": "At age of three my parents brought us to our new home in Encinitas, CA to live in our home, now a heritage home shaped like a boat on shore, [...] The S.S. Moonlight. I recall walking down the center wooden hallway and noticing the filtered sunlight coming in from the porthole windows. http://encinitashistoricalsociety.org/The_Boathouses.html",
-      "firstName": "Petra",
-      "lastName": "Challus",
-      "category": "vse",
-      "subcategory": "roomfurn",
-      "age": "3"
-    },
-    {
-      "text": "I was about 3 or 4. I'm almost 58 now. I distinctly remember...\"daddy long-legs\" spiders on a rock wall behind our house.",
-      "firstName": "Mark",
-      "lastName": "Dixon",
-      "category": "vse",
-      "subcategory": "outdoors",
-      "age": "3-4"
-    },
-    {
-      "text": "I can't pinpoint my exact age, but it could have been about the time of the attached picture. There was a shaded porch at the front of the house, with a narrow sidewalk leading to the back yard.... In fact, the exact sidewalk shown in the picture. It was a hot day, and I was barefoot... and as I stepped off the porch onto the unshaded sidewalk, I distinctly remember feeling a sensation of COLD on the soles of my feet. It must have been the first time I walked barefoot on a hot sidewalk. However, quickly realizing my mistake and recognizing the HOT sensation, I hopped back up on the shady porch.",
-      "firstName": "Carl",
-      "lastName": "Egetter",
-      "category": "vse",
-      "subcategory": "outdoors"
-    },
-    {
-      "text": "Earliest memory? Vivid experience of viewing the blue sky from my baby buggy while lying down. Memory seems to have me not just seeing the sky but feeling it—being it. Guessing I must have been around a year old or less.",
-      "firstName": "Joan",
-      "lastName": "Greenwald",
-      "category": "vse",
-      "subcategory": "",
-      "age": "1"
-    },
-    {
-      "text": "A toddler is grasping a small jam-jar\nContaining a cabbage-white butterfly,\nIn a warm and dusty summertime yard.\nThe fluttering wings puttering softly\nUp against the trap’s glass transparency.\nA man holds the memory like a bright\nSnapshot in his mind’s eye. Apparently\nThe infant is me, captured in sunlight.\nIn a moment the animal flaps free\nInto air. Red blood appears on an arm.\nA horrified woman runs up to see.\nI’m fingering a faint cross on my palm.\n\tA lifetime ago and a lifetime gone,\n\tNo lifetime remaining now but this one.",
-      "firstName": "Ken",
-      "lastName": "Hazelwood",
-      "category": "vse"
-    },
-    {
-      "text": "I think I remember toys above my crib latched onto the side. I know I remember riding the ferry from Newfoundland when I was about 18 months. It was unpleasant. We were on a bench on the deck and the ships horn was painfully loud.",
-      "firstName": "Russ",
-      "lastName": "Hoffman",
-      "category": "vse",
-      "subcategory": "travel",
-      "age": "1"
-    },
-    {
-      "text": "My first memory, aside from eating cherry Jello, I was possibly four, five months old, lying in my crib. I had never needed a night light as complete darkness has always been necessary for my sleep. I never suffered from monsters under my bed. My closet-- a different story. I learned quite by accident that I was able to entertain myself with the natural phosphenes induced by vigorously rubbing my eyes. Bright orange flashes, intense blues, pinwheels of colored dots, metamorphosing undulating organic apparitions, all beyond rational description (hey, I was only a baby!), each vaporizing with a lick of a sudden faint flame, to be replaced with the even more bizarre. My own self-induced mystical carnival of colors- a delightful natural spectacle, summoned at will for my very young goodnights' delight. * There are no pictures to submit as I was too young at the time to take selfies.",
-      "firstName": "Rick",
-      "lastName": "Lett",
-      "category": "vse",
-      "age": "0"
-    },
-    {
-      "text": "I can remember squatting in the yard by the coal chute and looking at the Lilies of the Valley, how white they were against the black coal on the ground. The flowers seemed to be knee high, so I was very young. I also remember the tinkling sound I imagined they made. (Several years later I heard an orchestra playing over the loud exhaust of a car with a bad muffler as I road for forty minutes home with my father at night. A second very young memory is of sitting behind a coal/wood stove that was burning. My family was looking for me, but I liked the warm place between the stove and the wall.",
-      "firstName": "Roger A.",
-      "lastName": "Meyer",
-      "category": "vse",
-      "subcategory": "outdoors"
-    },
-    {
-      "text": "It was 1964, and I was three years old living in Guam. I remember sitting on the white sand beach just at the water's edge, playing with a bucket. The water was very clear, and I could see the sea shells under water. I was wearing a red bathing suit with a little skirt. Afterwards, we went to a concessions stand where I had a chocolate milkshake. It really was paradise.",
-      "firstName": "Marianne",
-      "lastName": "Mortera",
-      "category": "vse",
-      "subcategory": "outdoors",
-      "age": "3"
-    },
-    {
-      "text": "Someone was holding me in their arms near the old black cookstove. When another person lifted up one of the round iron covers, I could peer down into the stove and see the fire burning, bright yellow-orange and dramatic through the black hole. Mother said I must have been 1 1/2.",
-      "firstName": "Joan",
-      "lastName": "Pasch",
-      "category": "vse",
-      "subcategory": "roomfurn",
-      "age": "1"
-    },
-    {
-      "text": "I was born on January 18, 1944 in Bradenton, Florida, a small town on the Gulf of Mexico. When, I was about 2 or 3 years old, I remember lying near a window in the bedroom of our two bedroom house, looking out the window at the oranges on the trees next to the window.",
-      "firstName": "Joseph",
-      "lastName": "Reed",
-      "category": "vse",
-      "subcategory": "roomfurn",
-      "age": "2-3"
-    },
-    {
-      "text": "Just before my third birthday we flew from Southern California to Kansas City. Up to then I had mostly only seen a brown, dry landscape - this was the late 1940's before irrigated lawns. As the plane was landing I was looking out the window and was amazed by the bright green grass covered all over with yellow flowers (Dandelions).",
-      "firstName": "Lois",
-      "lastName": "Ruble",
-      "category": "vse",
-      "subcategory": "travel",
-      "age": "2"
-    },
-    {
-      "text": "I remember being in a crib (I promise) in a darkened room in the afternoon (probably for a nap). I remember a curtained window in the room and a soft plaid blanket mostly white. My mother said that this was in Trenton, N.J. and I was about 18 months of age.",
-      "firstName": "Richard A.",
-      "lastName": "Schultz",
-      "category": "vse",
-      "subcategory": "roomfurn",
-      "age": "1"
-    },
-    {
-      "text": "There is a memory of my childhood which occasionally resurfaces from the deepest depths of my mind, which I feel must be from my first year of life--possibly around ten months old. The large front window of our house was divided into upper and lower sections by a wooden beam (or sill), and I was barely tall enough to reach up and hold onto the sill so I could support myself while peering outside, just over the top of the sill, at our front patio, lawn and driveway. I can remember watching the mailman as he crossed the front patio to place the day's mail in the mailbox at our front door. And in my mind's eye, I can also see an old photograph from our family photo album showing me from behind, wearing only a diaper, looking out the front window as I have described. (Though, no such photograph actually exists today, in the album I inherited after my mother's death. So, who knows whether or not I simply imagined seeing such a photo of me as a child?)",
-      "category": "vse",
-      "subcategory": "roomfurn",
-      "age": "0"
-    },
-    {
-      "text": "In my earliest memory, I believe I was about 15 months old. It is Christmas time, and I can visualize a Christmas tree beside a bay window; I am sitting and crawling on the floor around the tree, and I am playing with a red plastic toy. My parents told me that I was late in starting to walk – nearly two years old, I think, so by my second birthday I would have been walking. So this must have been the previous Christmas, when I would have been nearly 15 months.",
-      "firstName": "Peter",
-      "lastName": "Ramsden",
-      "category": "vse",
-      "subcategory": "holiday",
-      "age": "1"
-    },
-    {
-      "text": "I recall as a two year old the first basement apartment, one bedroom my parents and I lived in. At Christmas time that year I received a small electric pin ball machine with ball catches that lit up. Two weeks later I turned 3. A year later the family moved to a new house.",
-      "firstName": "F.",
-      "lastName": "Vonsnickle",
-      "category": "vse",
-      "subcategory": "roomfurn",
-      "age": "2"
-    },
-    {
-      "text": "I have several memories from the time I was 18-20 months old. One consisted of hearing a parade go down our street, which we then watched from the porch of our house in Whittier, CA.",
-      "firstName": "Jeffrey",
-      "lastName": "Jones",
-      "category": "vse",
-      "subcategory": "outdoors",
-      "age": "1"
-    },
-    {
-      "text": "I remember being close to three years old. The house next door burned to the ground on Christmas Eve. I remember the sounds of the fire engines, people running everywhere.",
-      "firstName": "Carolyn",
-      "lastName": "Lawler",
-      "category": "vse",
-      "age": "3"
-    },
-    {
-      "text": "I was under a year old but already talking in sentences. I remember being on the porch of our two-story apartment building, in my play pen. People would come by and I remember that I would ask them something my mother always said to visitors, \"Come on in for a cup of coffee!\"",
-      "firstName": "Deborah",
-      "lastName": "Koreneff",
-      "category": "vse",
-      "age": "0"
-    },
-    {
-      "text": "I was three and I was watching a yellow bulldozer move earth and said to my friend, \"I want to do that!\" It was at my parents' Glendora House.",
-      "firstName": "Kurt",
-      "lastName": "Cooper",
-      "category": "vse",
-      "subcategory": "outdoors",
-      "age": "3"
-    },
-    {
-      "text": "My earliest memory is pretty mundane. In it, I am talking a walk around the block (near my house, I think), and I remember noticing how the beat of my footfalls on the sidewalk made a song. This worries me greatly, because I'm afraid my parents will hear it, and that I'll be embarrassed. Given the location, I must have been 2 or barely 3.",
-      "firstName": "Emily",
-      "lastName": "Stahl",
-      "category": "vse",
-      "subcategory": "outdoors",
-      "age": "2"
-    },
-    {
-      "text": "I remember several events and activities very vividly...between age two and three. Playing in the garden in front of my house with my mother and talking about the colors of the flowers. Catching butterflies and setting them free in my room and watching them fly out through the window.",
-      "firstName": "Neelakantan",
-      "lastName": "Sunder",
-      "category": "vse",
-      "subcategory": "outdoors",
-      "age": "2-3"
-    },
-    {
-      "text": "I remember eating ice cubes outside, playing in a hedge, I must have been about 18 months old, I remember dad going to work, [...] I remember the area and various other things around that area and time. If any of this is of interest let me know.",
-      "firstName": "Christopher",
-      "lastName": "Wesselingh",
-      "category": "vse",
-      "subcategory": "outdoors",
-      "age": "1"
-    },
-    {
-      "text": "I was given a puppy for my 3rd birthday. He was born 8 weeks before my birthday, so this memory must have been near my birthday. I remember the farm house and walking around to the backyard where the mother and puppies were being kept in a pen attached to the house. The house was a pink/coral color. I can see the dogs in the pen and feel the joy of picking my Mittens.",
-      "firstName": "Emily",
-      "lastName": "Andersen",
-      "category": "vse",
-      "subcategory": "outdoors",
-      "age": "3"
-    },
-    {
-      "text": "My earliest memory is of being taken up for a joy flight on my father's knee with Sir Alan Cobham's Flying Circus in Northern England. It was April 1930 and I had just turned 3. It was a byplane with two open cockpits. I hope there was a seatbelt, but I don't rememember it. Cobham, a land-speed record holder, was, like many others at the time, trying to popularise flying.",
-      "firstName": "Jeff",
-      "lastName": "Whittle",
-      "category": "vse",
-      "age": "3"
-    },
-    {
-      "text": "I was probably between 2-3 years old. My mother was a medical resident in training, rarely home, and I remember a feeling of wanting to be with her. Here is the memory: I walked to the right side of the bed where she lay – I woke her by asking her for juice. She got up and walked with me to the kitchen (left of the bedroom). I never drank the orange juice. It was in a clear glass placed on the wooden dresser to the right of the bed. In the morning, there was large cockroach – drowned in the juice.",
-      "firstName": "Dena",
-      "lastName": "Dubal",
-      "category": "vse",
-      "age": "2-3"
-    },
-    {
-      "text": "I was in-between fourteen and eighteen months (according to my mother) when I saw the Tomb of the Unknown Soldier. It was a sunny day and I was with my mother and my father. My father was holding me and I remember the vantage point. I was higher up than other things I remember from when I was very young.",
-      "firstName": "Beth",
-      "lastName": "Gibson",
-      "category": "vse",
-      "subcategory": "travel",
-      "age": "1"
-    },
-    {
-      "text": "My earliest childhood memory was in the home I grew up in, I was standing holding on to my crib crying for my mother. I could see the back of her head, and she was ignoring me. I remember being very angry and screaming. I remember I did not know how to form words, so I screamed. When she would not turn or come to me, I decided to climb out of my crib. As soon as I breached the top rail, I slipped over and fell to the floor. Of course baby's heads are the heaviest part of their bodies, so that is where I landed. The next thing I knew, my mother was running to me and grabbing me up from the floor. I remember as she rocked me against her shoulder she was crying. My oldest brother came behind her to look at me. I remember the shock in his eyes when he saw me. He told me when I was 10 years older, that he saw an egg size lump swelling from my forehead. I also remember, being in the car and reaching towards the window and crying… My mind does not link these two situations together, but was told on the way to the hospital after the fall in the panic my hand was closed in the car door. I suppose I remember because for a baby it must have been quite traumatic!",
-      "firstName": "D.",
-      "lastName": "Ebi",
-      "category": "trouble",
-      "subcategory": "fear"
-    },
-    {
-      "text": "Age, according to Wolfram Alpha, I was 2 years 3 months 15 days. I fell head first into what I thought of as a river. Mom says it was a stream. I remember seeing the silt in the water in layers. My uncle pulled me out as his legs were longer and faster. I don't remember that. It is my understanding that if one experiences some sort of trauma in early childhood, one will remember that. That must be the case here because even today, I have minor issues putting my head underwater.",
-      "firstName": "David",
-      "lastName": "Eckard",
-      "category": "trouble",
-      "age": "2"
-    },
-    {
-      "text": "I was 6 years old and this little boy in my \"Kindergarten\" group (I grew up in Germany) kept telling me that I was 5 years old. I told him that I was 6 years old and explained that I must be 6 because I could already tie my shoes. The boy was frequently mean to me and I often wished him to be gone. When he drowned, I felt mortified that I was responsible, since I had wished him to disappear.",
-      "firstName": "Claudia",
-      "lastName": "Lieberwirth",
-      "category": "trouble",
-      "age": "6"
-    },
-    {
-      "text": "I have a lot of memories but I wouldn't know which one is the earliest. I'll tell you about one that must be one of the oldest because it was on the day of my second birthday and also is very singular because it involves the \"critical thinking\" that I had by that time. It wasn't a party but a family reunion in my grandarents' house, I was playing \"carritos\" or something in front of the stairways at the entrance of the house that lead to the street when, I don't know how, I fell through them. I must have hit hard because I was crying. And crying a lot. So hard that I stopped breathing like when the air is suddenly taken away by a punch in the stomach. Well, I happened to gain everyone's attention, and surely don't remember much of their arguments but I do remember how they (the adults, can't say who exactly) brought me inside the house and put me on top of the dining table (good at the height to serve them as a piñata) and I start receiving some slaps in my butt; and I remember seeing through my watering eyes all the people around me and thinking \"What is wrong with these people? I fell off, hit myself, I'm crying, and ALSO they slap me? Shame!!\" (I guess at that point I was turning blue!!!)",
-      "firstName": "Humberto",
-      "lastName": "Molero Eljuri",
-      "category": "trouble",
-      "subcategory": "pain",
-      "age": "2"
-    },
-    {
-      "text": "I remember from a very early age that all I wanted was my family to love me ....My memories started when I was three, I can remember all the physical abuse and what I now know as emotional abuse like it was yesterday. I remember telling my aunt and being told it was my fault, I remember her smell, her dress, and mostly the look she had on her face ..... It scared me. She told me it happened because I was a bad person.....She said if I told anyone - worse things would happen. My family was middle class. I remember a lot of the comments said to degrade and belittle, the abuse, the lies and being treated as less than human. I was locked in my room or slept with the dogs. I remember doing it gladly, I liked the dogs and if I did what they told me- my family might love me. Our stories are different, we are not. Not all memories are happy.",
-      "category": "trouble",
-      "subcategory": "abuse",
-      "age": "3"
-    },
-    {
-      "text": "At age 2 1/2 I fell down a staircase at a playmates house and broke my right leg. I can remember entering the house, and instead of going up 3-4 steps into the kitchen, I tumbled down the staircase into the basement. The basement was dark. The next thing I remember is my parents carrying me up a long set of stairs into the hospital. Those memories are still very clear at my present age of 78. I can vaguely remember riding a tricycle while having a cast on my leg.",
-      "firstName": "Fran",
-      "lastName": "Murphy",
-      "category": "trouble",
-      "subcategory": "brokenbone",
-      "age": "2"
-    },
-    {
-      "text": "I remember breaking my thumb at 2.5 years old. I recall going to the hospital and having an enourmous bandage on it. The doctor must have been a Sikh because he had a turban on his head-I thought it was a bandage. For many years afterwards whenever I saw a Sikh, I would shout \"Look! There is a doctor!\" It felt so logical at the time!",
-      "firstName": "Nikki",
-      "lastName": "Stevenson",
-      "category": "trouble",
-      "subcategory": "brokenbone",
-      "age": "2"
-    },
-    {
-      "text": "My earliest memory dates back to probably 1939-40, when I must have been about a year old at the most. I remember distinctly that I am sitting cross-legged on the floor of a doctor’s clinic in Delhi, looking at the gleaming surgical instruments through the glass of the lowest shelf in a cupboard. The scene was confirmed by my parents who had taken me to a very well known Doctor’s clinic for some consultation about me, and I had been allowed to look at the instruments to keep me from howling while my parents consulted with the doctor. This is a rather inconsequential memory per se, but one which is very clear and apparently refuses to go away even after 7 decades!",
-      "firstName": "Ravindra",
-      "lastName": "Sharma",
-      "category": "trouble",
-      "subcategory": "docvisit",
-      "age": "1"
-    },
-    {
-      "text": "I remember my crib. I remember being in the crib and yelling to be let out. I think I was in my crib longer than many children simply because I was the youngest of four and it was just more economical and efficient. Therefore I could have been as old as three or four before I had my own bed. I don’t know for sure. But I remember standing up in my crib and trying to get the attention of someone to get me out.",
-      "firstName": "Aimee",
-      "lastName": "Eisiminger",
-      "category": "trouble",
-      "subcategory": "fear"
-    },
-    {
-      "text": "Rural Puerto Rico, late 1935-early 1936. I was three or four years old. I am sure of that because when I was four and a half my family moved to town, away from the little house in the country where this happened. It was probably a Sunday. I had followed, unbeknownst to them, my mother and a group of aunts and uncles out into the balcony. They were standing there, as was the after-dinner custom, enjoying the breeze and greeting passersby, usually a parade on foot or horseback, rarely a car. The balustrade was made of parallel wooden slats painted white that allowed my knee through. The road was thirty feet away the most (that detail was learned driving by many years later, on the way to San Juan). Suddenly a very dark tall man wearing all black and a black cape, with a goosestep gait appeared on a small hill to our left on the road, shouting something about needing to be very careful so as not to step on his dead mother's bones. The women screamed and ran back into the house. The men also ran in, but I don't hear their screams in my memory. Then they closed the door behind them! I was trying to run too, but I was stuck to the slats. The harder I yanked, the tighter I stuck. Then one of the uncles came out and unstuck my leg simply by unfolding it. I felt no relief. I felt betrayed and abandoned by my mother--the others didn't matter. I was scared to death of Frankenstein into my late teens and had scary dreams with that theme, namely the gait, perhaps reinforced by the WWll movies.",
-      "firstName": "Silvia",
-      "lastName": "Herrera",
-      "category": "trouble",
-      "subcategory": "fear",
-      "age": "3-4"
-    },
-    {
-      "text": "We lived in a 3-flat bldg on the 3700 block of McLean in Chicago. Going up the back stairs, wearing my pink moire dress, I saw this gray fuzzy stuff in a corner and put my hand in it. It felt AWFUL! I was terrorized, because if I moved my hand even a teeny bit, it felt worse. I was so scared! I screamed, and our next door neighbor came running with a pillow. She had pansies in her garden that I thought looked like monkey faces. Years later, Mom said I was just 18 months old when this happened. (I'm 80 now and it's as vivid as if it were happening now).",
-      "firstName": "Marilynn",
-      "lastName": "Miller",
-      "category": "trouble",
-      "subcategory": "fear",
-      "age": "1"
-    },
-    {
-      "text": "My earliest childhood memory was during the 1st year of my school, I was 2.5 to 3 years old around that time. My father came to drop me to school that day and I don't know why, but I didn't want him to leave me and go. And so I started crying, cried out loud and kept crying the whole day till he came back to pick me up. A point to note here is that I usually loved going school, never cried for that.",
-      "firstName": "Grishma",
-      "lastName": "Patel",
-      "category": "trouble",
-      "subcategory": "fear",
-      "age": "2"
-    },
-    {
-      "text": "The adults in my family used to tease that the cops were going to take me away when I was about two. I can recall only one specific memory regarding this. I saw a man's silhouette through the translucent window of our apartment door as he banged loudly and demanded the door to be opened. I was terrified that the man was there to take me away, but it was just my uncle being impatient at the door. I also recall begging my mom not to open the door and my uncle trying to comfort me once he was in the house.",
-      "firstName": "C.",
-      "lastName": "Welsh",
-      "category": "trouble",
-      "subcategory": "fear",
-      "age": "2"
-    },
-    {
-      "text": "My earliest memories are from preschool. I was probably about 4 years old. One memory is being completely terrified that my mother, having just dropped me off, was going to leave and never come back. What if I got hurt? What if the other kids were mean to me? The distress of my mother leaving for those 2-3 hours were horrible enough for me--I can't imagine what it felt like for her.",
-      "firstName": "JoAnna",
-      "lastName": "Wendel",
-      "category": "trouble",
-      "subcategory": "fear",
-      "age": "4"
-    },
-    {
-      "text": "I was badly scalded with very hot water when less than two years old. Although I dont remember the actual incident, I do remember being in a cot in hospital and standing and shaking the cot and shouting for the nurse. This is one of my most powerful memories, and I think of it often. I am now 65 years old.",
-      "firstName": "Ian",
-      "lastName": "Boddy",
-      "category": "trouble",
-      "subcategory": "hospital",
-      "age": "0-2"
-    },
-    {
-      "text": "About age 2 or 3, I distinctly remember people in white clothing picking me up, placing me on a hard surface, forcing me to look into very bright lights over my head. I see someone leaning over me, placing what seemed like a cupped screen with cotton in it over my mouth and nose, and then (as I learned later) dropping ether onto the cotton until I lost consciousness. This was all due to the repair of a cleft lip/palate, and was among the early portions of what turned out to be 14 surgeries.",
-      "firstName": "Mancos",
-      "lastName": "Grant",
-      "category": "trouble",
-      "subcategory": "hospital",
-      "age": "2-3"
-    },
-    {
-      "text": "I was 19 months old. I'm 49 now. I remember a hospital room. It was yellow. I was in a crib by the door. There were about 4 other cribs. There was a short table in the middle of the room with child's chairs. There were high windows on the opposite wall. I described this scene to my mom as an adult and confirmed the details. I was in hospital for three days with pneumonia. It took two nurses to hold me down to administer medicine.",
-      "firstName": "Bob",
-      "lastName": "Hawaii",
-      "category": "trouble",
-      "subcategory": "hospital",
-      "age": "1"
-    },
-    {
-      "text": "I remember being in the hospital. I recall having an IV in my leg, and my mother was begging me to eat some chicken. It turns out I had pneumonia and was about 2 years old at the time. I remember feeling very tired and wanting to go home.",
-      "firstName": "Pam",
-      "lastName": "Marshall",
-      "category": "trouble",
-      "subcategory": "hospital",
-      "age": "2"
-    },
-    {
-      "text": "My earliest childhood memory was when I was about 18 months. I had acute bronchitis/pneumonia and was in the hospital. I specifically remember because I was in a miniature oxygen tent. Across from me a little girl was also in for the very same reason. I remember her hair being long black and her nightgown being a baby blue. I remember thinking that this was fun and that I was tired of being in the tent but also very sleepy or lethargic. Then the doctor came in and was smiling, I smiled too until he grabbed my leg through the tent holes and with the other hand he started to give me a shot. I was so angry, and when I turned to look at my dad (with tears blurring my vision) he was holding up my Raggedy Anne coloring book and had colored a page in trying to make me smile. I wasn't happy about that either.",
-      "firstName": "Suzanne",
-      "lastName": "Powell",
-      "category": "trouble",
-      "subcategory": "hospital",
-      "age": "1"
-    },
-    {
-      "text": "I was 3 years. I remember going to the hospital and the room where I was in a crib with another child. I remember going into the operating room and especially the lights. I remember coming home from the hospital and being carried up the stairs to my parents apartment. I remember being given a bottle and while I lay on the couch in the living room.",
-      "firstName": "Francis",
-      "lastName": "Salzano",
-      "category": "trouble",
-      "subcategory": "hospital",
-      "age": "3"
-    },
-    {
-      "text": "I recall that at about age three years, my brother and I lived with my mother and grandmother in a small town in Central Georgia (USA). Our father was in the Pacific during WWII. I slept on a screen porch the second room away from my mother, who slept in a room on the other side of my grandmother’s room. I had a nightmare that involved a red cat. I recall it being some sort of cat that was dangerous like a panther or Bob cat. It was very small, and was bouncing around my room jumping here and there. I was very scared because it seemed real. I recall navigating territory out of my room, across grandmother’s bed in the room next to mine, then to my mother’s room. She calmed me down and I went back to sleep.",
-      "firstName": "Phil",
-      "lastName": "Brown",
-      "category": "trouble",
-      "subcategory": "nightmare",
-      "age": "3"
-    },
-    {
-      "text": "I believe I was about 2 years old. The story of the \"Big Bad Wolf\" had been read to me and later that night I had a nightmare that the wolf was outside our house. I climbed out of the crib and went out the front door and started walking up the road outside our house. I was imagining that the wolf was following me in the woods and I was terrified. A policeman saw me and pick me up and gave me a ride back to our house. My parents were awoken and were very relieved to see me. My mom soaked my feet in water since they were very cold.",
-      "firstName": "Peter",
-      "lastName": "Ronman",
-      "category": "trouble",
-      "subcategory": "nightmare",
-      "age": "2"
-    },
-    {
-      "text": "Superman's Girl Friend Lois Lane #66 They Call Me the Cat / Lois Lane, Witch-Doctor\nDC Comics\nJul 1966\nSilver Age / USA / English\nComic / $0.12\nI was born in Jan. of '62, barely 4 years old and I remember reading this comic in my bedroom. I had a whole library of books by then. (I had an alphabet book in my cradle I cut my teeth on.) This comic gave me a nightmare and I still remember it. I didn't know it then but I was coming down with the measles and after I started to break out my mother called her friend and brought her kids for a sleep over.",
-      "firstName": "Shara",
-      "lastName": "Bingham Mills",
-      "category": "trouble",
-      "subcategory": "sick",
-      "age": "4"
-    },
-    {
-      "text": "I remember darkness and the feeling of bliss and comfort, then light and real discomfort. Much later I learned that the memories were of an occasion I became gravely ill when I was 8 months old and was treated with penicillin injections every three hours day and night. Every time I was injected the lights were turned on and then when the lights were dimmed and the fever subsided I felt better.",
-      "firstName": "Roberto",
-      "lastName": "Blum",
-      "category": "trouble",
-      "subcategory": "sick",
-      "age": "0"
-    },
-    {
-      "text": "I was about three years old and I was chasing a girl named Judy Christmas outside our house in Whittier, CA. I got too close and her heel caught my right eyebrow. I bled a lot but I was not taken to the doctor, merely mopped up and sent back out to play. I still bear a scar from that incident and I'm now 67.",
-      "firstName": "Jeffrey",
-      "lastName": "Jones",
-      "category": "trouble",
-      "subcategory": "sick",
-      "age": "3"
-    },
-    {
-      "text": "I remember (or at least remember remembering) getting the chicken pox. I was 3 years old, and my preschool teacher took me in the hall and told me I had to go home because I had the chicken pox. I vehemently insisted that I didn't (my best friend at the time had just had them, so I knew what they looked like and was unable to believe that I could have gotten spots without knowing it), but she was insistent, and I had to go home. The memory is very hazy-I can't even remember whether my mom or dad came to pick me up. I remember two other snapshots of chicken pox: lying in bed and wanting to get up but not being able to because of the chicken pox on my feet, and getting cereal for a meal for myself when I was feeling a little better because I infected my mom, and she got a much worse case than I did. (I also infected my few-month-old brother, and he has some scars from his case. I'm glad there's a vaccine now!)",
-      "firstName": "Evelyn",
-      "lastName": "Lamb",
-      "category": "trouble",
-      "subcategory": "sick",
-      "age": "3"
-    },
-    {
-      "text": "I was the second to last child in a family of eight children. One winter nobody wanted to hold me on their lap. I had a cough, a deep barking cough with a \"whoop\" at the end. Sometimes I would throw up after a coughing spell. I am in my sixties and I can still recall the sound. My oldest sister say's that I couldn't have been more than three years old. There was no vaccine for Pertussis back in the early fifties. Since then I sumbit myself to the torture of a DPT shot every ten years. I get feverish and I carry around a lump in my arm the size of a golf ball but come June 2016, I will be lining up for my shot.",
-      "firstName": "Elizabeth",
-      "lastName": "Slinde",
-      "category": "trouble",
-      "subcategory": "sick",
-      "age": "3"
-    },
-    {
-      "text": "When I was 3 years old we lived in Merfelden Germany, my dad was in the Air Force. It was around Christmas when I remember my dad taking my pacifier and cutting it up and throwing it in the trash. I cried and cried but he just told me I was a big girl now.",
-      "firstName": "Patricia",
-      "lastName": "Delacruz",
-      "category": "trouble",
-      "age": "3"
-    },
-    {
-      "text": "I was three years old. My parents were fighting with each other - full on. It became a physical free for all. I remember screaming after them trying to stop them as the chaos and violence went from room to room.",
-      "firstName": "Carolyn",
-      "lastName": "Lawler",
-      "category": "trouble",
-      "age": "3"
-    },
-    {
-      "text": "I remember, in a very physical sort of way, getting my head stuck between the skinny metal banisters of the spiral staircase in my house when I was three or four. I recall the sense of panic that washed over me when I realized dislodging my head wasn't as effortless as the initial \"lodging.\" After a minute of struggle and repeated knocking of my jaw and ears on metal, I removed my head easily enough before a parent was any the wiser.",
-      "firstName": "Scarlett",
-      "lastName": "Chepke",
-      "category": "antics",
-      "age": "3-4"
-    },
-    {
-      "text": "Personally, my memory is not the best. I am always misplacing my belongings, forgetting appointments, and many other clumsy tasks my disorganized mind makes. Although I may have an overall horrible memory, I remember this one particular moment. My older brother and I would get our picture taken with Santa Claus at the mall every year. My mother would dress us up in these ridiculous outfits and we would go to the movie theater and watch one after. My mother was famous for bringing our own snacks in her purse instead of spending a fortune at the snack bar. This one particular day, I was bugging my mother for a fruit roll-up. It's a sugary snack that is apparently very easy to choke on. My mother finally gave in to my whining to calm me down before my picture being taken with Santa. We were next in line and I got nervous I wasn't going to finish my treat. So, I shoved the entire three foot fruit roll-up in my mouth. In the picture, you can clearly see I'm trying my best to hold back something or keep a secret. The only thing I was holding back was my vomit that ended up mostly on Santa Claus. Needless to say, the other kids in line weren't too happy; but Santa surprisingly kept his act together and was extremely forgiving. That is my earliest memory as a child.",
-      "firstName": "Danielle",
-      "lastName": "Clay",
-      "category": "antics"
-    },
-    {
-      "text": "One time I awoke in daylight and needed to go to the bathroom badly. I probably was near 2. No one else was in the room. It took me a long time climb over the side of the crib and step down to the floor. During that time, I pooped. I was very embarrassed, because \"big boys\" are supposed to get someone to help them do it in the toilet. (There was also a commode in the bedroom for emergencies, but I was still too young to use it without help.)",
-      "firstName": "John",
-      "lastName": "Dickey",
-      "category": "antics",
-      "age": "2"
-    },
-    {
-      "text": "I remember going to Kindergarten when it was only half day at the age of 4( I was a young one because I had a November birthday). All of my older sisters went from 9-3pm, but since I was in Kindergarten, I had to go from 12-3 so I could walk home with my sisters. I was the youngest of 5 girls (there are only 6 years between us all), and my parents both worked so I was instructed to wait for a phone call to let me know when to go to school. I was so sad to see my sisters go to school without me, being the youngest, I felt I was missing out on something. I diligently sat by the phone and waited for my dad to call me from work to tell me it was time to go to school. I would say, “OK!”, hang up the phone, and run out the front door to walk the 2 blocks to school. Years later, our neighbor across the street told me that every day she would have to walk across the street and shut the front door for me. I guess I was so excited that I would just run off and leave the door open.",
-      "firstName": "Sharon",
-      "lastName": "Lim",
-      "category": "antics",
-      "age": "4"
-    },
-    {
-      "text": "I remember something from my first day of kindergarden. The teacher was calling roll. She said, \"Michelle.\" I had never heard the name before and though it was pretty, so I repeated it. The petite girl next to me said menacingly, \"Yeah, that's my name. What do you want to do about it?\"",
-      "firstName": "Catherine",
-      "lastName": "Martell",
-      "category": "antics"
-    },
-    {
-      "text": "I was a few weeks short of my third birthday. I remember I didn't want to take my usual afternoon nap. My mother had already exhausted almost all of her tricks that normally would switch me into the cooperative mode. Therefore as a last resort she offered one of the hard candies I loved. Laying on my bed I started dissolving it in my mouth but after a moment I became a little bit groggy. I remember vividly my mother telling me that I should not fell asleep until the candy was gone entirely, but I said to myself: \"I will place it under my tongue and perhaps the candy will still be in my mouth when I wake up,\" and I fell asleep. An hour or so later I woke up and instantly checked for the candy - it was in my mouth. I remember a feeling of triumph and pride as if some scientific hypothesis had been proven experimentally, and I resolved to never to tell that to my mother. Well, I did, some forty years later, but she could not recall the situation. Another memory of my early childhood is tied to the same surroundings, this is to the place we lived in until I was four and a half years old and never went back there in my life. I have a very clear memory of the floor plan of the apartment including a layout of the furniture in all rooms.",
-      "firstName": "Christopher",
-      "lastName": "Onzol",
-      "category": "antics",
-      "age": "2"
-    },
-    {
-      "text": "I have a couple of memories of being in my crib which was located in a corner of the living room due to my older brothers and sisters occupying the bedrooms. I would guess this was around one to three years of age. I recall having worked one of the wooden bars out of its socket allowing enough space to get out through the bars of my crib. The only problem being the loose bar was on the wall side of the crib. I would remove the bar, grab the bars on either side of the egress and push the crib away from the wall. Having gained my freedom, I promptly raided the bowl of peppermint bonbons my mother loved and feasted on the sweet delicacies. I remember waking up back in my crib with soggy sticky half melted peppermint bonbons stuck all over my blankets.",
-      "firstName": "Dan",
-      "lastName": "Dahl",
-      "category": "antics",
-      "subcategory": "getintrouble",
-      "age": "2"
-    },
-    {
-      "text": "My sister was not yet born so I must have been around two. We were on vacation on a mountainous area and we went for a walk. I was walking in front of my parents and then I started running towards the edge of a steep cliff. My father ran and caught me just before I fell down. After this incident I always looked upon my father as my personal hero and saviour.",
-      "firstName": "Amalia",
-      "lastName": "Liontaki",
-      "category": "antics",
-      "subcategory": "getintrouble",
-      "age": "2"
-    },
-    {
-      "text": "My mother had stepped outside and there was a warm lemon meringue pie cooling on the kitchen counter. I took the whole pie and went upstairs to my younger sister's crib. I dropped the pie into the crib and crawled over the edge into the crib with her and the pie. We made a mess. My mother told me that when she came back into the house and discovered the infraction, she laughed hysterically. I remember the warmth of the pie.",
-      "firstName": "Don",
-      "lastName": "Smith",
-      "category": "antics",
-      "subcategory": "getintrouble"
-    },
-    {
-      "text": "2 years old. I remember visiting the neighbours by sneaking through a gap in the fence. They took my inside and I was playing behind their sofa. I looked everywhere for a potty and the closest thing to a potty was neighbour Jimmy's slipper. I knew it was not a potty but thought maybe it was a very small potty. I recall his suprise when he put on a very wet slipper!",
-      "firstName": "Nikki",
-      "lastName": "Stevenson",
-      "category": "antics",
-      "subcategory": "getintrouble",
-      "age": "2"
-    },
-    {
-      "text": "The year was 1957. I was on the USS Ainsworth with my mother, older sister and younger brother heading to Guam. I was three years old. A naval officer dressed in white entered our room and was speaking with my mother. I became bored and climbed on a plank that was sticking halfway out of a porthole. It is still very vivid in my memory to this day. I crawled out a ways on the plank and looked down, viewing the lower deck. Civilians and navy crew were walking around on a wooden deck. I remember ladies dressed in suits and high heels with hats and I even remember their hairdos. I was feeling pretty smug knowing they couldn't see me but I could see them. Then all of a sudden my mother let out a scream and called my name and I crawled backwards back inside very comfortably and the officer lifted me off the plank and also I am sure he took care of that plank. My mother about passed out and I remember having had no fear of the situation.",
-      "firstName": "Marilyn",
-      "lastName": "Camargo",
-      "category": "antics",
-      "subcategory": "getintrouble",
-      "age": "3"
-    },
-    {
-      "text": "I was around 9 months old. We were living in a rental house and two large dogs lived in the yard next door. I remember my older brother (2 years older) being afraid of these dogs and therefore feeling fear myself. I can remember they were on the east side of our back yard and there was a chain link fence which kept them out physically but not visually. This was verified by my mother a few years before she died (at 93).",
-      "firstName": "Anne",
-      "lastName": "Cooper",
-      "category": "antics",
-      "subcategory": "play",
-      "age": "0"
-    },
-    {
-      "text": "I'm riding in a little yellow and red plastic car at a playgroup, a friend is coming towards me on another ride-on toy. We smile at each other. I think I must have been between 3-3.5.",
-      "firstName": "Helen",
-      "lastName": "Taylor",
-      "category": "antics",
-      "subcategory": "play",
-      "age": "3"
-    },
-    {
-      "text": "My earliest memory was from when I was two years old (plus/minus two months), living in Winnipeg, Manitoba. I can recall running around a neighbour's yard on a summer day chasing older kids that were playing 'guns'. I was holding my arm up and my index finger pointed out as a makeshift toy gun. I can remember where the neighbour's house was relative to mine as well as the 'shape' of the neighbourhood even though I only lived there for nine months. Although I was certainly being ignored by the older children, I also recall feeling joyous and exhilarated in those few moments back in 1971.",
-      "firstName": "Rob",
-      "lastName": "Tyrrell",
-      "category": "antics",
-      "subcategory": "play",
-      "age": "2"
-    },
-    {
-      "text": "I was 4, I see myself running by a small wall with many plants surrounding it, I was very happy. At the other side of the wall there was a countryside and it seemed to me like an unreacheable paradise. I didn't want to jump the wall, just to feel it inside my mind, my breathing was very accelerated. There was a friend of mine with me, but the secret was just mine. The sun crossed through the plants and the mystery was the biggest in the world.... Very, very special memory.",
-      "firstName": "Jesús",
-      "lastName": "Saez",
-      "category": "antics",
-      "subcategory": "play",
-      "age": "4"
-    },
-    {
-      "text": "The earliest memory I have is of my brother and 2 of our friends removing a rock from a stone wall so we could climb up and see over it. After I grew up I saw the wall was only about knee-high.",
-      "firstName": "Marilyn",
-      "lastName": "Wolf",
-      "category": "antics",
-      "subcategory": "play"
-    },
-    {
-      "text": "An early memory of linguistic acquisition: I was sitting on the rug while my mother was chatting with a friend in animated conversation. She expressed herself using the third conditional (eg. \"If I had known you were going to bring your car I would have gone with you.\") This was when I understood the use of this kind of construction. Some wheels just started turning in my head and EUREKA!",
-      "firstName": "Richard A.",
-      "lastName": "Schultz",
-      "category": "antics",
-      "subcategory": "learnlanguage"
-    },
-    {
-      "text": "Well, the story or event I distinctly remember from my early childhood is about my mom beating me for my committing a serious act that affected the drinking water supply of say at least fifty people maybe. I was under five, had'nt started going to school. But summertime is the time when kids rebel. I was part of a bunch of three and on a sunny forenoon we vanished together from the homestead and reached the nearly dry pond to the west of the homestead. On the east side of the embankment of the pond there was a well maintained public well perhaps the drinking water source for say ten or fifteen families. In summer season people who come for fetching water using a pulley rope and bucket may have to wait for several minutes for water to seep in. The troop of three kids, I am one, initially started to lean over the protective wll to have a peek at the floor of the well. Then one of us dropped a piece stone into the well. Then there was a competition to throw stuff in . It was a rage for us for some time. Then we frolicked our way back home. But in an hour or so the word about spoiling the well reached my home. On questioning by mom I told the truth and there started say like ten minutes of spanking with a broom stick , but below my knees. After all a mom beating her kid. It was a punishment that I never forget in my life.",
-      "firstName": "Dr. Thrivikramji",
-      "lastName": "Kythavilakom",
-      "category": "antics",
-      "subcategory": "getintrouble"
-    },
-    
-    {
-      "text": "Age 21 months. Pearl Harbor. Sitting in my stroller looking up. Everyone seemed worried.",
-      "firstName": "Jessea",
-      "lastName": "Ahway",
-      "category": "hist",
-      "subcategory": "war",
-      "age": "1"
-    },
-    {
-      "text": "The earliest memory that I can definitively date is Dec 7, 1941, which puts me at just six years old. My brother and I were playing with blocks on the living room floor while my parents were becoming upset listening to the radio. They were listening to the war news on station WOR, which confused me mightily as I was just learning the alphabet.",
-      "firstName": "Charles",
-      "lastName": "Cairns",
-      "category": "hist",
-      "subcategory": "war",
-      "age": "6"
-    },
-    {
-      "text": "My earliest significant memory, other than a few moments from my third birthday party, and some before that, was of the 1946 Memorial Day parade in New York City. It was the one immediately following our victory in World War II, so it was probably one of the most spectacular parades in the city's history. It turned the corner at 95th street and Riverside Drive, next to the apartment building where I lived. I remember standing under the barricade at the side of the street, where I had an unobstructed view of, and heard the powerful sound of the endless procession of excellent marching bands. There was never another parade like it.",
-      "firstName": "Nick",
-      "lastName": "Cohen",
-      "category": "hist"
-    },
-    {
-      "text": "I was two. And this I know because History recorded the memory. I was sitting in-front of the black and white TV on the floor watching the parade in Texas. It was the shooting of JFK. I first recalled it when during the 80's the conspiracy theory came out on TV and was saying footage not seen since the day of the shooting. I told co-workers what would take place in the car as he got shot and they said I couldn't remember that far back. I told them to watch. They did and I was vindicated.",
-      "firstName": "James T.",
-      "lastName": "Hinman",
-      "category": "hist",
-      "age": "2"
-    },
-    {
-      "text": "This was my father's earliest memory. which he wrote about in an email when he was in his late 80s. Ben Lawler was born in January 1915 and was living in Green Bay, Wisconsin: \"Memory of WWI dates back to l9l8 when I was 3--t’was in the spring of the year. Mayme and I were in our back yard as a street car with a band playing in it loud and clear, church bells were ringing and factory whistles were blowing. My question to Mayme was: What's all the noise for, mother? She said: \\“The war's over.\\” My question to her was: \\“What's a war mama?\\” She tried to explain it to me. Recall briefly, that she indicated that men killed their enemies. My question: \\“what's an enemy, mother\\” -- The band played on, the factory whistles blew, the street car went on its way. People on the street car were singing who weren't playing an instrument. Mother went back into the house to prepare dinner; I followed her. Memory fails what went on further. I was unable to absorb those facts until a few years later when attending school. -- My first recollection of Veteran's Day. -- The foregoing is my personal experience from WWI.\"",
-      "firstName": "Mary Ann",
-      "lastName": "Lawler",
-      "category": "hist",
-      "subcategory": "war",
-      "age": "3"
-    },
-    {
-      "text": "I will be 68 years old on June 23. My earliest memory is of a hurricane that hit southeast Florida during the season of 1948. I remember that my brother who was 17 months younger, was an infant in a crib. The rain water had come into the room and was on the crib legs. I was under three years of age and was very scared. My grandfather held me up to see the debris blowing around.",
-      "firstName": "Cheryl",
-      "lastName": "Lutzinger",
-      "category": "hist",
-      "age": "0-3"
-    },
-    {
-      "text": "I remember my brother-in-law coming home from WW11. I do not remember anything but him being in uniform. I was born in June, 1942 ;so, I must have been 31/2 or 4. To this day I remember vividly him walking in wearing the uniform.",
-      "firstName": "Bonita",
-      "lastName": "Wright",
-      "category": "hist",
-      "subcategory": "war",
-      "age": "3"
     }
   ]
 }
