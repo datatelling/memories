@@ -793,14 +793,16 @@
       "firstName": "Dickens",
       "lastName": "Rivers",
       "category": "family",
-      "age": "2"
+      "age": "2",
+      "callout": "baby-blue slide"
     },
     {
-      "text": "I remember my sister, 2 years younger, before she could walk, so I was about 3. I also remember my father and uncles sanding the living room floor. My mother says I was 3 then too. Also at 3 I remember helping my grandfather fertilize his roses, the the next day doing the same with Tide.",
+      "text": "I remember my sister, 2 years younger, before she could walk, so I was about 3. I also remember my father and uncles sanding the living room floor. My mother says I was 3 then too. Also at 3 I remember helping my grandfather fertilize his roses, then the next day doing the same with Tide.",
       "firstName": "Maurice",
       "lastName": "White",
       "category": "family",
-      "age": "3"
+      "age": "3",
+      "callout": "fertilize his roses"
     },
     {
       "text": "I was 10 months old, sitting in the tiled sink in my grandmother's kitchen to bathe. I do not recall bathing, but I do remember the black and cream tile pattern of the sink and splash-board. My grandmother died when I was about 1 year old, and I never saw the inside of her home again. When I was in my 40's I was startled to see the tile pattern in a photo my mother had - I have been doodling it for as long as I can remember.",
@@ -808,7 +810,8 @@
       "lastName": "Creedon",
       "category": "family",
       "subcategory": "gparents",
-      "age": "0-1"
+      "age": "0-1",
+      "callout": "tile pattern"
     },
     {
       "text": "I couldn't have been older than one. I remember sitting in the garden chair on the terrace. The cushions were covered in a striped white & red material, a little rough to the touch. There was some kind of bush behind the chair which reached a little above the back. I hear my grandfather call me with his distinctive call, I can smell him and see the top of his bald head, he was very tall, but hard as I try I cannot climb down from the chair. I call back: \"I come Appa, I come\"... The incredible part is how vivid the memory is. The colors, the sounds, even the time of day, probably around early afternoon. Not too long after that my grandfather died, because I got to mention that scene to my mother and she said her father was very worried I'd never learn to speak properly having been so premature, and she laughed it off because I was only one. She was surprised I remembered so may details. The material with which the cushions was covered was indeed striped canvas, and although we lived in that house until I was twelve, there were many things that changed, beginning with the arrangement and cover of the furniture in the terrace.",
@@ -816,7 +819,8 @@
       "lastName": "Cusi",
       "category": "family",
       "subcategory": "gparents",
-      "age": "1"
+      "age": "1",
+      "callout": "striped white & red"
     },
     {
       "text": "I remember sitting on the knees of a very elderly gentleman with a heavy dark beard. I was no more than 2 years old at the time. Years ago my mother told me that he was my grandfather. I still remember it vividly.",
@@ -824,14 +828,16 @@
       "lastName": "Dickes",
       "category": "family",
       "subcategory": "gparents",
-      "age": "2"
+      "age": "2",
+      "callout": "a heavy dark beard"
     },
     {
-      "text": "I remember being a baby and being carried by my grandfather, as he asked me to high five him. The world seemed particularly blurry and I just remember moving my hands. I was only able to tell this memory was about him when my parents told me this was a custom of his with me. I felt we never met since he died when I was still a baby.",
+      "text": "I remember being a baby and being carried by my grandfather, as he asked me to high-five him. The world seemed particularly blurry and I just remember moving my hands. I was only able to tell this memory was about him when my parents told me this was a custom of his with me. I felt we never met since he died when I was still a baby.",
       "firstName": "Sofia",
       "lastName": "Orellana",
       "category": "family",
-      "subcategory": "gparents"
+      "subcategory": "gparents",
+      "callout": "high-five him"
     },
     {
       "text": "I remember sitting in the foyer, waiting for Grand mom to come over and wanting my teddy to close his eyes so he could sleep...he didn't, so I pulled his eyes off. Then, I kept trying to put them back on and they wouldn't stick. :( This was before I was two.",
@@ -839,7 +845,8 @@
       "lastName": "Q.",
       "category": "family",
       "subcategory": "gparents",
-      "age": "0-2"
+      "age": "0-2",
+      "callout": "wanting my teddy"
     },
     {
       "text": "The earliest childhood memory is likely to be brief and so is mine. I remember as a toddler being changed by my grandmother. She would lay me down and start. She would direct my attention to a statue of Jesus to divert my attention. I remember the big blue safety pins (of course, everything is huge when one is little), the cloud of talcum powder as she held my heels together with one hand and the softness of the diaper. And then, there is the faint memory of the color burgundy, which I think was her bedspread. So, there you have from when I was about 2 years.",
@@ -847,7 +854,8 @@
       "lastName": "Smith",
       "category": "family",
       "subcategory": "gparents",
-      "age": "2"
+      "age": "2",
+      "callout": "cloud of talcum"
     },
     {
       "text": "At around two years old I remember helping my wonderful Grandmother, Dorothy to wipe condensation from the windows of our home with old newspaper. One of my first words was \"condensation.\" We did this each morning.",
@@ -855,7 +863,8 @@
       "lastName": "Stevenson",
       "category": "family",
       "subcategory": "gparents",
-      "age": "2"
+      "age": "2",
+      "callout" : "old newspaper"
     },
     {
       "text": "An even earlier memory is when I was being potty trained by my grandmother at 2 years old (1970). I remember her talking sweetly to me in her bathroom. Up until a few years ago, I could remember the words she said.",
@@ -863,7 +872,8 @@
       "lastName": "Taylor",
       "category": "family",
       "subcategory": "gparents",
-      "age": "2"
+      "age": "2",
+      "callout": "potty trained"
     },
     {
       "text": "I remember wanting my mother to leave the room so I could climb out of my playpen at two or three. I was a 10 pound baby, I worked out with my mother to Jack Lalane every morning when she let me out, otherwise I watched through my bars. I could heft myself out and open the doors we had and wander the fields and visit the neighbors.",
@@ -871,7 +881,8 @@
       "lastName": "Bingham Mills",
       "category": "family",
       "subcategory": "parents",
-      "age": "2-3"
+      "age": "2-3",
+      "callout": "wander the fields"
     },
     {
       "text": "My family had recently relocated from North Dakota to Southern California. I was nearly 3 yrs old. I remember standing up in the back seat of our car behind the driver's seat, where my dad was. My dad was driving around subdivisions looking for our relative's house.",
@@ -879,7 +890,8 @@
       "lastName": "Burbach",
       "category": "family",
       "subcategory": "parents",
-      "age": "3"
+      "age": "3",
+      "callout": "in the back seat"
     },
     {
       "text": "I have many early childhood memories--almost all of them around negative experiences. For instance, I remember being put in a playpen in the living room by my stay-at-home mother. I would estimate that I was about 18 months old (still too young to crawl over the top). Hated being confined, so when my dad came home for lunch, I put my arms up and got him to pick me up. My mother let him have it, saying something about all the trouble it took her to get me in the playpen and settled down....so back I went.",
@@ -887,7 +899,8 @@
       "lastName": "Case",
       "category": "family",
       "subcategory": "parents",
-      "age": "1"
+      "age": "1",
+      "callout": "in a playpen"
     },
     {
       "text": "My earliest memory is of my childhood in St. Louis. We lived near the Gaslight Square section on Olive St., which in 1965 or 1966 (when I was still four years old) was one of the last routes to be converted from electric street car service to gas-powered buses. (We moved from Olive to Kingshighway when I was still four; and I remember that day, too.) On this steamy particular summer day, as I recall, I was on a street car on the Olive line with my dad. I don't remember where we were going--just that it was standing room only and I clung to my dad staring up at the strangers, a jarring bell clanged and clanged and clanged as we proceeded along. I never told this story to my now-departed father, nor did I ask anything about where we were going that day. But nearly a half-century later, I can still hear the \"jang-jang-jang\" sound of that street car bell reverberating in my mind. And it is that sound and the feint image of my trip with my father that I would recall whenever I'd see the worn-away street pavement revealing the old cobblestones -- and the street car tracks! -- over the years as I grew up. (Info on St. Louis streetcars can be found at: http://en.wikipedia.org/wiki/Streetcars_in_St._Louis.)",
@@ -895,14 +908,16 @@
       "lastName": "Currie",
       "category": "family",
       "subcategory": "parents",
-      "age": "4"
+      "age": "4",
+      "callout": "a jarring bell clanged"
     },
     {
       "text": "I remember walking to the store with someone, most likely my mother. I have a physical memory of my arm reaching upward to hold someone's hand. We walked by a store that sold those lawn jockeys. One was outside on the sidewalk. I recall that he was black (I'm white), though what was memorable was that he was the same height as me. I slowed down so that I could look eye-to-eye with him but was not allowed to tarry. I was less than 4 1/2.",
       "firstName": "Sharon",
       "lastName": "Elliott",
       "category": "family",
-      "subcategory": "parents"
+      "subcategory": "parents",
+      "callout": "my arm reaching"
     },
     {
       "text": "The black and white squares of the kitchen floor were way down there... I was high, high above it all! I was aiming blocks at the squares watching whether they could land in a white or black square. My mother was picking them up and giving them back to me. I was in my high-chair. The top refrigerator was at my shoulder (I have since learned that was actually one of the short/half size models) but in my memory it feels like the proof that I had conquered heights. I was about 18 months old.",
@@ -910,7 +925,8 @@
       "lastName": "de Aragon",
       "category": "family",
       "subcategory": "parents",
-      "age": "1"
+      "age": "1",
+      "callout": "high above it all"
     },
     {
       "text": "I'm 72...lived in AR...looking out the window seeing my dad coming up the dirt road from work. I was 2 when we lived in this house.",
@@ -918,7 +934,8 @@
       "lastName": "Essman",
       "category": "family",
       "subcategory": "parents",
-      "age": "2"
+      "age": "2",
+      "callout": "my dad coming"
     },
     {
       "text": "I am less than one year old. I'm sitting in a high chair and my mother is feeding me. Also in the kitchen are two or three other adults, and they are talking at me. I'm aware that they are trying to communicate, but I don't know their language. I ask myself, Who are these people? What am I doing here?",
@@ -926,14 +943,16 @@
       "lastName": "Fagereng",
       "category": "family",
       "subcategory": "parents",
-      "age": "0-1"
+      "age": "0-1",
+      "callout": "in a high chair"
     },
     {
       "text": "I remember my dad would come home at the same time every day and me running to give him a hug. Don't know how old I was but I remember I was no taller than his knee and I remember looking down at his shoes and me being in a diaper. Funny, I don't remember his face, but I remember his smell. English leather. A smell I love to this day.",
       "firstName": "Jason",
       "lastName": "French",
       "category": "family",
-      "subcategory": "parents"
+      "subcategory": "parents",
+      "callout": "English leather"
     },
     {
       "text": "I was perhaps 8 months old. My extended family was on a boat excursion in the Thousand Islands area of Ontario. I was being held by my mother. Various people were sitting with us and then leaving and returning. I found out later that they were different family members who were going to the back of the boat where they could take better photos.",
@@ -941,15 +960,17 @@
       "lastName": "Gauvin",
       "category": "family",
       "subcategory": "parents",
-      "age": "0-1"
+      "age": "0-1",
+      "callout": "boat excursion"
     },
     {
-      "text": "I was born March 1932 and my second sister was born in October 1935, so I was about 3 years and 4 months old when my mother was expecting my sister in the summer of 1935. My mother was having problems with preeclampsia that summer so she was on a restricted diet. Instead of sharing the evening meal with us she read to us. I can even remember the title of the book: \"The Cloister on the Hearth.\"I believe it was a story of a group of itinerant actors travelling through England. I can't remember the author. That kind of information wasn't of interest to a 3 year old :)!",
+      "text": "I was born March 1932 and my second sister was born in October 1935, so I was about 3 years and 4 months old when my mother was expecting my sister in the summer of 1935. My mother was having problems with preeclampsia that summer so she was on a restricted diet. Instead of sharing the evening meal with us she read to us. I can even remember the title of the book: \"The Cloister on the Hearth.\" I believe it was a story of a group of itinerant actors travelling through England. I can't remember the author. That kind of information wasn't of interest to a 3 year old :)!",
       "firstName": "Ross",
       "lastName": "Gould",
       "category": "family",
       "subcategory": "parents",
-      "age": "3"
+      "age": "3",
+      "callout": "she read to us"
     },
     {
       "text": "I have a memory of being in a baby carrier, watching my uncle and dad carry a sofa out the front door of our apartment that my parents were living in for a little while after I was born. This would have been the early 70's, and I couldn't have been much older than 1-2 years old. Verified by my parents.",
@@ -957,7 +978,8 @@
       "lastName": "H",
       "category": "family",
       "subcategory": "parents",
-      "age": "1-2"
+      "age": "1-2",
+      "callout": "in a baby carrier"
     },
     {
       "text": "I remember asking my mother as she was ironing, when was she going to buy me some panties. I was still wearing diapers. I was somewhere between the ages of two and three. Her response was always the same, \"Whenever I get some money.\" There was never enough money for just the basics in my household.",
@@ -965,7 +987,8 @@
       "lastName": "Huntley",
       "category": "family",
       "subcategory": "parents",
-      "age": "2-3"
+      "age": "2-3",
+      "callout": "asking my mother"
     },
     {
       "text": "While I have only a single fleeting memory of sitting on my father's arm when I must have been only 16 or 17 months old (he died when I was 18 months old), and he pressing my body close to him, telling me not to be frightened after a man's hat fell off his head while he was peering down a building, and I mistook the hat for his head falling off.",
@@ -973,7 +996,8 @@
       "lastName": "Klopper",
       "category": "family",
       "subcategory": "parents",
-      "age": "1"
+      "age": "1",
+      "callout": "his head falling off"
     },
     {
       "text": "My earliest memory consists of sitting next to my mother on a sofa, my attention divided between the sofa’s brilliant green leaf pattern and the book my mother was reading to me. Suddenly, a noise diverted my attention from the sofa/book to the room in front of me, and I looked up to see my father disappear behind a tremendous flash of light. I shut my eyes in pain, then opened them to see hundreds of blue dots obscuring my vision, and I cried out in fear and outrage. This memory rattled around in my head all throughout my childhood, but I had no idea whether it was something that had actually occurred or I had just dreamed it. Then, when I was about 10 years old, my father showed me the album he had just finished of my baby pictures; and my eyes were immediately drawn to a photo of myself (at about eight months of age), sitting next to my mother with a book and staring directly into the camera. That was it! I thought. That’s what I remembered! (Photo submitted a few seconds ago.)",
@@ -981,7 +1005,8 @@
       "lastName": "Lipeles",
       "category": "family",
       "subcategory": "parents",
-      "age": "0-1"
+      "age": "0-1",
+      "callout": "tremendous flash"
     },
     {
       "text": "My earliest memory is having just spit a pill into the bathroom sink. I can see the sink, and the pill slowly melting down into the drain. I know my mother was beside me. This took place in the town where I was born, and since we moved before I turned 3, this memory must be from before that age.",
@@ -989,7 +1014,8 @@
       "lastName": "Miller",
       "category": "family",
       "subcategory": "parents",
-      "age": "0-3"
+      "age": "0-3",
+      "callout": "just spit a pill"
     },
     {
       "text": "This 10 or 15 second memory is like a film. In 1961, when I was 15 months old, I was in my mother's arms watching my sisters get on the train ahead of us. It was dark outside and cold. C, my oldest sister, looks back to see B and E coming along behind her. E who was 4, was wearing a white or cream coloured beret. I asked my mother about this years later. She said we got on the train to move to another city and it was at night. She's amazed that I can remember it so clearly. I have no other memories until about age 3.",
@@ -997,7 +1023,8 @@
       "lastName": "Morris",
       "category": "family",
       "subcategory": "parents",
-      "age": "1"
+      "age": "1",
+      "callout": "get on a train"
     },
     {
       "text": "This happened before my third birthday. My mother, stepfather-to-be and I were on a picnic close to a road in Southern California. Everything was brown and dusty. I kept running away toward the road so they put me into the car. No matter how much I cried they wouldn't let me out. My Mother was astonished when I told her of this memory decades later, and confirmed that was what happened.",
@@ -1005,7 +1032,8 @@
       "lastName": "Ruble",
       "category": "family",
       "subcategory": "parents",
-      "age": "0-3"
+      "age": "0-3",
+      "callout": "I kept running"
     },
     {
       "text": "I remember sitting on my Mom's lap in the front seat of the car, her tummy was so big with my brother that I could pat my hands on the dash. I would have been 2-3 months less than 3 years old. I am 62 now.",
@@ -1013,7 +1041,8 @@
       "lastName": "Strand",
       "category": "family",
       "subcategory": "parents",
-      "age": "2"
+      "age": "2",
+      "callout": "tummy was so big"
     },
     {
       "text": "Must have been less than 2 years old since my mother was still carrying me around. I remember being in her arms when some ruckus broke out upstairs. I vaguely remember feeling her sense of urgency, and then being tossed onto the couch as she rushed off upstairs to see what was the matter. I distinctly remember flying through the air having a great time bouncing up and down on the couch as I landed. Though my own experience was positive, I later found out that my older brother had mistakenly flushed his underwear down the toilet and was screaming frantically in an attempt to retrieve them. Circa 1955.",
@@ -1021,7 +1050,8 @@
       "lastName": "Timothy",
       "category": "family",
       "subcategory": "parents",
-      "age": "0-2"
+      "age": "0-2",
+      "callout": "flushed his underwear"
     },
     {
       "text": "I remember a rather skewed image of my father leaning against the doorjamb of the kitchen, smoking. The skewing of the image was caused because he was rather tall and I must have been younger than three. My father gave up smoking when I was barely three, so he told me much, much later.",
@@ -1029,13 +1059,16 @@
       "lastName": "van Zwam",
       "category": "family",
       "subcategory": "parents",
-      "age": "0-3"
+      "age": "0-3",
+      "callout": "my father leaning"
     },
     {
       "text": "When I was about three I remember lying awake in my crib. I remember vividly the things in my room, the direction I was facing, and the sounds. I heard the phone ring and wondered who it was. My father came up a minute later and asked if I wanted to know who called. I thought that was funny because I WAS just wondering about that. He told me Santa Claus called. I was sooo excited. Santa called to say I was a big girl and I can now sleep in a Big Girl Bed. I was really scared, but thought that if Santa thought I could do it, then I probably could. And I did.",
+      "firstName": "Anonymous",
       "category": "family",
       "subcategory": "parents",
-      "age": "3"
+      "age": "3",
+      "callout": "Santa Claus called"
     },
     {
       "text": "This article is interesting to me because unlike my brother and sister, I can remember incredible detail from when I was one year old and my mother came home from the hospital with my brother. I remember the babysitter's hairstyle, the mauve chair I stood on watching through the window when I saw my mother with a small white bundle, I remember what I said and how my parents laughed.",
@@ -1043,7 +1076,8 @@
       "lastName": "Adams",
       "category": "family",
       "subcategory": "siblingbirth",
-      "age": "1"
+      "age": "1",
+      "callout": "babysitter's hairstyle"
     },
     {
       "text": "My new brother was just brought home and was in his crib, so quiet. The room was pale blue, lights off, some light coming through sheer curtains. The crib was so high and I wanted to see him so badly, but could not. I walked out, past the sofa with gold specks and into the kitchen with a black and white tiled floor. My age was almost 23 months.",
@@ -1051,7 +1085,8 @@
       "lastName": "Bushey",
       "category": "family",
       "subcategory": "siblingbirth",
-      "age": "1"
+      "age": "1",
+      "callout": "I wanted to see him"
     },
     {
       "text": "I was three years, eight months old. I know that because it was when my parents brought home my youngest sister. I remember it as a couple of short, few-second \"clips.\" My mother walking in the front door with her coat on and a baby in her arms--it had felt like she was away for AGES. Then a baby in a cradle or bassinet with a chubby little fist and my voice over: \"Look at her little fingers! Look at her little hand!\" She seemed incredibly tiny. I had never seen anything like that.",
@@ -1059,7 +1094,8 @@
       "lastName": "DiChristina",
       "category": "family",
       "subcategory": "siblingbirth",
-      "age": "3"
+      "age": "3",
+      "callout": "her little fingers"
     },
     {
       "text": "My earliest memory is some time after I was 18 months old and my little sister was born. I am currently 61 years old. My memory is of my little sister being brand new and tiny and having black fuzzy hair. She rapidly lost this hair and it was replaced by blonde hair that she kept through most of her childhood, darkening slightly as she became an adult. My memory is of looking up at my then seemingly gigantic but slim mother who was changing her and lifting her out of her bassinet or it may have been a changing table. I vaguely recall the dark brown hair and style my mother had, but not the clothes she wore at the time. My sister was wrapped in a white cloth. I recall reaching for her and asking something and being told not to as she had just dirtied her nappy. I remember seeing the dark brown excrement on the nappy. This occurred in the room that later became my father's office, and then my bedroom after my sister and I gained separate rooms.",
@@ -1067,7 +1103,8 @@
       "lastName": "Falconer",
       "category": "family",
       "subcategory": "siblingbirth",
-      "age": "1"
+      "age": "1",
+      "callout": "brand new and tiny"
     },
     {
       "text": "One of my earliest childhood memories was seeing my baby sister after she was born. She was on a table with her umbilical cord dangling down and I thought she was a doll with a rope in the middle. My mother had the baby at home with Dr. Reid in attendance in Woodside, New York. Year: 1940. I was almost four years old.",
@@ -1075,7 +1112,8 @@
       "lastName": "Gallo",
       "category": "family",
       "subcategory": "siblingbirth",
-      "age": "3"
+      "age": "3",
+      "callout": "umbilical cord"
     },
     {
       "text": "I was 16 months old. The date had to be about September 22, 1946. One of my parents picked me up, held me over a bassinet to show me the infant inside, and told me, \"This is your brother!\" I remember thinking \"What's a brother, and if it's mine, why can't I have it?\" I have lots more memories from that period. I am 69.",
@@ -1083,7 +1121,8 @@
       "lastName": "George",
       "category": "family",
       "subcategory": "siblingbirth",
-      "age": "1"
+      "age": "1",
+      "callout": "\"What's a brother?\""
     },
     {
       "text": "I remember the night my sister was born. I was three years and four months. I was at my aunt's house. My mother told me to wait for her there and left. A while later my grandfather told me to get into his truck. I started to argue that mom had said to wait. Grandpa yelled at me to get in his truck. I did. The truck engine was loud. He took me home.",
@@ -1091,21 +1130,25 @@
       "lastName": "Martell",
       "category": "family",
       "subcategory": "siblingbirth",
-      "age": "3"
+      "age": "3",
+      "callout": "truck engine"
     },
     {
-      "text": "When I was just over 3 years old I remember sitting in the back of the car on the way home from the hosptial. I was next to my mother and she was holding my new born brother. She wouldn't let me hold him. I'm now 33 and she still won't let me hold me.",
+      "text": "When I was just over 3 years old I remember sitting in the back of the car on the way home from the hospital. I was next to my mother and she was holding my newborn brother. She wouldn't let me hold him. I'm now 33 and she still won't let me hold me.",
       "firstName": "Patrick",
       "lastName": "Moran",
       "category": "family",
       "subcategory": "siblingbirth",
-      "age": "3"
+      "age": "3",
+      "callout": "newborn brother"
     },
     {
       "text": "I would have been 3 and a half. I had a father who was rather ignorant when it came to thinking with empathy, he wanted a picture-perfect family and this memory spoke volumes in terms of how things turned out (very much not picture perfect many times over for many different reasons). I was given a whole load of toys by my father a few days before my mum went into labour with my younger sister. My dad had given me these toys to give to the new baby so the new baby would be friends with me. As any 3 year old would do when handed a whole load of brightly coloured childs toys to give away, I hid them. I wanted them for myself, I didn't want to give them away and didn't understand the concept of trying to forge a relationship with something which had already been doted on and had lavish attention on- not to mention a space in my bedroom and made my mum very ill. My dad wanted to go to the hospital to visit my mum after she had given birth (he didn't do mess, holding hands or watching babies being born- this was only the '80's, he had a very backward mentality). He asked me where the toys were, I lied, I hadn't lied before and I lied to hide the fact I didn't want to give them away or say I had both opened them from the packaging (he didn't wrap them) and hidden them for myself. He found them in the cupboard and went crazy, shouting at me to being greedy etc and decided I had ruined the toys and would have nothing to give my younger sister. I remember not caring.... Like I say, he wanted a picture perfect family but was a little crude in trying to obtain one!",
+      "firstName": "Anonymous",
       "category": "family",
       "subcategory": "siblingbirth",
-      "age": "3"
+      "age": "3",
+      "callout": "whole load of toys"
     },
     {
       "text": "At age 25 months I greeted my brand new baby brother on his arrival from the hospital with a bright shiny red fire engine which I had received from Santa Claus 6 weeks before. I intended to drop it over the rail and onto my brother, but the adults caught me in time. I remember it in detail along with other childhood events.",
@@ -1113,14 +1156,16 @@
       "lastName": "Stecher",
       "category": "family",
       "subcategory": "siblingbirth",
-      "age": "2"
+      "age": "2",
+      "callout": "shiny red fire engine"
     },
     {
       "text": "When I was about four years old my favourite thing in the world was sucking my pink pacifier. I loved it unconditionally and I made sure to always keep it on a shelf next to my toy turtle, so it could never get lost. One night when I was ready to go to bed, disaster struck. The pacifier was gone. My parents were consulted, we started a large-scale investigation in the house, car and even washing machine - but no luck. My four year-old self was slowly sinking in despair, when my dad took me to the side and said he knew what was going on. He explained that the pacifier-fairy had come to take my pacifier away and bring it to a baby because I was a big girl now and I wouldn't need it anymore. That did impress me and install a great sense of self-confidence in me. Decades later, I learned that it was my baby brother who tossed the thing because he liked seeing the lid of our bin swing back and forth...",
       "firstName": "Maria",
       "lastName": "Suessmilch",
       "category": "family",
-      "age": "4"
+      "age": "4",
+      "callout": "the pacifier-fairy"
     }
   ]
 }
