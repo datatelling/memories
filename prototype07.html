@@ -292,13 +292,22 @@
 				var categoryIndex = {};
 				var categoryCount = -1;
 
+				// var zMap = {
+				// 	'0': -3800,
+				// 	'1': -1500,
+				// 	'2': 400,
+				// 	'3': 1800,
+				// 	'4': 2800
+				// }
+
 				var zMap = {
-					'0': -3800,
-					'1': -1500,
+					'0': 2800,
+					'1': 1800,
 					'2': 400,
-					'3': 1800,
-					'4': 2800
+					'3': -1500,
+					'4': -3800
 				}
+
 
 				for ( var i = 0; i < objects.length; i ++ ) {
 					var mem = memories[i];
@@ -367,6 +376,7 @@
 
 				renderer = new THREE.CSS3DRenderer();
 				renderer.setSize( sceneWidth, window.innerHeight );
+				// renderer.setDepthTest(true);
 				renderer.domElement.style.position = 'absolute';
 				// renderer.domElement.style.backgroundColor = 'white';
 				renderer.domElement.style.backgroundColor = 'black';
