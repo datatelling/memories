@@ -29,7 +29,6 @@
 				height: 240px;
 				box-shadow: 0px 0px 12px rgba(255,255,255,0.5);
 				border: 1px solid rgba(127,255,255,0.25);
-				/*text-align: center;*/
 				cursor: default;
 			}
 
@@ -116,6 +115,17 @@
 				color: #000000;
 				background-color: rgba(0,255,255,0.75);
 			}
+
+			#overlay {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 900px;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.75);
+				display: none;
+			}
+
 		</style>
 	</head>
 	<body>
@@ -132,6 +142,8 @@
 			<button id="category">CATEGORY</button>
 			<button id="age">AGE</button>
 		</div>
+
+		<div id="overlay">&nbsp;</div>
 
 		<div id="activeCard">
 			<div class="callout"></div>
@@ -150,6 +162,7 @@
 			var cameraPresets = {};
 			var sceneWidth = 900;
 
+			var layout = 'table';
 			var activeCard = false;
 
 			// load memories data
@@ -181,13 +194,6 @@
 					// increase category count for building category layout
 					if (!categoryTotals.hasOwnProperty(mem.category)) categoryTotals[mem.category] = 0;
 					categoryTotals[mem.category] += 1;
-
-					// // create a random quote for now
-					// var words = mem.text.split(' ');
-					// var length = parseInt(Math.random() * 3) + 1;
-					// var start = parseInt( Math.random() * (words.length - 3) );
-					// var callout = '"' + words.slice(start, start + length).join(' ') + '"';
-					// mem.callout = callout;
 
 					// color map for categories
 					var colorMap = {
@@ -277,15 +283,16 @@
 				var categoryCount = -1;
 
 				var zMap = {
-					'0': -3800,
-					'1': -1500,
+					'0': 2800,
+					'1': 1800,
 					'2': 400,
-					'3': 1800,
-					'4': 2800
+					'3': -1500,
+					'4': -3800,
 				}
 
 				for ( var i = 0; i < objects.length; i ++ ) {
 					var mem = memories[i];
+					// var mem = memories[ objects.length - i - 1 ];
 
 					var object = new THREE.Object3D();
 
@@ -368,8 +375,10 @@
 				var button = document.getElementById( 'table' );
 				button.addEventListener( 'click', function ( event ) {
 
-					transform( targets.table, 1000 );
-					animateCamera( cameraPresets.table, 2000 );
+					layout = 'table';
+
+					transform( targets[layout], 1000 );
+					animateCamera( cameraPresets[layout], 2000 );
 
 					controls.altControls = true;
 					controls.noRotate = true;
@@ -379,8 +388,10 @@
 				var button = document.getElementById( 'category' );
 				button.addEventListener( 'click', function ( event ) {
 
-					transform( targets.category, 1000 );
-					animateCamera( cameraPresets.category, 2000 );
+					layout = 'category';
+
+					transform( targets[layout], 1000 );
+					animateCamera( cameraPresets[layout], 2000 );
 
 					controls.altControls = false;
 					controls.noRotate = false;
@@ -390,27 +401,30 @@
 				var button = document.getElementById( 'age' );
 				button.addEventListener( 'click', function ( event ) {
 
-					transform( targets.age, 1000 );
-					animateCamera( cameraPresets.age, 2000 );
+					layout = 'age';
+
+					transform( targets[layout], 1000 );
+					animateCamera( cameraPresets[layout], 2000 );
 
 					controls.altControls = false;
 					controls.noRotate = false;
 
 				}, false );
 
-				var card = document.getElementById( 'activeCard' );
-				card.addEventListener( 'click', function ( event ) {
 
-					$(card).animate({ top: window.innerHeight }, 200, function() {
+
+				$('#activeCard, #overlay').click(function() {
+					$('#activeCard').animate({ top: window.innerHeight }, 200, function() {
 						$(card).css('display', 'block');
-						transform( targets.table, 1000 );
+						transform( targets[layout], 1000 );
+
+						$('#overlay').delay(500).fadeOut();
 					});
+				})
 
-				}, false );
 
-
-				transform( targets.table, 1000 );
-				animateCamera( cameraPresets.table, 2000 );
+				transform( targets[layout], 1000 );
+				animateCamera( cameraPresets[layout], 2000 );
 
 				//
 
@@ -453,7 +467,7 @@
 				var object = objects[ activeCard ].object;
 
 				new TWEEN.Tween( object.position )
-				.to( { x: camera.position.x, y: camera.position.y - 300, z: camera.position.z - 300 }, 1000 )
+				.to( { x: camera.position.x, y: camera.position.y - 300, z: camera.position.z }, 1000 )
 				.easing( TWEEN.Easing.Cubic.InOut )
 				.start();
 
@@ -467,6 +481,8 @@
 				.to( {}, 1000 * 2 )
 				.onUpdate( render )
 				.start();
+
+				$('#overlay').delay(500).fadeIn();
 
 			}
 
