@@ -1,22 +1,22 @@
 {
   "categories": {
     "vse": {
-      "color": [127, 169, 178],
-      "name": "Sensory<br>Experience",
+      "color": [255, 71, 31],
+      "name": "SENSORY<br>EXPERIENCE",
       "table": {
-        "x": -1800,
-        "y": -660
+        "x": -1840,
+        "y": -230
       },
       "category": {
         "z": -1500
       }
     },
     "trouble": {
-      "color": [255, 12, 107],
-      "name": "Trouble",
+      "color": [18, 30, 100],
+      "name": "TROUBLE",
       "table": {
-        "x": -1755,
-        "y": 250
+        "x": -1800,
+        "y": 600
       }
       ,
       "category": {
@@ -25,21 +25,21 @@
     }, 
     "antics": {
       "color": [21, 213, 255],
-      "name": "Antics",
+      "name": "ANTICS",
       "table": {
-        "x": -1750,
-        "y": 900
+        "x": -1780,
+        "y": 1120
       },
       "category": {
         "z": 1800
       }
     }, 
     "family": {
-      "color": [204, 195, 101],
-      "name": "Family",
+      "color": [86, 189, 67],
+      "name": "FAMILY",
       "table": {
-        "x": -1750,
-        "y": -1310
+        "x": -1780,
+        "y": -1210
       }
       ,
       "category": {
@@ -47,11 +47,11 @@
       }
     }, 
     "hist": {
-      "color": [250, 163, 6],
-      "name": "History",
+      "color": [72, 53, 45],
+      "name": "HISTORY",
       "table": {
-        "x": -1752,
-        "y": 1290
+        "x": -1800,
+        "y": 1380
       },
       "category": {
         "z": 2800

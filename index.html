@@ -277,10 +277,10 @@
 
 				//
 
-				renderer = new THREE.CSS3DRenderer();
+				renderer = new THREE.CSS3DRenderer({antialias:true});
 				renderer.setSize( sceneWidth, window.innerHeight );
 				renderer.domElement.style.position = 'absolute';
-				renderer.domElement.style.backgroundColor = 'white';
+				renderer.domElement.style.backgroundColor = '#FFE9D1';
 				document.getElementById( 'container' ).appendChild( renderer.domElement );
 
 				//
