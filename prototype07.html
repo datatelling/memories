@@ -4,159 +4,17 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<title>memories</title>
-		<style>
-			
-			@font-face {
-    			font-family: "Apres Regular";
-    			src: url("fonts/Apres-Regular.ttf");
-			}
-			@font-face {
-			    font-family: "Apres Bold";
-			    src: url("fonts/Apres-Bold.ttf");
-			    font-weight: bold;
-			}
-			@font-face {
-			    font-family: "Apres Italic";
-			    src: url("fonts/Apres-Oblique.ttf");
-			    font-style: italic, oblique;
-			}
-			@font-face {
-			    font-family: "Apres BoldItalic";
-			    src: url("fonts/Apres-BoldItalic.ttf");
-			    font-weight: bold;
-			    font-style: italic, oblique;
-			}
+		
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 
-			html, body {
-				height: 100%;
-			}
-
-			body {
-				background-color: white;
-				margin: 0;
-				font-family: Apres Regular, sans-serif; 
-				overflow: hidden;
-			}
-
-			#container > div {
-				border-right: 1px solid gray;
-			}
-
-			a {
-				color: #ffffff;
-			}
-
-			.card, #activeCard {
-				width: 360px;
-				height: 240px;
-				box-shadow: 0px 0px 12px rgba(255,255,255,0.5);
-				border: 1px solid rgba(127,255,255,0.25);
-				cursor: default;
-			}
-
-			.card:hover, , #activeCard:hover {
-				box-shadow: 0px 0px 12px rgba(255,255,255,0.75);
-				border: 1px solid rgba(255,255,255,0.75);
-			}
-
-				.card .callout {
-					position: absolute;
-					top: 15px;
-					left: 0px;
-					right: 0px;
-					font-size: 60px;
-					font-weight: bold;
-					font-style: italic;
-					color: rgba(255,255,255,0.75);
-					padding-left: 10px;
-				}
-
-				.card .name {
-					position: absolute;
-					bottom: 20px;
-					left: 0px;
-					right: 0px;
-					font-size: 36px;
-					color: rgba(255,255,255,0.75);
-					padding-left: 10px;
-				}
-
-			#activeCard {
-				width: 800px;
-				height: 530px;
-				overflow-y: scroll;
-				top: 800px;
-				position: absolute;
-				left: 50px;
-				color: white;
-				background-color: rgba(0, 127, 127, 0.9);
-			}
-				#activeCard .callout {
-					font-size: 60px;
-					padding: 25px;
-				}
-
-				#activeCard .name {
-					position: relative;
-					float: left;
-					display: inline;
-					width: 280px;
-					font-size: 30px;
-					padding: 10px;
-				}
-
-				#activeCard .text {
-					position: relative;
-					float: right;
-					display: inline;
-					width: 450px;
-					font-size: 24px;
-					padding: 10px;
-				}
-
-			#menu {
-				position: absolute;
-				bottom: 20px;
-				left: 350px;
-				text-align: center;
-				background-color: rgba(255, 255, 255, 0.9);
-				padding: 10px;
-			}
-
-			button {
-				color: rgba(127, 127, 127, 0.75);
-				background: transparent;
-				outline: 1px solid rgba(127, 127, 127, 0.75);
-				border: 0px;
-				padding: 5px 10px;
-				cursor: pointer;
-			}
-			button:hover {
-				background-color: rgba(0,255,255,0.5);
-			}
-			button:active {
-				color: #000000;
-				background-color: rgba(0,255,255,0.75);
-			}
-
-			#overlay {
-				position: absolute;
-				top: 0px;
-				left: 0px;
-				width: 900px;
-				height: 100%;
-				background-color: rgba(0, 0, 0, 0.75);
-				display: none;
-			}
-
-		</style>
-	</head>
-	<body>
 		<script src="js/three.min.js"></script>
 		<script src="js/tween.min.js"></script>
 		<script src="js/OrbitControls.js"></script>
 		<script src="js/CSS3DRenderer.js"></script>
 		<script src="js/jquery-2.1.1.min.js"></script>
+	</head>
+	<body>
+		
 
 		<div id="container"></div>
 
@@ -179,8 +37,12 @@
 			var camera, scene, renderer;
 			var controls;
 
-			var objects = [];
-			var targets = { table: [], category: [], age: [] };
+			var objects = [], annotations = [];
+			
+			var targets = {
+				table: [], category: [], age: [],
+				"table-annotations": [], "category-annotations": [], "age-annotations": []
+			};
 
 			var cameraPresets = {};
 			var sceneWidth = 900;
@@ -188,10 +50,13 @@
 			var layout = 'table';
 			var activeCard = false;
 
+			var memories, categories;
+			
 			// load memories data
-			var memories = [];
 			$.get('js/memories.json', function(data) {
 				memories = data.memories;
+				categories = data.categories;
+
 				init();
 				animate();
 			})
@@ -202,6 +67,46 @@
 				camera.position.z = 15000;
 
 				scene = new THREE.Scene();
+
+				// process categories data for building annotation layer
+
+				for ( var cat in categories ) {
+
+					// set up html element
+					var note = document.createElement( 'div' );
+					note.className = 'annotation';
+					note.setAttribute('id', cat);
+					note.innerHTML = categories[cat].name;
+
+					// set up css 3d properties
+					var object = new THREE.CSS3DObject( note );
+					object.position.x = Math.random() * 4000 - 2000;
+					object.position.y = Math.random() * 4000 - 2000;
+					object.position.z = Math.random() * 4000 - 2000;
+
+					object.rotation.x = Math.random() * 2 * 3.14;
+					object.rotation.y = Math.random() * 2 * 3.14;
+
+					// add to the scene and keep track of the 3d object
+					annotations.push( object );
+					scene.add( object );
+
+					// set up positioning for different views and keep track of 
+					// each target object
+					var object = new THREE.Object3D();
+					object.position.x = categories[cat].table.x;
+					object.position.y = categories[cat].table.y;
+					object.position.z = 0;
+					targets['table-annotations'].push( object );
+
+					var object = new THREE.Object3D();
+					object.position.x = categories[cat].table.x - 160;
+					object.position.y = -100;
+					object.position.z = categories[cat].category.z;
+					targets['category-annotations'].push( object );
+
+				}
+
 
 				var categoryTotals = {};
 
@@ -218,19 +123,10 @@
 					if (!categoryTotals.hasOwnProperty(mem.category)) categoryTotals[mem.category] = 0;
 					categoryTotals[mem.category] += 1;
 
-					// color map for categories
-					var colorMap = {
-						vse: [127, 169, 178],
-						trouble: [255, 12, 107],
-						antics: [21, 213, 255],
-						family: [204, 195, 101],
-						hist: [250, 163, 6],
-					}
-
 					var card = document.createElement( 'div' );
 					card.className = 'card';
 					card.setAttribute('data-id', i);
-					card.style.backgroundColor = 'rgba(' + colorMap[mem.category].join(',') + ',0.85)';
+					card.style.backgroundColor = 'rgba(' + categories[mem.category].color.join(',') + ',0.85)';
 
 					var callout = document.createElement( 'div' );
 					callout.className = 'callout';
@@ -284,7 +180,7 @@
 				// table layout
 
 				var yPos = 0;
-				cameraPresets.table = { x: 0, y: 0, z: 4100}
+				cameraPresets.table = { x: 0, y: 0, z: 4500}
 
 				for ( var i = 0; i < objects.length; i++ ) {
 
@@ -292,7 +188,7 @@
 					var xPos = i % 9;
 					if (xPos == 0) yPos++;
 
-					object.position.x = (xPos * 400) - 1600;
+					object.position.x = (xPos * 400) - 1450;
 					object.position.y = - ( yPos * 260 ) + 1550;
 
 					targets.table.push( object );
@@ -401,6 +297,7 @@
 					layout = 'table';
 
 					transform( targets[layout], 1000 );
+					transformAnnotation( targets[layout+'-annotations'], 1000 );
 					animateCamera( cameraPresets[layout], 2000 );
 
 					controls.altControls = true;
@@ -414,6 +311,7 @@
 					layout = 'category';
 
 					transform( targets[layout], 1000 );
+					transformAnnotation( targets[layout+'-annotations'], 1000 );
 					animateCamera( cameraPresets[layout], 2000 );
 
 					controls.altControls = false;
@@ -427,6 +325,7 @@
 					layout = 'age';
 
 					transform( targets[layout], 1000 );
+					transformAnnotation( targets[layout+'-annotations'], 1000 );
 					animateCamera( cameraPresets[layout], 2000 );
 
 					controls.altControls = false;
@@ -447,6 +346,7 @@
 
 
 				transform( targets[layout], 1000 );
+				transformAnnotation( targets[layout+'-annotations'], 1000 );
 				animateCamera( cameraPresets[layout], 2000 );
 
 				//
@@ -462,6 +362,34 @@
 				for ( var i = 0; i < targets.length; i ++ ) {
 
 					var object = objects[ i ].object;
+					var target = targets[ i ];
+
+					new TWEEN.Tween( object.position )
+						.to( { x: target.position.x, y: target.position.y, z: target.position.z }, Math.random() * duration + duration )
+						.easing( TWEEN.Easing.Exponential.InOut )
+						.start();
+
+					new TWEEN.Tween( object.rotation )
+						.to( { x: target.rotation.x, y: target.rotation.y, z: target.rotation.z }, Math.random() * duration + duration )
+						.easing( TWEEN.Easing.Exponential.InOut )
+						.start();
+
+				}
+
+				new TWEEN.Tween( this )
+					.to( {}, duration * 2 )
+					.onUpdate( render )
+					.start();
+
+			}
+
+			function transformAnnotation( targets, duration ) {
+
+				// TWEEN.removeAll();
+
+				for ( var i = 0; i < targets.length; i ++ ) {
+
+					var object = annotations[ i ];
 					var target = targets[ i ];
 
 					new TWEEN.Tween( object.position )

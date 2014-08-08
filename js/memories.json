@@ -1,4 +1,63 @@
 {
+  "categories": {
+    "vse": {
+      "color": [127, 169, 178],
+      "name": "Sensory<br>Experience",
+      "table": {
+        "x": -1800,
+        "y": -660
+      },
+      "category": {
+        "z": -1500
+      }
+    },
+    "trouble": {
+      "color": [255, 12, 107],
+      "name": "Trouble",
+      "table": {
+        "x": -1755,
+        "y": 250
+      }
+      ,
+      "category": {
+        "z": 400
+      }
+    }, 
+    "antics": {
+      "color": [21, 213, 255],
+      "name": "Antics",
+      "table": {
+        "x": -1750,
+        "y": 900
+      },
+      "category": {
+        "z": 1800
+      }
+    }, 
+    "family": {
+      "color": [204, 195, 101],
+      "name": "Family",
+      "table": {
+        "x": -1750,
+        "y": -1310
+      }
+      ,
+      "category": {
+        "z": -3800
+      }
+    }, 
+    "hist": {
+      "color": [250, 163, 6],
+      "name": "History",
+      "table": {
+        "x": -1752,
+        "y": 1290
+      },
+      "category": {
+        "z": 2800
+      }
+    }
+  },
   "memories": [
     {
       "text": "Age 21 months. Pearl Harbor. Sitting in my stroller looking up. Everyone seemed worried.",

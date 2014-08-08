@@ -1,0 +1,149 @@
+@font-face {
+	font-family: "Apres Regular";
+	src: url("/fonts/Apres-Regular.ttf");
+}
+@font-face {
+    font-family: "Apres Bold";
+    src: url("/fonts/Apres-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Apres Italic";
+    src: url("/fonts/Apres-Oblique.ttf");
+    font-style: italic, oblique;
+}
+@font-face {
+    font-family: "Apres BoldItalic";
+    src: url("/fonts/Apres-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic, oblique;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: white;
+	margin: 0;
+	font-family: 'Apres Regular', sans-serif; 
+	overflow: hidden;
+}
+
+#container > div {
+	border-right: 1px solid gray;
+}
+
+a {
+	color: #ffffff;
+}
+
+.card, #activeCard {
+	width: 360px;
+	height: 240px;
+	box-shadow: 0px 0px 12px rgba(255,255,255,0.5);
+	border: 1px solid rgba(127,255,255,0.25);
+	cursor: default;
+}
+
+.card:hover, , #activeCard:hover {
+	box-shadow: 0px 0px 12px rgba(255,255,255,0.75);
+	border: 1px solid rgba(255,255,255,0.75);
+}
+
+	.card .callout {
+		position: absolute;
+		top: 15px;
+		left: 0px;
+		right: 0px;
+		font-size: 60px;
+		font-weight: bold;
+		font-style: italic;
+		color: rgba(255,255,255,0.75);
+		padding-left: 10px;
+	}
+
+	.card .name {
+		position: absolute;
+		bottom: 20px;
+		left: 0px;
+		right: 0px;
+		font-size: 36px;
+		color: rgba(255,255,255,0.75);
+		padding-left: 10px;
+	}
+
+#activeCard {
+	width: 800px;
+	height: 530px;
+	overflow-y: scroll;
+	top: 800px;
+	position: absolute;
+	left: 50px;
+	color: white;
+	background-color: rgba(0, 127, 127, 0.9);
+}
+	#activeCard .callout {
+		font-size: 60px;
+		padding: 25px;
+		font-style: italic;
+	}
+
+	#activeCard .name {
+		position: relative;
+		float: left;
+		display: inline;
+		width: 280px;
+		font-size: 30px;
+		padding: 10px;
+	}
+
+	#activeCard .text {
+		position: relative;
+		float: right;
+		display: inline;
+		width: 450px;
+		font-size: 24px;
+		padding: 10px;
+	}
+
+.annotation {
+	font-size: 60px;
+	color: black;
+	text-align: right;
+}
+
+#menu {
+	position: absolute;
+	bottom: 20px;
+	left: 350px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 10px;
+}
+
+button {
+	color: rgba(127, 127, 127, 0.75);
+	background: transparent;
+	outline: 1px solid rgba(127, 127, 127, 0.75);
+	border: 0px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+button:hover {
+	background-color: rgba(0,255,255,0.5);
+}
+button:active {
+	color: #000000;
+	background-color: rgba(0,255,255,0.75);
+}
+
+#overlay {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 900px;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.75);
+	display: none;
+}
