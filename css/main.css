@@ -107,6 +107,14 @@ a {
 		padding: 10px;
 	}
 
+	#activeCard .pic {
+		position: relative;
+		float: left;
+		display: inline;
+		width: 300px;
+		padding: 10px;
+	}
+
 .annotation {
 	font-size: 60px;
 	color: black;
