@@ -63,6 +63,15 @@
       }
     }
   },
+  "ages": [
+    2800,
+    1800,
+    400,
+    -1500,
+    -3200,
+    -4500,
+    -6000
+  ],
   "memories": [
     {
       "text": "Age 21 months. Pearl Harbor. Sitting in my stroller looking up. Everyone seemed worried.",

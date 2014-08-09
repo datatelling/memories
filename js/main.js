@@ -4,22 +4,27 @@ var controls;
 var objects = [], annotations = [];
 
 var targets = {
-	table: [], category: [], age: [],
-	"table-annotations": [], "category-annotations": [], "age-annotations": []
+	"table": [],
+	"category": [],
+	"age": [],
+	"table-annotations": [],
+	"category-annotations": [],
+	"age-annotations": []
 };
 
 var cameraPresets = {};
 var sceneWidth = 900;
 
-var layout = 'table';
+var layout = "table";
 var activeCard = false;
 
-var memories, categories;
+var memories, categories, ages;
 
 // load memories data
 $.get('js/memories.json', function(data) {
 	memories = data.memories;
 	categories = data.categories;
+	ages = data.ages;
 
 	init();
 	animate();
@@ -32,7 +37,7 @@ function init() {
 
 	scene = new THREE.Scene();
 
-	// process categories data for building annotation layer
+	// process categories data for building annotation layer for table & categories
 
 	for ( var cat in categories ) {
 
@@ -72,6 +77,46 @@ function init() {
 	}
 
 
+	// process age data for building annotation layer for ages
+
+	for ( var i = 0; i < ages.length; i++) {
+
+		// set up html element
+		var note = document.createElement( 'div' );
+		note.className = 'annotation-age';
+		note.setAttribute('id', 'age-' + i);
+
+		if (i <= 4)
+			note.innerHTML = i + ' Years';
+		if (i == 5)
+			note.innerHTML = '6 Years';
+		if (i == 6)
+			note.innerHTML = 'Unknown';
+
+		// set up css 3d properties
+		var object = new THREE.CSS3DObject( note );
+		object.position.x = Math.random() * 4000 - 2000;
+		object.position.y = Math.random() * 4000 - 2000;
+		object.position.z = Math.random() * 4000 - 2000;
+
+		object.rotation.x = Math.random() * 2 * 3.14;
+		object.rotation.y = Math.random() * 2 * 3.14;
+
+		// add to the scene and keep track of the 3d object
+		annotations.push( object );
+		scene.add( object );
+
+		// set up positioning for different views and keep track of 
+		// each target object
+		var object = new THREE.Object3D();
+		object.position.x = 2250;
+		object.position.y = -100;
+		object.position.z = ages[i];
+		targets['age-annotations'].push( object );
+
+	}
+
+
 	var categoryTotals = {};
 
 	// process memories data
@@ -90,7 +135,7 @@ function init() {
 		var card = document.createElement( 'div' );
 		card.className = 'card';
 		card.setAttribute('data-id', i);
-		card.style.backgroundColor = 'rgba(' + categories[mem.category].color.join(',') + ',0.75)';
+		card.style.backgroundColor = 'rgba(' + categories[mem.category].color.join(',') + ',1)';
 
 		var callout = document.createElement( 'div' );
 		callout.className = 'callout';
@@ -105,7 +150,7 @@ function init() {
 		} else {
 			name.innerHTML = mem['firstName'];
 		}
-		name.style.color = 'rgba(' + categories[mem.category].namecolor.join(',') + ',0.85)';
+		name.style.color = 'rgba(' + categories[mem.category].namecolor.join(',') + ',1)';
 		card.appendChild( name );
 
 		var object = new THREE.CSS3DObject( card );
@@ -172,14 +217,6 @@ function init() {
 	var categoryIndex = {};
 	var categoryCount = -1;
 
-	var zMap = {
-		'0': 2800,
-		'1': 1800,
-		'2': 400,
-		'3': -1500,
-		'4': -3800,
-	}
-
 	for ( var i = 0; i < objects.length; i ++ ) {
 		var mem = memories[i];
 		// var mem = memories[ objects.length - i - 1 ];
@@ -197,7 +234,7 @@ function init() {
 
 		object.position.x = categoryIndex[mem.category].count % 9  * 400  - 1600;
 		object.position.y = Math.floor( categoryIndex[mem.category].count / 9 ) * 260;
-		object.position.z = zMap[ categoryIndex[mem.category].index ];
+		object.position.z = categories[mem.category].category.z;
 
 		targets.category.push( object );
 
@@ -205,44 +242,40 @@ function init() {
 
 	// age layout
 
-	// cameraPresets.age = { x: -4189, y: 1810, z: 5600 };
-	// cameraPresets.age = { x: 0, y: 0, z: 10000}
-	// cameraPresets.age = { x: 0, y: 1768, z: 7134 }
-	cameraPresets.age = { x: -220, y: 2187, z: 6155 }
+	// cameraPresets.age = { x: 3526, y: 832, z: 5878 };
+	cameraPresets.age = { x: 3085, y: 1158, z: 6067 };
 	var ageIndex = [];
 	var ageCount = -1;
 
-	var zMap = {
-		'0': -4000,
-		'1': -2700,
-		'2': -700,
-		'3': 1300,
-		'4': 2300,
-		'5': 3000
-	}
-
 	for ( var i = 0; i < objects.length; i ++ ) {
 		var mem = memories[i];
-		if (!mem.hasOwnProperty('age') || mem.age.length > 1) mem.age = '0';
+
+		// if the memory age is unkown, set it to unknown so it appears in the back
+		if (!mem.hasOwnProperty('age')) mem.age = 'unknown';
+
+		// if the age is a range, like 2-3, just use the first number
+		if (mem.age.length > 1) mem.age = mem.age.substring(0, 1);
 
 		// super hacky way of getting rid of the layout gap between years 4 & 6!
-		// redo this a better way!
+		// redo this a better way! this just changes the index of the lookup table
+		// for find the z position
 		if (mem.age == '6') mem.age = '5';
+		if (mem.age == 'u') mem.age = '6'; // 'unknown' gets shortened to 'u' above
 
 		var object = new THREE.Object3D();
 
 		if (!ageIndex.hasOwnProperty(mem.age)) ageIndex[mem.age] = -1;
 		ageIndex[mem.age] += 1;
 
-		object.position.x = ( ( ageIndex[mem.age] % 9 ) * 400 ) - 1600;
-		object.position.y = ( ( Math.floor( ageIndex[mem.age] / 9 ) ) * 260 ) - 500;
-		object.position.z = zMap[ mem.age ];
+		object.position.x = ( ( ( ageIndex[mem.age] % 9 ) * 400 ) - 1900 ) * -1;
+		object.position.y = ( ( Math.floor( ageIndex[mem.age] / 9 ) ) * 260 );
+		object.position.z = ages[ mem.age ];
+
+		console.log(mem.age, object.position)
 
 		targets.age.push( object );
 
 	}
-
-	// console.log(ageIndex)
 
 	//
 
@@ -268,7 +301,7 @@ function init() {
 		layout = 'table';
 
 		transform( targets[layout], 1000 );
-		transformAnnotation( targets[layout+'-annotations'], 1000 );
+		transformAnnotations( targets[layout+'-annotations'], 1000 );
 		animateCamera( cameraPresets[layout], 2000 );
 
 		controls.altControls = true;
@@ -282,7 +315,7 @@ function init() {
 		layout = 'category';
 
 		transform( targets[layout], 1000 );
-		transformAnnotation( targets[layout+'-annotations'], 1000 );
+		transformAnnotations( targets[layout+'-annotations'], 1000 );
 		animateCamera( cameraPresets[layout], 2000 );
 
 		controls.altControls = false;
@@ -296,7 +329,7 @@ function init() {
 		layout = 'age';
 
 		transform( targets[layout], 1000 );
-		transformAnnotation( targets[layout+'-annotations'], 1000 );
+		transformAnnotations( targets[layout+'-annotations'], 1000 );
 		animateCamera( cameraPresets[layout], 2000 );
 
 		controls.altControls = false;
@@ -317,7 +350,7 @@ function init() {
 
 
 	transform( targets[layout], 1000 );
-	transformAnnotation( targets[layout+'-annotations'], 1000 );
+	transformAnnotations( targets[layout+'-annotations'], 1000 );
 	animateCamera( cameraPresets[layout], 2000 );
 
 	//
@@ -354,13 +387,25 @@ function transform( targets, duration ) {
 
 }
 
-function transformAnnotation( targets, duration ) {
+function transformAnnotations( targets, duration ) {
 
 	// TWEEN.removeAll();
 
-	for ( var i = 0; i < targets.length; i ++ ) {
+	if (layout != "age") {
+		$('.annotation').fadeIn();
+		$('.annotation-age').fadeOut();
+	} else {
+		$('.annotation').fadeOut();
+		$('.annotation-age').fadeIn();
+	}
 
-		var object = annotations[ i ];
+	for ( var i = 0; i < targets.length; i++ ) {
+
+		if (layout != "age")
+			var object = annotations[ i ];
+		else
+			var object = annotations[ i + 5 ];
+
 		var target = targets[ i ];
 
 		new TWEEN.Tween( object.position )
@@ -389,7 +434,7 @@ function transformActiveCard( ) {
 	var object = objects[ activeCard ].object;
 
 	new TWEEN.Tween( object.position )
-	.to( { x: camera.position.x, y: camera.position.y - 300, z: camera.position.z }, 1000 )
+	.to( { x: camera.position.x, y: camera.position.y - 300, z: camera.position.z + 100 }, 1000 )
 	.easing( TWEEN.Easing.Cubic.InOut )
 	.start();
 

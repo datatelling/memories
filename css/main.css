@@ -119,11 +119,14 @@ a {
 		padding: 10px;
 	}
 
-.annotation {
+.annotation, .annotation-age {
 	font-size: 60px;
 	color: rgba(87, 58, 55);
 	text-align: right;
 	font-weight: bold;
+}
+.annotation-age {
+	display: none;
 }
 
 #menu {
