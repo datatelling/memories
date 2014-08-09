@@ -135,7 +135,7 @@ function init() {
 		var card = document.createElement( 'div' );
 		card.className = 'card';
 		card.setAttribute('data-id', i);
-		card.style.backgroundColor = 'rgba(' + categories[mem.category].color.join(',') + ',1)';
+		card.style.backgroundColor = 'rgba(' + categories[mem.category].color.join(',') + ',0.75)';
 
 		var callout = document.createElement( 'div' );
 		callout.className = 'callout';
@@ -150,7 +150,7 @@ function init() {
 		} else {
 			name.innerHTML = mem['firstName'];
 		}
-		name.style.color = 'rgba(' + categories[mem.category].namecolor.join(',') + ',1)';
+		name.style.color = 'rgba(' + categories[mem.category].namecolor.join(',') + ',0.75)';
 		card.appendChild( name );
 
 		var object = new THREE.CSS3DObject( card );
