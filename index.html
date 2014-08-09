@@ -127,7 +127,7 @@
 					var card = document.createElement( 'div' );
 					card.className = 'card';
 					card.setAttribute('data-id', i);
-					card.style.backgroundColor = 'rgba(' + categories[mem.category].color.join(',') + ',0.85)';
+					card.style.backgroundColor = 'rgba(' + categories[mem.category].color.join(',') + ',0.75)';
 
 					var callout = document.createElement( 'div' );
 					callout.className = 'callout';
@@ -137,6 +137,7 @@
 					var name = document.createElement( 'div' );
 					name.className = 'name';
 					name.innerHTML = mem['firstName'] + ' ' + mem['lastName']
+					name.style.color = 'rgba(' + categories[mem.category].namecolor.join(',') + ',0.75)';
 					card.appendChild( name );
 
 					var object = new THREE.CSS3DObject( card );
@@ -280,7 +281,7 @@
 				renderer = new THREE.CSS3DRenderer({antialias:true});
 				renderer.setSize( sceneWidth, window.innerHeight );
 				renderer.domElement.style.position = 'absolute';
-				renderer.domElement.style.backgroundColor = '#FFE9D1';
+				renderer.domElement.style.backgroundColor = '#FFF8F0';
 				document.getElementById( 'container' ).appendChild( renderer.domElement );
 
 				//

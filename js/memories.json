@@ -1,7 +1,8 @@
 {
   "categories": {
     "vse": {
-      "color": [255, 71, 31],
+      "color": [206, 89, 57],
+      "namecolor": [255, 0, 0],
       "name": "SENSORY<br>EXPERIENCE",
       "table": {
         "x": -1840,
@@ -12,7 +13,8 @@
       }
     },
     "trouble": {
-      "color": [18, 30, 100],
+      "color": [116, 121, 192],
+      "namecolor": [255, 0, 0],
       "name": "TROUBLE",
       "table": {
         "x": -1800,
@@ -24,7 +26,8 @@
       }
     }, 
     "antics": {
-      "color": [21, 213, 255],
+      "color": [65, 180, 201],
+      "namecolor": [255, 0, 0],
       "name": "ANTICS",
       "table": {
         "x": -1780,
@@ -35,7 +38,8 @@
       }
     }, 
     "family": {
-      "color": [86, 189, 67],
+      "color": [120, 186, 95],
+      "namecolor": [255, 0, 0],
       "name": "FAMILY",
       "table": {
         "x": -1780,
@@ -47,7 +51,8 @@
       }
     }, 
     "hist": {
-      "color": [72, 53, 45],
+      "color": [139, 114, 100],
+      "namecolor": [255, 0, 0],
       "name": "HISTORY",
       "table": {
         "x": -1800,
@@ -697,7 +702,7 @@
       "category": "vse",
       "subcategory": "roomfurn",
       "age": "0-1",
-      "callout": "watching the mailman"
+      "callout": "the mailman"
     },
     {
       "text": "In my earliest memory, I believe I was about 15 months old. It is Christmas time, and I can visualize a Christmas tree beside a bay window; I am sitting and crawling on the floor around the tree, and I am playing with a red plastic toy. My parents told me that I was late in starting to walk – nearly two years old, I think, so by my second birthday I would have been walking. So this must have been the previous Christmas, when I would have been nearly 15 months.",

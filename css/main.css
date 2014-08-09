@@ -24,7 +24,7 @@ html, body {
 }
 
 body {
-	background-color: #FFE9D1;
+	background-color: white;
 	margin: 0;
 	font-family: 'Apres Regular', sans-serif; 
 	overflow: hidden;
@@ -42,7 +42,7 @@ a {
 	width: 360px;
 	height: 240px;
 	box-shadow: 0px 0px 12px rgba(255,255,255,0.5);
-	border: 1px solid rgba(127,255,255,0.25);
+	border: 1px solid rgba(255,0,0,0.25);
 	border-radius: 20px;
 	cursor: default;
 }
@@ -60,8 +60,9 @@ a {
 		font-size: 60px;
 		font-weight: bold;
 		font-style: italic;
-		color: rgba(87, 58, 55,0.75);
-		padding-left: 10px;
+		color: rgba(87, 58, 55,0.85);
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
 	.card .name {
@@ -69,8 +70,8 @@ a {
 		bottom: 20px;
 		left: 0px;
 		right: 0px;
-		font-size: 36px;
-		color: rgba(255,255,255,0.75);
+		font-size: 42px;
+		color: rgba(120, 186, 95, 1);
 		padding-left: 10px;
 	}
 
@@ -118,7 +119,7 @@ a {
 
 .annotation {
 	font-size: 60px;
-	color: black;
+	color: rgba(87, 58, 55);
 	text-align: right;
 	font-weight: bold;
 }
