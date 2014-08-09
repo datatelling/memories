@@ -136,8 +136,13 @@
 
 					var name = document.createElement( 'div' );
 					name.className = 'name';
-					name.innerHTML = mem['firstName'] + ' ' + mem['lastName']
-					name.style.color = 'rgba(' + categories[mem.category].namecolor.join(',') + ',0.75)';
+					// name.innerHTML = mem['firstName'] + ' ' + mem['lastName'];
+					if (mem.hasOwnProperty('age')) {
+						name.innerHTML = mem['firstName'] + ', ' + mem['age'];
+					} else {
+						name.innerHTML = mem['firstName'];
+					}
+					name.style.color = 'rgba(' + categories[mem.category].namecolor.join(',') + ',0.85)';
 					card.appendChild( name );
 
 					var object = new THREE.CSS3DObject( card );
