@@ -26,6 +26,8 @@ $.get('js/memories.json', function(data) {
 	categories = data.categories;
 	ages = data.ages;
 
+	memories.reverse();
+
 	init();
 	animate();
 })
@@ -195,19 +197,20 @@ function init() {
 
 	// table layout
 
-	var yPos = 0;
+	var yPos = 15;
 	cameraPresets.table = { x: 0, y: 0, z: 4500}
 
 	for ( var i = 0; i < objects.length; i++ ) {
 
 		var object = new THREE.Object3D();
-		var xPos = i % 9;
-		if (xPos == 0) yPos++;
-
+		var xPos = 8 - (i % 9);
+		
 		object.position.x = (xPos * 400) - 1450;
 		object.position.y = - ( yPos * 260 ) + 1550;
 
 		targets.table.push( object );
+
+		if (xPos == 0) yPos--;
 
 	}
 
@@ -219,7 +222,6 @@ function init() {
 
 	for ( var i = 0; i < objects.length; i ++ ) {
 		var mem = memories[i];
-		// var mem = memories[ objects.length - i - 1 ];
 
 		var object = new THREE.Object3D();
 
@@ -270,8 +272,6 @@ function init() {
 		object.position.x = ( ( ( ageIndex[mem.age] % 9 ) * 400 ) - 1900 ) * -1;
 		object.position.y = ( ( Math.floor( ageIndex[mem.age] / 9 ) ) * 260 );
 		object.position.z = ages[ mem.age ];
-
-		console.log(mem.age, object.position)
 
 		targets.age.push( object );
 
