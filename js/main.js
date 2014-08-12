@@ -32,6 +32,10 @@ $.get('js/memories.json', function(data) {
 	animate();
 })
 
+function dist(x, y, x0, y0){
+    return Math.sqrt((x -= x0) * x + (y -= y0) * y);
+};
+
 function init() {
 
 	camera = new THREE.PerspectiveCamera( 40, sceneWidth / window.innerHeight, 1, 10000 );
@@ -291,11 +295,53 @@ function init() {
 	// var ageIndex = [];
 	// var ageCount = -1;
 
+
+	//	Precompute the positions
+	//
+
+	var spiralPositions = [];
+
+	var PHI = (1.0+Math.sqrt(5.0))/2.0;
+
+	var samples = objects.length;
+	var minDistBtwSamples= 360+20;	// TODO: make it alogirthmic
+ 
+	var prevX = 0;
+	var prevY = 0;
+
+	var angle = 0;
+	var radius = 10;
+	while (samples > 0){
+  		var X = Math.cos(angle) * radius;
+  		var Y = Math.sin(angle) * radius;
+  		
+  		if(dist(X,Y,prevX,prevY) > minDistBtwSamples){
+
+  			var billboardAngle = angle;
+
+  			if(angle%(Math.PI*2.) >=Math.PI){
+  				billboardAngle += Math.PI/2.;	
+  			} else {
+  				billboardAngle -= Math.PI/2.;
+  			}
+
+    		spiralPositions.push({ 	x: X,
+    								y: Y,
+    								a: billboardAngle
+    							});
+    		prevX = X;
+    		prevY = Y;
+    		samples--;
+  		}
+
+  		angle += Math.PI/180.;
+  		radius += 2.;
+	}
+
+	//	Add the objects accourding to the positions
+	//	
 	for ( var i = 0; i < objects.length; i ++ ) {
 		var mem = memories[i];
-
-  		var angle = mem.agesort*(Math.PI/90.);
-  		var radius = mem.agesort*20.;
 
 		// // commenting this out: added an agesort to the data to make a spiral
 		// // if the memory age is unkown, set it to unknown so it appears in the back
@@ -312,8 +358,10 @@ function init() {
 
 		var object = new THREE.Object3D();
 
-		object.position.x = Math.cos(angle) * radius;
-		object.position.y = Math.sin(angle) * radius;
+		object.position.x = spiralPositions[mem.agesort].x;
+		object.position.y = spiralPositions[mem.agesort].y;
+
+		object.rotation.z = spiralPositions[mem.agesort].a;
 
 		targets.age.push( object );
 	}
