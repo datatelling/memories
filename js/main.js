@@ -183,11 +183,15 @@ function init() {
 			$('#activeCard .callout').text(memories[i].callout);
 			$('#activeCard .name').text(memories[i].firstName + ' ' + memories[i].lastName);
 			$('#activeCard .text').text(memories[i].text);
-			if (memories[i].hasOwnProperty('image')) $('#activeCard .pic').prepend('<img id="theImg" src="' + memories[i].image + '" width="300"/>');
 
 			$('#activeCard').css('background-color', $(this).css('background-color'));
 			$('#activeCard').css('top', window.innerHeight);
 			$('#activeCard').delay(900).animate({ top:'100px' });
+
+			if (memories[i].hasOwnProperty('image'))
+				$('#activeCard .pic').html( '<img src="' + memories[i].image + '">');
+			else
+				$('#activeCard .pic').html('');
 
 		}, false );
 
