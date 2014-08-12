@@ -140,6 +140,12 @@ a {
 	display: none;
 }
 
+#title {
+	position: absolute;
+	top: 20px;
+	left:20px;
+}
+
 #menu {
 	position: absolute;
 	bottom: 20px;

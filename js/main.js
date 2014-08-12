@@ -255,37 +255,69 @@ function init() {
 	// age layout
 
 	// cameraPresets.age = { x: 3526, y: 832, z: 5878 };
+	// cameraPresets.age = { x: 3085, y: 1158, z: 6067 };
+	// var ageIndex = [];
+	// var ageCount = -1;
+
+	// for ( var i = 0; i < objects.length; i ++ ) {
+	// 	var mem = memories[i];
+
+	// 	// if the memory age is unkown, set it to unknown so it appears in the back
+	// 	if (!mem.hasOwnProperty('age')) mem.age = 'unknown';
+
+	// 	// if the age is a range, like 2-3, just use the first number
+	// 	if (mem.age.length > 1) mem.age = mem.age.substring(0, 1);
+
+	// 	// super hacky way of getting rid of the layout gap between years 4 & 6!
+	// 	// redo this a better way! this just changes the index of the lookup table
+	// 	// for find the z position
+	// 	if (mem.age == '6') mem.age = '5';
+	// 	if (mem.age == 'u') mem.age = '6'; // 'unknown' gets shortened to 'u' above
+
+	// 	var object = new THREE.Object3D();
+
+	// 	if (!ageIndex.hasOwnProperty(mem.age)) ageIndex[mem.age] = -1;
+	// 	ageIndex[mem.age] += 1;
+
+	// 	object.position.x = ( ( ( ageIndex[mem.age] % 9 ) * 400 ) - 1900 ) * -1;
+	// 	object.position.y = ( ( Math.floor( ageIndex[mem.age] / 9 ) ) * 260 );
+	// 	object.position.z = ages[ mem.age ];
+
+	// 	targets.age.push( object );
+
+	// }
+
 	cameraPresets.age = { x: 3085, y: 1158, z: 6067 };
-	var ageIndex = [];
-	var ageCount = -1;
+	// var ageIndex = [];
+	// var ageCount = -1;
 
 	for ( var i = 0; i < objects.length; i ++ ) {
 		var mem = memories[i];
 
-		// if the memory age is unkown, set it to unknown so it appears in the back
-		if (!mem.hasOwnProperty('age')) mem.age = 'unknown';
+  		var angle = mem.agesort*(Math.PI/90.);
+  		var radius = mem.agesort*20.;
 
-		// if the age is a range, like 2-3, just use the first number
-		if (mem.age.length > 1) mem.age = mem.age.substring(0, 1);
+		// // commenting this out: added an agesort to the data to make a spiral
+		// // if the memory age is unkown, set it to unknown so it appears in the back
+		// if (!mem.hasOwnProperty('age')) mem.age = 'unknown';
 
-		// super hacky way of getting rid of the layout gap between years 4 & 6!
-		// redo this a better way! this just changes the index of the lookup table
-		// for find the z position
-		if (mem.age == '6') mem.age = '5';
-		if (mem.age == 'u') mem.age = '6'; // 'unknown' gets shortened to 'u' above
+		// // if the age is a range, like 2-3, just use the first number
+		// if (mem.age.length > 1) mem.age = mem.age.substring(0, 1);
+
+		// // super hacky way of getting rid of the layout gap between years 4 & 6!
+		// // redo this a better way! this just changes the index of the lookup table
+		// // for find the z position
+		// if (mem.age == '6') mem.age = '5';
+		// if (mem.age == 'u') mem.age = '6'; // 'unknown' gets shortened to 'u' above
 
 		var object = new THREE.Object3D();
 
-		if (!ageIndex.hasOwnProperty(mem.age)) ageIndex[mem.age] = -1;
-		ageIndex[mem.age] += 1;
-
-		object.position.x = ( ( ( ageIndex[mem.age] % 9 ) * 400 ) - 1900 ) * -1;
-		object.position.y = ( ( Math.floor( ageIndex[mem.age] / 9 ) ) * 260 );
-		object.position.z = ages[ mem.age ];
+		object.position.x = Math.cos(angle) * radius;
+		object.position.y = Math.sin(angle) * radius;
 
 		targets.age.push( object );
-
 	}
+
 
 	//
 
@@ -293,6 +325,7 @@ function init() {
 	renderer.setSize( sceneWidth, window.innerHeight );
 	renderer.domElement.style.position = 'absolute';
 	renderer.domElement.style.backgroundColor = '#FFF8F0';
+	// renderer.domElement.style.backgroundColor = 'black';
 	document.getElementById( 'container' ).appendChild( renderer.domElement );
 
 	//
@@ -461,6 +494,26 @@ function transformActiveCard( ) {
 
 	$('#overlay').delay(500).fadeIn();
 
+}
+
+function sortByAge(toSort) {
+  for (var i = 0; i < toSort.length; i++) {
+    toSort[i].tempi = i;
+  }
+  toSort.sort(function (a, b) {
+    if (a.sortage > b.sortage)
+      return 1;
+    if (a.sortage < b.sortage)
+      return -1;
+    // a must be equal to b
+    return 0;
+  });
+  console.log(toSort);
+  toSort.sortIndices = [];
+  for (var j = 0; j < toSort.length; j++) {
+    toSort.sortIndices.push(toSort[j].tempi);
+  }
+  return toSort.sortIndices;
 }
 
 function animateCamera( position, duration ) {
