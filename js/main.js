@@ -2,6 +2,7 @@ var camera, scene, renderer;
 var controls;
 
 var objects = [], annotations = [];
+var spiralPositions = [];
 
 var targets = {
 	"table": [],
@@ -81,47 +82,6 @@ function init() {
 		targets['category-annotations'].push( object );
 
 	}
-
-
-	// process age data for building annotation layer for ages
-
-	for ( var i = 0; i < ages.length; i++) {
-
-		// set up html element
-		var note = document.createElement( 'div' );
-		note.className = 'annotation-age';
-		note.setAttribute('id', 'age-' + i);
-
-		if (i <= 4)
-			note.innerHTML = i + ' Years';
-		if (i == 5)
-			note.innerHTML = '6 Years';
-		if (i == 6)
-			note.innerHTML = 'Unknown';
-
-		// set up css 3d properties
-		var object = new THREE.CSS3DObject( note );
-		object.position.x = Math.random() * 4000 - 2000;
-		object.position.y = Math.random() * 4000 - 2000;
-		object.position.z = Math.random() * 4000 - 2000;
-
-		object.rotation.x = Math.random() * 2 * 3.14;
-		object.rotation.y = Math.random() * 2 * 3.14;
-
-		// add to the scene and keep track of the 3d object
-		annotations.push( object );
-		scene.add( object );
-
-		// set up positioning for different views and keep track of 
-		// each target object
-		var object = new THREE.Object3D();
-		object.position.x = 2250;
-		object.position.y = -100;
-		object.position.z = ages[i];
-		targets['age-annotations'].push( object );
-
-	}
-
 
 	var categoryTotals = {};
 
@@ -206,7 +166,111 @@ function init() {
 		}, false );
 
 		objects.push( { id: i, object: object });
+	}
 
+		//	Precompute the spiral positions of ages view
+ 	//
+	var PHI = (1.0+Math.sqrt(5.0))/2.0;
+
+	var samples = objects.length+6;
+	var minDistBtwSamples= 360+20;	// TODO: make it alogirthmic
+ 
+	var prevX = 0;
+	var prevY = 0;
+
+	var angle = 0;
+	var radius = 10;
+	var depth = 0.;
+	while (samples > 0){
+  		var X = Math.cos(angle) * radius;
+  		var Y = Math.sin(angle) * radius;
+  		
+  		if(dist(X,Y,prevX,prevY) > minDistBtwSamples){
+
+  			var billboardAngle = angle;
+
+  			if(angle%(Math.PI*2.) >=Math.PI){
+  				billboardAngle += Math.PI/2.;	
+  			} else {
+  				billboardAngle -= Math.PI/2.;
+  			}
+
+    		spiralPositions.push({ 	x: X,
+    								y: Y,
+    								z: depth,
+    								a: billboardAngle
+    							});
+    		prevX = X;
+    		prevY = Y;
+    		samples--;
+    		depth+=10.;
+  		}
+
+  		angle += Math.PI/180.;
+  		radius += 2.;
+	}
+
+	// process age data for building annotation layer for ages
+
+	for ( var i = 0; i < ages.length; i++) {
+
+		if(i>0){
+			// set up html element
+			var note = document.createElement( 'div' );
+			note.className = 'annotation-age';
+			note.setAttribute('id', 'age-' + i);
+			var indexPos = 16;
+
+			if (i >= 2)
+				indexPos += 24+1;
+
+			if (i >= 3)
+				indexPos += 35+1;
+
+			if (i >= 4)
+				indexPos += 33+1;
+
+			if (i >= 5)
+				indexPos += 7+1;
+
+			if (i >= 6)
+				indexPos += 2+1;
+
+			if (i <= 4){
+				note.innerHTML = i + ' Years';
+			} else if (i == 5){
+				note.innerHTML = '6 Years';
+			} else if (i == 6){
+				note.innerHTML = 'Unknown';
+			}
+				
+			// set up css 3d properties
+			var object = new THREE.CSS3DObject( note );
+			object.position.x = Math.random() * 4000 - 2000;
+			object.position.y = Math.random() * 4000 - 2000;
+			object.position.z = Math.random() * 4000 - 2000;
+
+			object.rotation.x = Math.random() * 2 * 3.14;
+			object.rotation.y = Math.random() * 2 * 3.14;
+
+			// add to the scene and keep track of the 3d object
+			annotations.push( object );
+			scene.add( object );
+
+			// set up positioning for different views and keep track of 
+			// each target object
+			var object = new THREE.Object3D();
+			// object.position.x = 2250;
+			// object.position.y = -100;
+			// object.position.z = ages[i];
+
+			object.position.x = spiralPositions[indexPos].x;
+			object.position.y = spiralPositions[indexPos].y;
+			object.position.z = spiralPositions[indexPos].z;
+			object.rotation.z = spiralPositions[indexPos].a;
+
+			targets['age-annotations'].push( object );
+		}
 	}
 
 	// table layout
@@ -291,77 +355,37 @@ function init() {
 
 	// }
 
-	cameraPresets.age = { x: 3085, y: 1158, z: 6067 };
+	// cameraPresets.age = { x: 3085, y: 1158, z: 6067 };
+	cameraPresets.age = {x: 579, y: -5403, z: 4258 };
 	// var ageIndex = [];
 	// var ageCount = -1;
 
-
-	//	Precompute the positions
-	//
-
-	var spiralPositions = [];
-
-	var PHI = (1.0+Math.sqrt(5.0))/2.0;
-
-	var samples = objects.length;
-	var minDistBtwSamples= 360+20;	// TODO: make it alogirthmic
- 
-	var prevX = 0;
-	var prevY = 0;
-
-	var angle = 0;
-	var radius = 10;
-	while (samples > 0){
-  		var X = Math.cos(angle) * radius;
-  		var Y = Math.sin(angle) * radius;
-  		
-  		if(dist(X,Y,prevX,prevY) > minDistBtwSamples){
-
-  			var billboardAngle = angle;
-
-  			if(angle%(Math.PI*2.) >=Math.PI){
-  				billboardAngle += Math.PI/2.;	
-  			} else {
-  				billboardAngle -= Math.PI/2.;
-  			}
-
-    		spiralPositions.push({ 	x: X,
-    								y: Y,
-    								a: billboardAngle
-    							});
-    		prevX = X;
-    		prevY = Y;
-    		samples--;
-  		}
-
-  		angle += Math.PI/180.;
-  		radius += 2.;
-	}
-
 	//	Add the objects accourding to the positions
 	//	
+	var offSet = 0;
 	for ( var i = 0; i < objects.length; i ++ ) {
 		var mem = memories[i];
 
 		// // commenting this out: added an agesort to the data to make a spiral
-		// // if the memory age is unkown, set it to unknown so it appears in the back
-		// if (!mem.hasOwnProperty('age')) mem.age = 'unknown';
+		// if the memory age is unkown, set it to unknown so it appears in the back
+		if (!mem.hasOwnProperty('age')) mem.age = 'unknown';
 
-		// // if the age is a range, like 2-3, just use the first number
-		// if (mem.age.length > 1) mem.age = mem.age.substring(0, 1);
+		// if the age is a range, like 2-3, just use the first number
+		if (mem.age.length > 1) mem.age = mem.age.substring(0, 1);
 
-		// // super hacky way of getting rid of the layout gap between years 4 & 6!
-		// // redo this a better way! this just changes the index of the lookup table
-		// // for find the z position
-		// if (mem.age == '6') mem.age = '5';
-		// if (mem.age == 'u') mem.age = '6'; // 'unknown' gets shortened to 'u' above
+		// super hacky way of getting rid of the layout gap between years 4 & 6!
+		// redo this a better way! this just changes the index of the lookup table
+		// for find the z position
+		if (mem.age == '6') mem.age = '5';
+		if (mem.age == 'u') mem.age = '6'; // 'unknown' gets shortened to 'u' above
 
 		var object = new THREE.Object3D();
 
-		object.position.x = spiralPositions[mem.agesort].x;
-		object.position.y = spiralPositions[mem.agesort].y;
-
-		object.rotation.z = spiralPositions[mem.agesort].a;
+		var index = parseInt(mem.agesort) + parseInt(mem.age);
+		object.position.x = spiralPositions[index].x;
+		object.position.y = spiralPositions[index].y;
+		object.position.z = spiralPositions[index].z;
+		object.rotation.z = spiralPositions[index].a;
 
 		targets.age.push( object );
 	}
@@ -597,5 +621,5 @@ function animate() {
 function render() {
 
 	renderer.render( scene, camera );
-
+	console.log(camera.position);
 }
