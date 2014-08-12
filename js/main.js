@@ -144,14 +144,20 @@ function init() {
 		callout.textContent = mem.callout;
 		card.appendChild( callout );
 
+		if (mem.hasOwnProperty('image')) {
+			var icon = document.createElement( 'div' );
+			icon.className = 'camera';
+			icon.style.color = 'rgba(' + categories[mem.category].namecolor.join(',') + ',0.75)';
+			icon.innerHTML = '<i class="icon-camera icon-large"></i>';
+			card.appendChild( icon );
+		}
+
 		var name = document.createElement( 'div' );
 		name.className = 'name';
-		// name.innerHTML = mem['firstName'] + ' ' + mem['lastName'];
-		if (mem.hasOwnProperty('age')) {
+		if (mem.hasOwnProperty('age'))
 			name.innerHTML = mem['firstName'] + ', ' + mem['age'];
-		} else {
+		else
 			name.innerHTML = mem['firstName'];
-		}
 		name.style.color = 'rgba(' + categories[mem.category].namecolor.join(',') + ',0.75)';
 		card.appendChild( name );
 
