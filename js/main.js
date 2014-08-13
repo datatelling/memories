@@ -1,3 +1,9 @@
+// Pre-loading variables
+//
+$('#activeCard').offset({top:window.innerHeight});
+
+//	Global Variables and Arrays
+//
 var camera, scene, renderer;
 var controls;
 
