@@ -404,6 +404,7 @@
       "category": "trouble",
       "subcategory": "fear",
       "age": "3-4",
+      "displayage": "3-4",
       "callout": "stuck to the slats",
       "agesort": "81"
     },
@@ -454,6 +455,7 @@
       "category": "trouble",
       "subcategory": "hospital",
       "age": "0-2",
+      "displayage": "0-2",
       "callout": "badly scalded",
       "agesort": "2"
     },
@@ -464,6 +466,7 @@
       "category": "trouble",
       "subcategory": "hospital",
       "age": "2-3",
+      "displayage": "2-3",
       "callout": "ether onto the cotton",
       "agesort": "53"
     },
@@ -544,6 +547,7 @@
       "category": "trouble",
       "subcategory": "sick",
       "age": "0-1",
+      "displayage": "0-1",
       "callout": "I remember darkness",
       "image": "pics/Roberto_Blum.jpg",
       "agesort": "3"
@@ -603,6 +607,7 @@
       "category": "vse",
       "subcategory": "dream",
       "age": "3-4",
+      "displayage": "3-4",
       "callout": "chased... by a dragon",
       "agesort": "89"
     },
