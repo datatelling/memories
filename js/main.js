@@ -105,7 +105,7 @@ function init() {
 
 		var callout = document.createElement( 'div' );
 		callout.className = 'callout';
-		callout.textContent = mem.callout;
+		callout.textContent = mem.callout.substring(0, 1).toUpperCase() + mem.callout.substring(1);
 		card.appendChild( callout );
 
 		if (mem.hasOwnProperty('image')) {
@@ -150,7 +150,7 @@ function init() {
 
 			transformActiveCard( );
 
-			$('#activeCard .callout').text(memories[i].callout);
+			$('#activeCard .callout').text(memories[i].callout.substring(0, 1).toUpperCase() + memories[i].callout.substring(1));
 			$('#activeCard .name').text(memories[i].firstName + ' ' + memories[i].lastName);
 			$('#activeCard .text').text(memories[i].text);
 
@@ -621,5 +621,5 @@ function animate() {
 function render() {
 
 	renderer.render( scene, camera );
-	console.log(camera.position);
+
 }

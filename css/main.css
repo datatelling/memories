@@ -85,50 +85,67 @@ a {
 	}
 
 #activeCard {
+	top: 800px;
 	width: 800px;
 	height: 530px;
-	overflow-y: scroll;
-	top: 800px;
 	position: absolute;
 	left: 50px;
 	color: white;
 	background-color: rgba(0, 127, 127, 0.9);
+	overflow-y: hidden;
 }
+
+	#activeCard .cardContainer {
+		width: 400px;
+		height: 530px;
+		float: left;
+		position: fixed;
+		overflow-x:	hidden;
+		overflow-y: auto;
+	}
+
 	#activeCard .callout {
-		font-size: 60px;
-		padding: 25px;
+		font-size: 40px;
+		padding: 20px;
+		padding-bottom: 5px;
 		font-style: italic;
+		width: 350px;
+		float: left;
 	}
 
 	#activeCard .name {
 		position: relative;
+		width: 350px;
 		float: left;
 		display: inline;
-		width: 280px;
-		font-size: 30px;
-		padding: 10px;
-	}
-
-	#activeCard .text {
-		position: relative;
-		float: right;
-		display: inline;
-		width: 400px;
 		font-size: 24px;
-		padding: 10px;
+		padding-left: 20px;
 	}
 
 	#activeCard .pic {
 		position: relative;
 		float: left;
 		display: inline;
-		width: 300px;
-		padding: 10px;
+		width: 350px;
+		padding: 20px;
 	}
-
 		#activeCard .pic img {
-			width: 300px;
+			width: 100%;
 		}
+
+	#activeCard .text {
+		position: relative;
+		float: right;
+		display: inline;
+		width: 360px;
+		height: 490px;
+		padding: 20px;
+		font-size: 22px;
+		line-height: 1.25em;
+		word-wrap: break-word;
+		overflow-y: auto;
+		border-left: 1px solid rgba(255, 255, 255, 0.25);
+	}
 
 .annotation, .annotation-age {
 	font-size: 60px;
