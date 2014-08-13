@@ -110,7 +110,7 @@ function init() {
 		targets['table-annotations'].push( object );
 
 		var object = new THREE.Object3D();
-		object.position.x = categories[cat].table.x - 160;
+		object.position.x = categories[cat].table.x - 1600;
 		object.position.y = -100;
 		object.position.z = categories[cat].category.z;
 		targets['category-annotations'].push( object );
@@ -324,7 +324,7 @@ function init() {
 	// table layout
 
 	var yPos = 15;
-	cameraPresets.table = { x: 0, y: 0, z: 3500}
+	cameraPresets.table = { x: 0, y: 0, z: 3000}
 	for ( var i = 0; i < objects.length; i++ ) {
 
 		var object = new THREE.Object3D();
@@ -341,7 +341,7 @@ function init() {
 
 	// category layout
 
-	cameraPresets.category = { x: -4142, y: 1074, z: 3700 };
+	cameraPresets.category = { x: -3745, y: 775, z: 7138 };
 	var categoryIndex = {};
 	var categoryCount = -1;
 
@@ -359,7 +359,7 @@ function init() {
 		}
 		categoryIndex[mem.category].count += 1;
 
-		object.position.x = categoryIndex[mem.category].count % 9  * 400  - 1600;
+		object.position.x = categoryIndex[mem.category].count % 9  * 400  - 3000;
 		object.position.y = Math.floor( categoryIndex[mem.category].count / 9 ) * 260;
 		object.position.z = categories[mem.category].category.z;
 
@@ -367,7 +367,9 @@ function init() {
 
 	}
 
-	cameraPresets.age = {x: 579, y: -5403, z: 4258 };
+	// age layout
+
+	cameraPresets.age = {x: 425, y: -3971, z: 3130 };
 
 	//	Add the objects according to the positions
 	//	
@@ -606,5 +608,7 @@ function animate() {
 function render() {
 
 	renderer.render( scene, camera );
+
+	console.log(camera.position);
 
 }

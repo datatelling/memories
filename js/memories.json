@@ -6,10 +6,10 @@
       "name": "SENSORY<br>EXPERIENCE",
       "table": {
         "x": -1840,
-        "y": -230
+        "y": -220
       },
       "category": {
-        "z": -1500
+        "z": 1300
       }
     },
     "trouble": {
@@ -18,11 +18,11 @@
       "name": "TROUBLE",
       "table": {
         "x": -1800,
-        "y": 600
+        "y": 590
       }
       ,
       "category": {
-        "z": 400
+        "z": 3200
       }
     }, 
     "antics": {
@@ -31,10 +31,10 @@
       "name": "ANTICS",
       "table": {
         "x": -1780,
-        "y": 1120
+        "y": 1110
       },
       "category": {
-        "z": 1800
+        "z": 4600
       }
     }, 
     "family": {
@@ -43,11 +43,11 @@
       "name": "FAMILY",
       "table": {
         "x": -1780,
-        "y": -1210
+        "y": -1230
       }
       ,
       "category": {
-        "z": -3800
+        "z": -1000
       }
     }, 
     "hist": {
@@ -56,10 +56,10 @@
       "name": "HISTORY",
       "table": {
         "x": -1800,
-        "y": 1380
+        "y": 1370
       },
       "category": {
-        "z": 2800
+        "z": 5600
       }
     }
   },
