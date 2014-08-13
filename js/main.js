@@ -1,6 +1,6 @@
 // Pre-loading variables
 //
-$('#activeCard').offset({top:window.innerHeight});
+$('#activeCard').offset({top:window.innerHeight*2.});
 
 //	Global Variables and Arrays
 //
@@ -583,13 +583,15 @@ function animateCamera( position, duration ) {
 
 function onWindowResize() {
 
-	camera.aspect = sceneWidth / window.innerHeight;
-	camera.updateProjectionMatrix();
+	if(sceneWidth > window.innerHeight){
+		camera.aspect = sceneWidth / window.innerHeight;	
+	} else {
+
+	}
+	
+	// camera.updateProjectionMatrix();
 
 	renderer.setSize( sceneWidth, window.innerHeight );
-
-	render();
-
 }
 
 function animate() {
