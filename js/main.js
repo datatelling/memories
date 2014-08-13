@@ -153,6 +153,8 @@ function init() {
 			$('#activeCard .callout').text(memories[i].callout.substring(0, 1).toUpperCase() + memories[i].callout.substring(1));
 			$('#activeCard .name').text(memories[i].firstName + ' ' + memories[i].lastName);
 			$('#activeCard .text').text(memories[i].text);
+			
+			//crazy age hack because of earlier age hack - fix this
 			if (memories[i].hasOwnProperty('age'))
 				if (memories[i].hasOwnProperty('displayage'))
 					if (memories[i].displayage == '1')
@@ -164,7 +166,9 @@ function init() {
 						$('#activeCard .age').text(memories[i].age + ' year');
 					else
 						$('#activeCard .age').text(memories[i].age + ' years');
-			else
+			if (memories[i].age == 5)
+				$('#activeCard .age').text('6 years');
+			if (memories[i].age == 6)
 				$('#activeCard .age').text('');
 
 			$('#activeCard').css('background-color', $(this).css('background-color'));

@@ -146,6 +146,7 @@
       "lastName": "Chepke",
       "category": "antics",
       "age": "3-4",
+      "displayage": "3-4",
       "callout": "sense of panic",
       "agesort": "77"
     },
@@ -250,6 +251,7 @@
       "category": "antics",
       "subcategory": "play",
       "age": "0-1",
+      "displayage": "0-1",
       "callout": "two large dogs",
       "agesort": "1"
     },
