@@ -153,11 +153,17 @@ function init() {
 			$('#activeCard .callout').text(memories[i].callout.substring(0, 1).toUpperCase() + memories[i].callout.substring(1));
 			$('#activeCard .name').text(memories[i].firstName + ' ' + memories[i].lastName);
 			$('#activeCard .text').text(memories[i].text);
-			if (mem.hasOwnProperty('age'))
-				if (mem['age'] == '1')
-					$('#activeCard .age').text(mem['age'] + ' year');
-				else
-					$('#activeCard .age').text(mem['age'] + ' years');
+			if (memories[i].hasOwnProperty('age'))
+				if (memories[i].hasOwnProperty('displayage'))
+					if (memories[i].displayage == '1')
+						$('#activeCard .age').text(memories[i].displayage + ' year');
+					else
+						$('#activeCard .age').text(memories[i].displayage + ' years');
+				else 
+					if (memories[i].age == '1')
+						$('#activeCard .age').text(memories[i].age + ' year');
+					else
+						$('#activeCard .age').text(memories[i].age + ' years');
 			else
 				$('#activeCard .age').text('');
 
