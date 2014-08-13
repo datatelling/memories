@@ -45,13 +45,41 @@ function dist(x, y, x0, y0){
 
 function init() {
 
-	camera = new THREE.PerspectiveCamera( 40, sceneWidth / window.innerHeight, 1, 10000 );
-	camera.position.z = 15000;
+	// INIT THREE.JS stuff
+	//------------------------------------------
+	//	
 
+	//	Renderer
+	//
+	renderer = new THREE.CSS3DRenderer();
+	renderer.setSize( sceneWidth, window.innerHeight );
+	renderer.domElement.style.position = 'absolute';
+	renderer.domElement.style.backgroundColor = '#FFF8F0';
+	document.getElementById( 'container' ).appendChild( renderer.domElement );
+
+	//	Camera
+	//
+	camera = new THREE.PerspectiveCamera( 60, sceneWidth / window.innerHeight, 1, 10000 );
+	// camera.lookAt(0,0,0);
+	
+
+	//	Camera Controls
+	//	
+	controls = new THREE.OrbitControls( camera, renderer.domElement );
+	controls.rotateSpeed = 0.5;
+	controls.minDistance = -10000;
+	controls.maxDistance = 10000;
+	controls.noRotate = true;
+	controls.altControls = true;
+	controls.addEventListener( 'change', render );
+
+	// Scene
 	scene = new THREE.Scene();
 
+	// DATA and Layuouts
+	//------------------------------------------
+	//	
 	// process categories data for building annotation layer for table & categories
-
 	for ( var cat in categories ) {
 
 		// set up html element
@@ -191,10 +219,7 @@ function init() {
 		objects.push( { id: i, object: object });
 	}
 
-		//	Precompute the spiral positions of ages view
- 	//
-	var PHI = (1.0+Math.sqrt(5.0))/2.0;
-
+	//	Precompute the spiral positions of ages view
 	var samples = objects.length+6;
 	var minDistBtwSamples= 360+20;	// TODO: make it alogirthmic
  
@@ -299,8 +324,7 @@ function init() {
 	// table layout
 
 	var yPos = 15;
-	cameraPresets.table = { x: 0, y: 0, z: 4500}
-
+	cameraPresets.table = { x: 0, y: 0, z: 3500}
 	for ( var i = 0; i < objects.length; i++ ) {
 
 		var object = new THREE.Object3D();
@@ -317,7 +341,7 @@ function init() {
 
 	// category layout
 
-	cameraPresets.category = { x: -4142, y: 1074, z: 5941 };
+	cameraPresets.category = { x: -4142, y: 1074, z: 3700 };
 	var categoryIndex = {};
 	var categoryCount = -1;
 
@@ -374,26 +398,8 @@ function init() {
 		targets.age.push( object );
 	}
 
-
+	//	UI 
 	//
-
-	renderer = new THREE.CSS3DRenderer({antialias:true});
-	renderer.setSize( sceneWidth, window.innerHeight );
-	renderer.domElement.style.position = 'absolute';
-	renderer.domElement.style.backgroundColor = '#FFF8F0';
-	// renderer.domElement.style.backgroundColor = 'black';
-	document.getElementById( 'container' ).appendChild( renderer.domElement );
-
-	//
-
-	controls = new THREE.OrbitControls( camera, renderer.domElement );
-	controls.rotateSpeed = 0.5;
-	controls.minDistance = -10000;
-	controls.maxDistance = 10000;
-	controls.noRotate = true;
-	controls.altControls = true;
-	controls.addEventListener( 'change', render );
-
 	var button = document.getElementById( 'table' );
 	button.addEventListener( 'click', function ( event ) {
 
@@ -439,7 +445,7 @@ function init() {
 
 
 	$('#activeCard, #overlay').click(function() {
-		$('#activeCard').animate({ top: window.innerHeight }, 200, function() {
+		$('#activeCard').animate({ top: window.innerHeight*2. }, 200, function() {
 			$(card).css('display', 'block');
 			transform( targets[layout], 1000 );
 
@@ -452,10 +458,7 @@ function init() {
 	transformAnnotations( targets[layout+'-annotations'], 1000 );
 	animateCamera( cameraPresets[layout], 2000 );
 
-	//
-
 	window.addEventListener( 'resize', onWindowResize, false );
-
 }
 
 function transform( targets, duration ) {
@@ -583,15 +586,11 @@ function animateCamera( position, duration ) {
 
 function onWindowResize() {
 
-	if(sceneWidth > window.innerHeight){
-		camera.aspect = sceneWidth / window.innerHeight;	
-	} else {
-
-	}
-	
-	// camera.updateProjectionMatrix();
-
 	renderer.setSize( sceneWidth, window.innerHeight );
+
+	camera.aspect = sceneWidth / window.innerHeight;	
+	camera.updateProjectionMatrix();
+
 }
 
 function animate() {
