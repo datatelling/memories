@@ -221,7 +221,7 @@ function init() {
 
 	//	Precompute the spiral positions of ages view
 	var samples = objects.length+6;
-	var minDistBtwSamples= 360+20;	// TODO: make it alogirthmic
+	var minDistBtwSamples= 360+50;	// TODO: make it alogirthmic
  
 	var prevX = 0;
 	var prevY = 0;
