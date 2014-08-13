@@ -153,11 +153,11 @@ function init() {
 			$('#activeCard .callout').text(memories[i].callout.substring(0, 1).toUpperCase() + memories[i].callout.substring(1));
 			$('#activeCard .name').text(memories[i].firstName + ' ' + memories[i].lastName);
 			$('#activeCard .text').text(memories[i].text);
-			if (memories[i].hasOwnProperty('age'))
-				if (mem.age == '1')
-					$('#activeCard .age').text(mem.age + ' year');
+			if (mem.hasOwnProperty('age'))
+				if (mem['age'] == '1')
+					$('#activeCard .age').text(mem['age'] + ' year');
 				else
-					$('#activeCard .age').text(mem.age + ' years');
+					$('#activeCard .age').text(mem['age'] + ' years');
 			else
 				$('#activeCard .age').text('');
 
@@ -327,53 +327,14 @@ function init() {
 
 	}
 
-	// age layout
-
-	// cameraPresets.age = { x: 3526, y: 832, z: 5878 };
-	// cameraPresets.age = { x: 3085, y: 1158, z: 6067 };
-	// var ageIndex = [];
-	// var ageCount = -1;
-
-	// for ( var i = 0; i < objects.length; i ++ ) {
-	// 	var mem = memories[i];
-
-	// 	// if the memory age is unkown, set it to unknown so it appears in the back
-	// 	if (!mem.hasOwnProperty('age')) mem.age = 'unknown';
-
-	// 	// if the age is a range, like 2-3, just use the first number
-	// 	if (mem.age.length > 1) mem.age = mem.age.substring(0, 1);
-
-	// 	// super hacky way of getting rid of the layout gap between years 4 & 6!
-	// 	// redo this a better way! this just changes the index of the lookup table
-	// 	// for find the z position
-	// 	if (mem.age == '6') mem.age = '5';
-	// 	if (mem.age == 'u') mem.age = '6'; // 'unknown' gets shortened to 'u' above
-
-	// 	var object = new THREE.Object3D();
-
-	// 	if (!ageIndex.hasOwnProperty(mem.age)) ageIndex[mem.age] = -1;
-	// 	ageIndex[mem.age] += 1;
-
-	// 	object.position.x = ( ( ( ageIndex[mem.age] % 9 ) * 400 ) - 1900 ) * -1;
-	// 	object.position.y = ( ( Math.floor( ageIndex[mem.age] / 9 ) ) * 260 );
-	// 	object.position.z = ages[ mem.age ];
-
-	// 	targets.age.push( object );
-
-	// }
-
-	// cameraPresets.age = { x: 3085, y: 1158, z: 6067 };
 	cameraPresets.age = {x: 579, y: -5403, z: 4258 };
-	// var ageIndex = [];
-	// var ageCount = -1;
 
-	//	Add the objects accourding to the positions
+	//	Add the objects according to the positions
 	//	
 	var offSet = 0;
 	for ( var i = 0; i < objects.length; i ++ ) {
 		var mem = memories[i];
 
-		// // commenting this out: added an agesort to the data to make a spiral
 		// if the memory age is unkown, set it to unknown so it appears in the back
 		if (!mem.hasOwnProperty('age')) mem.age = 'unknown';
 
