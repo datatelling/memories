@@ -284,12 +284,14 @@ function init() {
 			if (i >= 6)
 				indexPos += 2+1;
 
-			if (i <= 4){
-				note.innerHTML = i + ' Years';
+			if (i == 1) {
+				note.innerHTML = '1 YEAR';
+			} else if (i > 1 && i <= 4){
+				note.innerHTML = i + ' YEARS';
 			} else if (i == 5){
-				note.innerHTML = '6 Years';
+				note.innerHTML = '6 YEARS';
 			} else if (i == 6){
-				note.innerHTML = 'Unknown';
+				note.innerHTML = 'UNKNOWN';
 			}
 				
 			// set up css 3d properties
