@@ -2,8 +2,6 @@
 //
 $('#activeCard').offset({top:window.innerHeight*2.});
 
-if ( !Detector.webgl ) Detector.addGetWebGLMessage();
-
 //	Global Variables and Arrays
 //
 var camera, scene, renderer;
