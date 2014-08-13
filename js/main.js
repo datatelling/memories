@@ -153,6 +153,13 @@ function init() {
 			$('#activeCard .callout').text(memories[i].callout.substring(0, 1).toUpperCase() + memories[i].callout.substring(1));
 			$('#activeCard .name').text(memories[i].firstName + ' ' + memories[i].lastName);
 			$('#activeCard .text').text(memories[i].text);
+			if (memories[i].hasOwnProperty('age'))
+				if (mem.age == '1')
+					$('#activeCard .age').text(mem.age + ' year');
+				else
+					$('#activeCard .age').text(mem.age + ' years');
+			else
+				$('#activeCard .age').text('');
 
 			$('#activeCard').css('background-color', $(this).css('background-color'));
 			$('#activeCard').css('top', window.innerHeight);

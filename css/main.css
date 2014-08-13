@@ -57,7 +57,7 @@ a {
 		top: 15px;
 		left: 0px;
 		right: 0px;
-		font-size: 60px;
+		font-size: 58px;
 		font-weight: bold;
 		font-style: italic;
 		color: rgba(87, 58, 55,0.85);
@@ -78,7 +78,7 @@ a {
 		left: 0px;
 		right: 0px;
 		text-align: right;
-		font-size: 42px;
+		font-size: 44px;
 		color: rgba(120, 186, 95, 1);
 		padding-left: 15px;
 		padding-right: 15px;
@@ -114,6 +114,15 @@ a {
 	}
 
 	#activeCard .name {
+		position: relative;
+		width: 350px;
+		float: left;
+		display: inline;
+		font-size: 24px;
+		padding-left: 20px;
+	}
+
+	#activeCard .age {
 		position: relative;
 		width: 350px;
 		float: left;
@@ -168,7 +177,7 @@ a {
 	bottom: 20px;
 	left: 350px;
 	text-align: center;
-	background-color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(255, 248, 240, 0.85);
 	padding: 10px;
 }
 
