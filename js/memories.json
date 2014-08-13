@@ -676,6 +676,7 @@
       "category": "vse",
       "subcategory": "outdoors",
       "age": "3-4",
+      "displayage": "3-4",
       "callout": "daddy long-legs",
       "agesort": "92"
     },
@@ -724,6 +725,7 @@
       "lastName": "Lett",
       "category": "vse",
       "age": "0-1",
+      "displayage": "0-1",
       "callout": "orange flashes",
       "agesort": "4"
     },
@@ -763,6 +765,7 @@
       "category": "vse",
       "subcategory": "roomfurn",
       "age": "2-3",
+      "displayage": "2-3",
       "callout": "oranges on the trees",
       "agesort": "57"
     },
@@ -792,6 +795,7 @@
       "category": "vse",
       "subcategory": "roomfurn",
       "age": "0-1",
+      "displayage": "0-1",
       "callout": "the mailman",
       "agesort": "5"
     },
@@ -840,6 +844,7 @@
       "lastName": "Koreneff",
       "category": "vse",
       "age": "0-1",
+      "displayage": "0-1",
       "callout": "talking in sentences",
       "agesort": "6"
     },
@@ -870,6 +875,7 @@
       "category": "vse",
       "subcategory": "outdoors",
       "age": "2-3",
+      "displayage": "2-3",
       "callout": "catching butterflies",
       "agesort": "61"
     },
@@ -908,6 +914,7 @@
       "lastName": "Dubal",
       "category": "vse",
       "age": "2-3",
+      "displayage": "2-3",
       "callout": "a large cockroach",
       "agesort": "62"
     },
@@ -992,6 +999,7 @@
       "category": "family",
       "subcategory": "gparents",
       "age": "0-1",
+      "displayage": "0-1",
       "callout": "tile pattern",
       "agesort": "7"
     },
@@ -1031,6 +1039,7 @@
       "category": "family",
       "subcategory": "gparents",
       "age": "0-2",
+      "displayage": "0-2",
       "callout": "wanting my teddy",
       "agesort": "8"
     },
@@ -1072,6 +1081,7 @@
       "category": "family",
       "subcategory": "parents",
       "age": "2-3",
+      "displayage": "2-3",
       "callout": "wander the fields",
       "agesort": "70"
     },
@@ -1143,6 +1153,7 @@
       "category": "family",
       "subcategory": "parents",
       "age": "0-1",
+      "displayage": "0-1",
       "callout": "in a high chair",
       "agesort": "9"
     },
@@ -1162,6 +1173,7 @@
       "category": "family",
       "subcategory": "parents",
       "age": "0-1",
+      "displayage": "0-1",
       "callout": "boat excursion",
       "agesort": "10"
     },
@@ -1182,6 +1194,7 @@
       "category": "family",
       "subcategory": "parents",
       "age": "1-2",
+      "displayage": "1-2",
       "callout": "in a baby carrier",
       "agesort": "33"
     },
@@ -1192,6 +1205,7 @@
       "category": "family",
       "subcategory": "parents",
       "age": "2-3",
+      "displayage": "2-3",
       "callout": "asking my mother",
       "agesort": "72"
     },
@@ -1213,6 +1227,7 @@
       "category": "family",
       "subcategory": "parents",
       "age": "0-1",
+      "displayage": "0-1",
       "callout": "tremendous flash",
       "image": "pics/Janice_Lipeles.jpg",
       "agesort": "11"
@@ -1224,6 +1239,7 @@
       "category": "family",
       "subcategory": "parents",
       "age": "0-3",
+      "displayage": "0-3",
       "callout": "just spit a pill",
       "agesort": "12"
     },
@@ -1244,6 +1260,7 @@
       "category": "family",
       "subcategory": "parents",
       "age": "0-3",
+      "displayage": "0-3",
       "callout": "I kept running",
       "agesort": "13"
     },
@@ -1264,6 +1281,7 @@
       "category": "family",
       "subcategory": "parents",
       "age": "0-2",
+      "displayage": "0-2",
       "callout": "flushed his underwear",
       "agesort": "14"
     },
@@ -1274,6 +1292,7 @@
       "category": "family",
       "subcategory": "parents",
       "age": "0-3",
+      "displayage": "0-3",
       "callout": "my father leaning",
       "agesort": "15"
     },
