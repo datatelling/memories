@@ -2,7 +2,6 @@
   "categories": {
     "vse": {
       "color": [206, 89, 57],
-      "namecolor": [137, 81, 64],
       "name": "SENSORY<br>EXPERIENCE",
       "table": {
         "x": -1840,
@@ -14,7 +13,6 @@
     },
     "trouble": {
       "color": [116, 121, 192],
-      "namecolor": [92, 93, 125],
       "name": "TROUBLE",
       "table": {
         "x": -1800,
@@ -27,7 +25,6 @@
     }, 
     "antics": {
       "color": [65, 180, 201],
-      "namecolor": [63, 111, 118],
       "name": "ANTICS",
       "table": {
         "x": -1780,
@@ -39,7 +36,6 @@
     }, 
     "family": {
       "color": [120, 186, 95],
-      "namecolor": [95, 125, 81],
       "name": "FAMILY",
       "table": {
         "x": -1780,
@@ -52,7 +48,6 @@
     }, 
     "hist": {
       "color": [139, 114, 100],
-      "namecolor": [57, 50, 46],
       "name": "HISTORY",
       "table": {
         "x": -1800,

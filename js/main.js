@@ -161,7 +161,7 @@ function init() {
 		if (mem.hasOwnProperty('image')) {
 			var icon = document.createElement( 'div' );
 			icon.className = 'camera';
-			icon.style.color = 'rgba(' + categories[mem.category].namecolor.join(',') + ',0.75)';
+			icon.style.color = 'rgba(87, 58, 55, 0.70)';
 			icon.innerHTML = '<i class="icon-camera icon-large"></i>';
 			card.appendChild( icon );
 		}
@@ -172,7 +172,7 @@ function init() {
 			name.innerHTML = mem['firstName'] + ', ' + mem['age'];
 		else
 			name.innerHTML = mem['firstName'];
-		name.style.color = 'rgba(' + categories[mem.category].namecolor.join(',') + ',0.75)';
+		name.style.color = 'rgba(87, 58, 55, 0.70)';
 		card.appendChild( name );
 
 		var object = new THREE.CSS3DObject( card );
@@ -342,7 +342,7 @@ function init() {
 	// table layout
 
 	var yPos = 15;
-	cameraPresets.table = { x: 0, y: 0, z: 3000}
+	cameraPresets.table = { x: 0, y: 0, z: 2700}
 	for ( var i = 0; i < objects.length; i++ ) {
 
 		var object = new THREE.Object3D();
