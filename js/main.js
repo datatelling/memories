@@ -27,17 +27,33 @@ var activeCard = false;
 
 var memories, categories, ages;
 
-// load memories data
-$.get('js/memories.json', function(data) {
-	memories = data.memories;
-	categories = data.categories;
-	ages = data.ages;
+var isOpera = navigator.userAgent.toLowerCase().indexOf("opera") > -1;
+var isMobile = 'ontouchstart' in document.documentElement;
 
-	memories.reverse();
+if (!isOpera && !isMobile) {
+	load();
+} else {
+	$("#menu").hide();
+	$("#unsupported").show();
+}
 
-	init();
-	animate();
-})
+function load() {
+
+	$("#menu").show();
+
+	// load memories data
+	$.get('js/memories.json', function(data) {
+		memories = data.memories;
+		categories = data.categories;
+		ages = data.ages;
+
+		memories.reverse();
+
+		init();
+		animate();
+	});
+}
+
 
 function dist(x, y, x0, y0){
     return Math.sqrt((x -= x0) * x + (y -= y0) * y);
