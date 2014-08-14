@@ -342,7 +342,7 @@ function init() {
 	// table layout
 
 	var yPos = 15;
-	cameraPresets.table = { x: 0, y: 0, z: 2700}
+	cameraPresets.table = { x: 0, y: 0, z: 2780}
 	for ( var i = 0; i < objects.length; i++ ) {
 
 		var object = new THREE.Object3D();
