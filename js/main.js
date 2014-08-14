@@ -42,7 +42,7 @@ function load() {
 	$("#menu").show();
 
 	// load memories data
-	$.get('js/memories.json', function(data) {
+	$.get('data/memories.json', function(data) {
 		memories = data.memories;
 		categories = data.categories;
 		ages = data.ages;
